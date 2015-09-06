@@ -1,0 +1,32 @@
+<RAHostAccess>
+	<Status>SUCCESS</Status>
+	<SID>593974102</SID>
+	<WID>pluto2</WID>
+	<RAHN>tests-nimon</RAHN>
+	<RAHA>Cisco IP Communicator</RAHA>
+	<AID>42094515</AID>
+	<RAHDV>T29LSP11</RAHDV>
+	<RAHDU>https://deweb2.qa.webex.com/client/T29LSP11/ra/self</RAHDU>
+	<PingServerIP>ehl3derzcbmm11.qa.webex.com;ehl3cbmm11.qa.webex.com
+	</PingServerIP>
+	<WINName>hl3win</WINName>
+	<WebDomainName>dewd</WebDomainName>
+	<MeetingDomainName>demd</MeetingDomainName>
+	<TeleServerSubject>674.134</TeleServerSubject>
+	<SubscribeName>QA</SubscribeName>
+	<SubscribePassword>pass</SubscribePassword>
+	<GpcProductRoot>WebEx</GpcProductRoot>
+	<GpcIniName>gpcnt.php</GpcIniName>
+	<SFSupporting>V2FudGE=</SFSupporting>
+	<GpcUrlRootEx>gpc.php?OS=NT&basicname=AAInstall&pmodules=AAInstall&replaceKey=EXE%7CJAVA%7CDLL%7COTHERS%7CSSF&LN=
+	</GpcUrlRootEx>
+	<GpcActiveIniSection>RA_H</GpcActiveIniSection>
+	<GpcProductVersion>324</GpcProductVersion>
+	<GpcProductDescription>WebEx</GpcProductDescription>
+	<GpcUrlRoot>https://deweb2.qa.webex.com/client/T29LSP11/ra/self
+	</GpcUrlRoot>
+	<GpcUnpackVersion>27, 17, 2010, 429</GpcUnpackVersion>
+	<GpcExtVersion>10029, 801, 2014, 1103</GpcExtVersion>
+	<GpcUnpackName>atgpcdec</GpcUnpackName>
+	<GpcExtName>atgpcext</GpcExtName>
+</RAHostAccess>

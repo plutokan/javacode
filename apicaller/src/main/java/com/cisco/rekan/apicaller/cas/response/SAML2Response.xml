@@ -1,0 +1,106 @@
+<samlp:Response
+	InResponseTo="s233cf840a3e8115c08c3561e80517eaa76a030722"
+	IssueInstant="2013-12-03T02:30:14.984Z"
+	ID="J4wLqeDSSIrJK3LD6dLTdrKap04"
+	Version="2.0"
+	xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
+	<saml:Issuer xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">JILL</saml:Issuer>
+	<samlp:Status>
+		<samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
+	</samlp:Status>
+	<saml:Assertion
+		Version="2.0"
+		IssueInstant="2013-12-03T02:30:14.984Z"
+		ID="pBNdLBoYdUgiCOt.vbRAEvvSlXr"
+		xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion">
+		<saml:Issuer>JILL</saml:Issuer>
+		<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+			<ds:SignedInfo>
+				<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+				<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+				<ds:Reference URI="#pBNdLBoYdUgiCOt.vbRAEvvSlXr">
+					<ds:Transforms>
+						<ds:Transform
+							Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+						<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+					</ds:Transforms>
+					<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+					<ds:DigestValue>jNLPL68BmklQM8Wfi8pOoKspZ40=</ds:DigestValue>
+				</ds:Reference>
+			</ds:SignedInfo>
+			<ds:SignatureValue>
+				XoioDg8+BDu/uGQOVZvAVoOaM5E9fTdCdsX+V0SDIDTA+FSmyUggZF5BLTihi//YcWdT6a3s/a/Q
+				HUK926APcK1y4Hs4+BAKdFihGmPfCv6wfxXIZkKkEg2bLqD3hmsCOUAXkXs1z2+XX2XdCKn0CQHL
+				AxTjJt+lIiiwBBnAOto=
+			</ds:SignatureValue>
+		</ds:Signature>
+		<saml:Subject>
+			<saml:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">pf001</saml:NameID>
+			<saml:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+				<saml:SubjectConfirmationData
+					InResponseTo="s233cf840a3e8115c08c3561e80517eaa76a030722"
+					NotOnOrAfter="2013-12-03T02:35:14.984Z"
+					Recipient="https://szqacsplgn.qa.webex.com/cas/SAML2AuthService.do?org=pfsso.com&amp;type=connect2" />
+			</saml:SubjectConfirmation>
+		</saml:Subject>
+		<saml:Conditions
+			NotOnOrAfter="2013-12-03T02:35:14.984Z"
+			NotBefore="2013-12-03T02:25:14.984Z">
+			<saml:AudienceRestriction>
+				<saml:Audience>pfsso</saml:Audience>
+			</saml:AudienceRestriction>
+		</saml:Conditions>
+		<saml:AuthnStatement
+			AuthnInstant="2013-12-03T02:30:14.984Z"
+			SessionIndex="pBNdLBoYdUgiCOt.vbRAEvvSlXr">
+			<saml:AuthnContext>
+				<saml:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified
+				</saml:AuthnContextClassRef>
+			</saml:AuthnContext>
+		</saml:AuthnStatement>
+		<saml:AttributeStatement xmlns:xs="http://www.w3.org/2001/XMLSchema">
+			<saml:Attribute
+				NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+				Name="uid">
+				<saml:AttributeValue
+					xsi:type="xs:string"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">pftest1@pfsso.com</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute
+				NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+				Name="employeeid">
+				<saml:AttributeValue
+					xsi:type="xs:string"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">pf001</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute
+				NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+				Name="email">
+				<saml:AttributeValue
+					xsi:type="xs:string"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">pftest1@pfsso.com</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute
+				NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+				Name="lastname">
+				<saml:AttributeValue
+					xsi:type="xs:string"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">test</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute
+				NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+				Name="firstname">
+				<saml:AttributeValue
+					xsi:type="xs:string"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">pftest1</saml:AttributeValue>
+			</saml:Attribute>
+			<saml:Attribute
+				NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
+				Name="updateTimeStamp">
+				<saml:AttributeValue
+					xsi:type="xs:string"
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">20130218065822.0Z</saml:AttributeValue>
+			</saml:Attribute>
+		</saml:AttributeStatement>
+	</saml:Assertion>
+</samlp:Response>

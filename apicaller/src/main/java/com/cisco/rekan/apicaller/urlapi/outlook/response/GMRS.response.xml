@@ -1,0 +1,44 @@
+<OutlookGetSM>
+	<Status>SUCCESS</Status>
+	<MK>152546004</MK>
+	<PN>To receive a call back, provide your phone number when you join the
+		event, or call the number below and enter the access code.
+		Primary Large_Enable_Call-in toll-free number (US/Canada)_Jerry:
+		7,0/5;8:0,9,9[0]2%+7(0)5-8,0 9#9
+		Primary Large_Enable_Call-in toll number (US/Canada)_Jerry:
+		7,0/5;8:0,9,9[0]2%+7(0)5-8,0 9#9
+		Toll-free dialing restrictions:
+		http://www.webex.com/pdf/tollfree_restrictions.pdf
+		Access code: 152 546 004
+	</PN>
+	<PNA>To receive a call back, provide your phone number when you join
+		the event, or call the number below and enter the access code.
+		Primary Large_Enable_Call-in toll-free number (US/Canada)_Jerry:
+		7,0/5;8:0,9,9[0]2%+7(0)5-8,0 9#9
+		Primary Large_Enable_Call-in toll number (US/Canada)_Jerry:
+		7,0/5;8:0,9,9[0]2%+7(0)5-8,0 9#9
+		Toll-free dialing restrictions:
+		http://www.webex.com/pdf/tollfree_restrictions.pdf
+		Access code: 152 546 004
+	</PNA>
+	<StartURL>https://deweb2.qa.webex.com/dewd-pluto/j.php?S=152546004
+	</StartURL>
+	<JoinURL>https://deweb2.qa.webex.com/dewd-pluto/j.php?J=152546004
+	</JoinURL>
+	<Disclaimer>IMPORTANT NOTICE: This WebEx service includes a feature
+		that allows audio and any documents and other materials exchanged or
+		viewed during the session to be recorded. By joining this session, you
+		automatically consent to such recordings. If you do not consent to the
+		recording, discuss your concerns with the meeting host prior to the
+		start of the recording or do not join the session. Please note that
+		any such recordings may be subject to discovery in the event of
+		litigation.</Disclaimer>
+	<HostDisclaimer>IMPORTANT NOTICE: This WebEx service includes a feature
+		that allows audio and any documents and other materials exchanged or
+		viewed during the session to be recorded. You should inform all
+		meeting attendees prior to recording if you intend to record the
+		meeting. Please note that any such recordings may be subject to
+		discovery in the event of litigation.</HostDisclaimer>
+	<EmailFooter>http://www.webex.com</EmailFooter>
+	<PROFILEID></PROFILEID>
+</OutlookGetSM>

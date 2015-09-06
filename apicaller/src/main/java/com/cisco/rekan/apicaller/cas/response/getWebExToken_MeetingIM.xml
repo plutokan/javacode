@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LoginResponse>
+	<response>
+		<result>SUCCESS</result>
+	</response>
+	<returnmsg>
+		<username>jianzha2@cisco.com</username>
+		<userID>UDGPCX0J0A91Z9LI8WP33JZGC0</userID>
+		<token>AAABNqppIycAEnUAB0d+Edsx+SiSZVu5M27iCwWYEwO1VhqI1TqpQ7ErPySr4QAAADLozCYRu3GK/kbCpwlo+l+1NjQZJzDkgtZyl50wBPAmnVwFtGnn8YKTT5CNzUS6tRhVBeIRyWJc62ykIgv5QdsB7Wrccmr/u709fdeM2DQIhZ0ryz/PHpdOjCV7SuQv7/e2JikOGFxt3/GUbuWKXOsaxq94R0DpLQKp8Kc3rQ7+9yNRObUnmw3WA0gn9W6q2gniKBzjMjYqmIod9Vrwp/2lyoFwUd8WiqzF2/FfHVmXF1db5L7IyA+RuOAnVswfWbVb3EaQVNfmPVP+Um6LS7EVvZ8JaU6ZTvIwDPe5VW4aydYGNolO0fP48UdAXHtWgl8GbYKyGtG+ZfpVR8aE7EVM
+		</token>
+		<createtime>1334298878759</createtime>
+		<timetolive>1209600</timetolive>
+		<orglevel>WAPI1</orglevel>
+		<serviceurl>x02wapi.webexconnect.com/wbxconnect</serviceurl>
+		<jabberToken>gSav2Hlnmz/hSLcXHCN4Vr7xBqdj7KHBLTlKjS3t7vC+WpA+7aLhRI5yNxaBDhQDN6BZM8R0f/ygK5qA8QPRVomM+uDTEH5E5QhhXCbYFTqjNNnpL9WQSoD6ml6AxMRdBv+/B0Vf+6d6s/CAn7FLq9/DZol88SRz7BOekd8AcxdIJKP/BcIYZZ9S2wVxr1WBgR/50fvupY10f5mr/IeWrtXaVMbC31NlLDIbzmpUWOQ0sNlL+MLOzcEcQ5a4dlMo+HNfyz2a5UQnRozxAB6FWR+4CJxcGWlZ9/RCHxtXleObxGJSZTONwcUQbkqfDiAYiILB97a7jOtrShE5195c1Xr3OgGRgk+JRfXoGYy8BLaUlpiwfcYBAT4mSf6BunlX7W3R6UiK6zOGziEbjXoEiA==
+		</jabberToken>
+		<jabberCluster>isj3cmx-gw.webexconnect.com</jabberCluster>
+		<jabberName>isj3</jabberName>
+		<webimserviceurl>https://im3.ciscowebex.com/webim/index.htm
+		</webimserviceurl>
+		<ep>VVJERVAlAACEGRs5kSW8WmK4VQ7vsi63Yrgh7p/Danx/kvGLR8wgCZgMHOM=</ep>
+	</returnmsg>
+</LoginResponse>

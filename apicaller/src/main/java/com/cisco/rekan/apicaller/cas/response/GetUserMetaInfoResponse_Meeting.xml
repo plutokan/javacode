@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LoginResponse>
+    <response>
+        <result>SUCCESS</result>
+    </response>
+    <returnmsg>
+        <username>v14szef1@szwtv13ef1.com</username>
+        <userID>U00O0C8QECVTH6GFIDPL29SE8O-9DKF</userID>
+        <email>v14szef1@szwtv13ef1.com</email>
+        <orglevel>WAPI2</orglevel>
+        <dcid>SZ</dcid>
+        <serviceurl>dfwapi-sz1-hf1.qa.webex.com/wbxconnect</serviceurl>
+        <conferenceurl>szwtv13ef1.qa.webex.com</conferenceurl>
+        <collabsurl>szwtv13ef1.qa.webex.com</collabsurl>
+    </returnmsg>
+</LoginResponse>

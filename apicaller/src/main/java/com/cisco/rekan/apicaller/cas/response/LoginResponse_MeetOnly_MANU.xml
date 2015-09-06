@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LoginResponse>
+	<response>
+		<result>FAILURE</result>
+		<exceptionID>cas.login_failed</exceptionID>
+		<reason>Sign in failed. User name or password is invalid or the user
+			is inactive.</reason>
+	</response>
+	<returnmsg />
+</LoginResponse>

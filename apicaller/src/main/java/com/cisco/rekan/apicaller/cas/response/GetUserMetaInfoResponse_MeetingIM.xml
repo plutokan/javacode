@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LoginResponse>
+	<response>
+		<result>SUCCESS</result>
+	</response>
+	<returnmsg>
+		<username>gadmin.0701.test.com@ltisz7.im.webex.com</username>
+		<userID>U0JEILASXTEM8K6K65L16RVW6G-V1Q</userID>
+		<email>gadmin.0701@test.com</email>
+		<bgstatus>Active</bgstatus>
+		<orglevel>WAPI2</orglevel>
+		<dcid>SZ</dcid>
+		<serviceurl>dfwapi-sz1-hf1.qa.webex.com/wbxconnect</serviceurl>
+		<conferenceurl>szlt01.qa.webex.com</conferenceurl>
+		<collabsurl>test.qa.webex.com</collabsurl>
+		<boshurl>https://szqacspwim2.qa.webex.com/http-bind</boshurl>
+		<jabberID>gadmin.0701.test.com@ltisz7.im.webex.com</jabberID>
+		<jabberToken>ZgEXrfNWxXJrXHnaxFhevCNbUZLTdHMjmEV2reBZGJpsPx5JJ6atPJye2aPWEnzkDEb0FpbeIMouMEFDQnYnp4iCEgdBBRfJ0XWAV8nTy3j5nR2lKygKYZqxxT7sY3kmPTHvVsDeBjpnYQshlnYTjbEjhFwSTRkIQDRxFx94R1TrjxVnVQQwv7aVb4lcIiDgz+EinBgwatmQEwR+JiA2yn2dH3hZmF4nEKKqxqT6FVYBdeWdh+EAmN7H/W/lmDFwUTyIYBi+BOY0QCNNW8V7kl9fAZ0mlJglvoym6nnz7/Lj4st6sSzW1hIT4ZekW25Tcst2S8SGeGGoXF5999/dOhhXtBqfFBTkyE4qINg5poNMxYukLNqs50sJB2doessjntlvowk0+wNf2Am4QIt5+6gOYD7YRhO6QLLWPzDdquUpkY6NnZs604XlkRNyU+ct</jabberToken>
+		<jabberCluster>szqacspcmx7.qa.webex.com</jabberCluster>
+		<jabberName>isz7</jabberName>
+	</returnmsg>
+</LoginResponse>

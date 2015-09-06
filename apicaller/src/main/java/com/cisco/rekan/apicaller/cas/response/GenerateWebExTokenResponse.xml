@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LoginResponse>
+	<response>
+		<result>SUCCESS</result>
+	</response>
+	<returnmsg>
+		<webextoken>
+			AAABQicADboAAHCACEchfs3o4FAndEnKzU6bKArv0MQVLkQlWFsZehhDZZcmOAAAADLXUIRC3uXtjHv9OxOYOs+4aNlDnDM0Laa9d4LNNpMF2xFwgZO87CaoOqvblX/rdgZNR+XH8gUY7iqN8rmWYL9geUSTwiUQh+uNgB62EqeJ3MMPi35/b7z+WQ1xng+UrOgJpQSwL42ixcaj2v1elf7dO3k7rTholsojejAzendcKKUN8EMsN9H9aBmeYsowmZNqYqWzqkGb7DP2NyOOQVLiPAiCuPBMPBdqAytHOL32hNJzvwSm/4D29Rd+ZyISgS/lExbxPfIBufFnmKwr+fPrvUxPRNBOTOyTmudIHg0J4Ot2mdA80QXiohGSxImOi0Vt9lNiETGiy8Eh+upZqe6QP0EpKsZUWB4Gt53ktp3E8M5/eDaV982BGxPESBMdHhg=
+		</webextoken>
+		<webexurl>test.qa.webex.com</webexurl>
+	</returnmsg>
+</LoginResponse>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RAHostList>
+	<Status>SUCCESS</Status>
+	<SID>593974102</SID>
+	<WID>pluto2</WID>
+	<RAHost>
+		<RAHN>tests-nimon</RAHN>
+		<RAHID>28367</RAHID>
+		<RAHP></RAHP>
+		<Options>0</Options>
+		<Status>1</Status>
+		<SubStatus>0</SubStatus>
+		<RAHA>Cisco IP Communicator</RAHA>
+	</RAHost>
+</RAHostList>

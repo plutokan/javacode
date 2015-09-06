@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LoginResponse>
+	<response>
+		<result>SUCCESS</result>
+	</response>
+	<returnmsg>
+		<username>gadmin.0701.test.com@ltisz7.im.webex.com</username>
+		<userID>U0JEILASXTEM8K6K65L16RVW6G-V1Q</userID>
+		<email>gadmin.0701@test.com</email>
+		<bgstatus>Active</bgstatus>
+		<token>AAABQfrNRqEAAABlCEcizHVDqrPjmLDQoQDcw4bByAqlXE8oyB5uMd4MS/sKswAAADIrY7fdhPHgRsiOsAhl+30NjetW+RZ73SJjVo/LRs6b6Lgwq+dqTh6vWzgBee4p0N0hFYvkoXrUTNudguOFrSMqMBQL0HBy06rxFLfVwMF8Nw4X0oeqH8JVUqGjXxKOOjh+qVv9u0TuKWNJpkv0OtwqXHrNS4HdMMI8gNNr3RYyJb/kWZD/w81NPuVr02/MV4/S6zhroO8w2FSM+g7IPHkDVEnxy9dn2Fz0fsZ0YsfR6dCeWvZpXA4I8WQo3yKafvpNF4jajsoev9iaaDcDdPe/q2MWLJA+Mjd4JMZqDXAWc6qneZE7OPN2b9H0+c02oUF7gGsLHlO6+b8kdwFm21a6AjIuPUM0oSo7Epx5wB4PdA180hlbWpdeckCdSIKUqCsoyAmk001zu1pUQkfxBr6Hb9mLM6KivjIrfHFABlQwWA==
+		</token>
+		<createtime>1382892258977</createtime>
+		<timetolive>101</timetolive>
+		<orglevel>WAPI2</orglevel>
+		<dcid>SZ</dcid>
+		<serviceurl>dfwapi-sz1-hf1.qa.webex.com/wbxconnect</serviceurl>
+		<conferenceurl>szlt01.qa.webex.com</conferenceurl>
+		<dmsurl>https://dmd-sz1-hf1.qa.webex.com/wbxdms/core</dmsurl>
+		<collabsurl>test.qa.webex.com</collabsurl>
+		<boshurl>https://szqacspwim2.qa.webex.com/http-bind</boshurl>
+		<ep>VVJERVAlAACZZEA96GD6cYWU6tva26Dq2ntX1MBRQwTOIUvmxiuCBp/iHXM=</ep>
+	</returnmsg>
+</LoginResponse>

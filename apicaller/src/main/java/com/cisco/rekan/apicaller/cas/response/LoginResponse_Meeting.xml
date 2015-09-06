@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LoginResponse>
+    <response>
+        <result>SUCCESS</result>
+    </response>
+    <returnmsg>
+        <username>v14szef1@szwtv13ef1.com</username>
+        <userID>U00O0C8QECVTH6GFIDPL29SE8O-9DKF</userID>
+        <email>v14szef1@szwtv13ef1.com</email>
+        <token>AAABQi2Mgd0AACowCEemYhxp9FZH0BJhdWXrZ/DAE+YaDhnZVhFZ9w/2TuyoHwAAADJjV9tHxFp+ZhUxGBVWiLWOja4nCdCJb0k1PAAeOf7ahpcV8jcZNO2rsfs/A5UXnyYHd3mqlJ5qIVTDOM7ojq15YhO5f2pKGOhDG1eQfoaKL5zms9ZB3WSKuKdvcu0UQ01VyX5S4DWlRweTJ8EAAkCZgrENM8p244A9SvrjCEn89VwW2t1Wo/LXwe/7/amQ8ayeyaieDlEWMsL3WkSXbxaB/bH8D0jj4DybBpOEqTQYUhGMkHGvRf6EFT7dtlkNw37vTH2xcUm6Iw5edlttTYgGLfxOVRSajPYynjVKhyDFYuHGduERa3ZzV65r5wR9cCiByxVNUC2S1/rihIAiuX6skLeY9JGDsah0PNjhHVnSpHJHTUhNsK9oMWXAZg4FKUM=</token>
+        <createtime>1383743652317</createtime>
+        <timetolive>10800</timetolive>
+        <orglevel>WAPI2</orglevel>
+        <dcid>SZ</dcid>
+        <serviceurl>dfwapi-sz1-hf1.qa.webex.com/wbxconnect</serviceurl>
+        <conferenceurl>szwtv13ef1.qa.webex.com</conferenceurl>
+        <dmsurl>https://dmd-sz1-hf1.qa.webex.com/wbxdms/core</dmsurl>
+        <collabsurl>szwtv13ef1.qa.webex.com</collabsurl>
+        <ep>VVJERVAlAACZZEA96GD6cYWU6tva26Dq2ntX1MBRQwTOIUvmxiuCBp/iHXM=</ep>
+    </returnmsg>
+</LoginResponse>

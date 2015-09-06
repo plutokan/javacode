@@ -1,0 +1,56 @@
+
+//JDBC homework
+
+从confid_tmp表里逐行读取confid, 然后根据下列规则检查gwconference表的column值是否在正确.
+如果column的值都是正确的,把检查完成时间和"gwconferece with confid=xxx is correct" 写入log文件gwconference_[date].log, 
+如果任何column的值是不正确的,将具体的column错误信息写入log文件gwconference_error_[date].log. 
+
+以confid相同来关联不同的表查询
+（1）gwconference.schedstarttime, scheduendtime, hostid, hostcalloutphonenumber应该与select starttime, endtime, hostid, hostcalloutphonenumber from mtgconference where confid=xxxx相同
+（2）gwconference.starttime的值，
+     当gwconference.status=0, gwconference.starttime应该与gwconference.schedstarttime相同
+     当gwconference.status=1 or 2, gwconference.starttime应该等于select timestamp from wbxmeetinglog_dist where confid=xxxx and eventtype in ('ConfOpen', 'dist-ConfOpen', 'DIST-ConfOpen')
+（3）gwconference.endtime的值，
+     当gwconference.status=0 or 1, gwconference.endtime应该为null
+     当gwconference.status=2, gwconference.endtime应该等于select timestamp from wbxmeetinglog_dist where confid=xxxx and eventtype in ('ConfClose', 'dist-ConfClose', 'DIST-ConfClose', 'ConfCloseAbnormal',  'dist-ConfCloseAbnormal','DIST-ConfCloseAbnormal')
+（4）如果gwconference.status=0, 在select count(*) from wbxmeetinglog_dist where confid=xxx返回为0
+     如果gwconference.status=1, 在wbxmeetinglog_dist有记录，但是必定无此记录：select timestamp from wbxmeetinglog_dist where confid=xxxx and eventtype in ('ConfClose', 'dist-ConfClose', 'DIST-ConfClose', 'ConfCloseAbnormal',  'dist-ConfCloseAbnormal','DIST-ConfCloseAbnormal')
+     如果gwconference.status=2, 在wbxmeetinglog_dist有此记录：select timestamp from wbxmeetinglog_dist where confid=xxxx and eventtype in ('ConfClose', 'dist-ConfClose', 'DIST-ConfClose', 'ConfCloseAbnormal',  'dist-ConfCloseAbnormal','DIST-ConfCloseAbnormal')
+（5）gwconference.hostname, firstname,lastname,email应该与select a.username, a.firstname, a.lastname, a.email from coruser a, mtgconference b where b.confid=xxxx and b.hostid=a.uid_相同
+（6）gwconference.tcreserveid的值应该与mtgconferene.MOD(FLOOR(OPTIONS/32),2) 值相同
+（7）gwconference.invited的值, 应该等于select count(*) from mtgconfattendeelist where confid=xxx；
+（8）gwconference.attendeenum的值，
+     当gwconference.status=0时，应该等于select maxusernumber from mtgconference where confid=xxx;
+     当gwconference.status=1时，应该等于select count(*) from wbxcurrentuser where confid=xxx;
+     当gwconference.status=2时，应该等于select count(*) from wbxeventloguser where confid=xxx;
+
+
+注：请在172.16.195.188运行该程序，直接可以访问DB: gw/pass@hfractest
+
+GWCONFERENCE的表结构如下：
+
+  CONFID                  NUMBER(10)            NOT NULL,
+  SITEID                  NUMBER(10)            DEFAULT (0)                   NOT NULL,
+  COMPANYID               NUMBER(10)            DEFAULT (0)                   NOT NULL,
+  MEETINGKEY              NUMBER(10)            DEFAULT (0)                   NOT NULL,
+  CONFNAME                VARCHAR2(512 BYTE)    DEFAULT ('NO NAME')           NOT NULL,
+  REPEATID                NUMBER(10)            DEFAULT (0)                   NOT NULL,
+  STATUS                  NUMBER(2)             DEFAULT (0)                   NOT NULL,
+  SCHEDSTARTTIME          DATE,
+  SCHEDENDTIME            DATE,
+  STARTTIME               DATE,
+  ENDTIME                 DATE,
+  HOSTID                  NUMBER(10),
+  HOSTNAME                VARCHAR2(128 BYTE)    DEFAULT ('NO DATA')           NOT NULL,
+  FIRSTNAME               VARCHAR2(128 BYTE),
+  LASTNAME                VARCHAR2(128 BYTE),
+  EMAIL                   VARCHAR2(128 BYTE),
+  HOSTCALLOUTPHONENUMBER  VARCHAR2(64 BYTE),
+  TCRESERVEID             NUMBER(10),
+  REGISTRATION            NUMBER(2),
+  INVITED                 NUMBER(10),
+  ATTENDEENUM             NUMBER(10),
+  CREATETIME              DATE                  DEFAULT (SYSDATE),
+  LASTMODIFIEDTIME        DATE
+
+ 

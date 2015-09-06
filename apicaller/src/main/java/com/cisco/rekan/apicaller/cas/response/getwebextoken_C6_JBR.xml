@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<LoginResponse>
+	<response>
+		<result>SUCCESS</result>
+	</response>
+	<returnmsg>
+		<username>brook1@szc761.com</username>
+		<userID>U3L3R9GUWRRL1KGUVFOAAHIPUL</userID>
+		<token>AAABQiczxg0AEnUAB0cjeD5LJbqGIfpEmdlRKIRTqbl7z2el2wn9BweidMc/4wAAADJLllfCMuxlHsHYojh/s3YHdpJ/wnkti4f705aIwKNHavImX0x/4Mo/L2lUi3sKs0TQFF6s8U3c1QpekumTls2E4eDVfVaiHjRa+Mbn8/2PRbvuyb2OkX7rcJEfFbCL+WtWlwWfdyIECDfkqy9/FOd/o4FCCJ0U07vXYwkScPapjnhr4RUZvk92oo9B/qNZrJ9Iwqw7Q2MmfbSorkUOhh+pUbhcmIkfmWgd85l/fKDb2nWYSN6GjOXPnLpJ8wJ6yJYhqgavyjNPkjER3ukJ8pbu
+		</token>
+		<createtime>1383637173773</createtime>
+		<timetolive>1209600</timetolive>
+		<orglevel>WAPI1</orglevel>
+		<serviceurl>szqacspwapi1.qa.webex.com/wbxconnect</serviceurl>
+		<ep>VVJERVAlAADmWfs9gX1XF6Lv+MTIWDFeVArUPPpXeZe24n5VHVda3LqGBhQ=</ep>
+	</returnmsg>
+</LoginResponse>

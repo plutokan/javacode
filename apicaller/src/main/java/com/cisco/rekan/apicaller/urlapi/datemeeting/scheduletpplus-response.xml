@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheduleMeetingResp>
+	<status>SUCCESS</status>
+	<meetingKey>215311350</meetingKey>
+	<AudioType>2</AudioType>
+	<SIPURL>sip:j2s2UTN9KtQP-efirLGKZB2A@killersr2.qa.webex.com</SIPURL>
+	<hostKey>259737</hostKey>
+	<meetingPassword>111111</meetingPassword>
+	<joinMeetingURL>https://killersr2.qa.webex.com/killersr2/j.php?MTID=m95b339c6b7b798c4a545305a5cefc115
+	</joinMeetingURL>
+	<hostMeetingURL>https://killersr2.qa.webex.com/killersr2/j.php?ED=180629767
+	</hostMeetingURL>
+	<telephony>
+		<serviceType>1</serviceType>
+		<globalCallinNumberURL>https://killersr2.qa.webex.com/killersr2/globalcallin.php?serviceType=MC&amp;eventID=180629767&amp;tollFree=1
+		</globalCallinNumberURL>
+		<callinTollNumber>1-022-488-1140</callinTollNumber>
+		<callinTollFreeNumber>1-022-488-1152</callinTollFreeNumber>
+	</telephony>
+</scheduleMeetingResp>

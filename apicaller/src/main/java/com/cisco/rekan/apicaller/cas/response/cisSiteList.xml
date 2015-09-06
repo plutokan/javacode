@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<response>
+		<endpoint>https://sz1gla.qa.webex.com</endpoint>
+		<xml><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<serv:message xmlns:serv="http://www.webex.com/schemas/2009/05/service"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:com="http://www.webex.com/schemas/2009/05/common"
+ xmlns:user="http://www.webex.com/schemas/2009/05/service/user">
+  <serv:header>
+    <serv:response>
+      <serv:result>SUCCESS</serv:result>
+    </serv:response>
+  </serv:header>
+  <serv:body>
+    <serv:bodyContent xsi:type="user:getSiteByAppTokenResponse">
+      <user:userInfo>
+      <user:siteType>TRAIN</user:siteType>
+      <user:siteName>st28</user:siteName>
+      <user:serverName>st28.qa.webex.com</user:serverName>
+      <user:userType>Host</user:userType>
+      <user:userName>0815.trial9@lowtouch.com</user:userName>
+      <user:userStatus>Active</user:userStatus>
+      <user:validation>false</user:validation>
+      <user:validationResult>ErrorAccessAS</user:validationResult>
+      <user:samlSSO>0</user:samlSSO>
+      </user:userInfo>
+      <user:userInfo>
+        <user:siteType>TRAIN</user:siteType>
+        <user:siteName>r27ld</user:siteName>
+        <user:serverName>r27ld.qa.webex.com</user:serverName>
+        <user:userType>Host</user:userType>
+        <user:userName>0815.trial9@lowtouch.com</user:userName>
+        <user:userStatus>Active</user:userStatus>
+        <user:validation>false</user:validation>
+        <user:validationResult>InvalidEmailOrPassword</user:validationResult>
+        <user:samlSSO>0</user:samlSSO>
+      </user:userInfo>
+      <user:userInfo>
+        <user:siteType>WBX11</user:siteType>
+        <user:lowTouchSite>true</user:lowTouchSite>
+        <user:siteName>szlt01</user:siteName>
+        <user:serverName>test.qa.webex.com</user:serverName>
+        <user:userType>Host</user:userType>
+        <user:userName>0815.trial9@lowtouch.com</user:userName>
+        <user:userStatus>Active</user:userStatus>
+        <user:validation>true</user:validation>
+        <user:validationResult>Normal</user:validationResult>
+        <user:samlSSO>0</user:samlSSO>
+      </user:userInfo>
+    </serv:bodyContent>
+  </serv:body>
+</serv:message>]]></xml>
+	</response>
+</root>
