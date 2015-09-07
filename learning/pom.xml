@@ -8,7 +8,6 @@
     <version>1.0</version>
   </parent>
   <artifactId>learning</artifactId>
-  <version>0.1</version>
   <name>learning</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -22,4 +21,6 @@
         <version>3.7l</version>
     </dependency>
   </dependencies>
+  <groupId>com.plutokan.javacode</groupId>
+  <version>1.0</version>
 </project>
