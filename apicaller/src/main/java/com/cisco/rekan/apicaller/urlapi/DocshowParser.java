@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.util.Properties;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 
 import org.apache.commons.codec.binary.Base64;
 import org.dom4j.Document;
