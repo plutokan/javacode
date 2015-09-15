@@ -99,16 +99,15 @@ public final class Utils {
     }
 
     /**
-     * é�¿å…�HttpClientçš„â€�SSLPeerUnverifiedException: peer not authenticatedâ€�å¼‚å¸¸
-     * ä¸�ç”¨å¯¼å…¥SSLè¯�ä¹¦
      * 
      * @author shipengzhi(shipengzhi@sogou-inc.com)
      */
     public static class WebClientDevWrapper {
 
-        public static org.apache.http.client.HttpClient wrapClient(org.apache.http.client.HttpClient base) {
+        @SuppressWarnings("deprecation")
+		public static org.apache.http.client.HttpClient wrapClient(org.apache.http.client.HttpClient base) {
             try {
-                SSLContext ctx = SSLContext.getInstance("TLS");
+                SSLContext ctx = SSLContext.getInstance("SSLv3");
                 X509TrustManager tm = new X509TrustManager() {
 
                     @Override

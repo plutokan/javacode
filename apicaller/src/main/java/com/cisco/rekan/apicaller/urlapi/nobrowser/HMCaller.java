@@ -26,8 +26,8 @@ import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
  */
 public class HMCaller extends AbstractURLAPITest {
 
-    private static final String USER_NAME = "pluto4";
-    private static final String USER_PASSWORD = "P@ss123";
+    private static final String USER_NAME = "pluto";
+    private static final String USER_PASSWORD = "P@ss1234";
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getPhpName()
@@ -45,10 +45,10 @@ public class HMCaller extends AbstractURLAPITest {
         // nobrowser.php?AT=HM&MK=017170569&DocshowVer=1.0&FeatureSupport=2&OS=iPhone&isUTF8=1&IT=15&VER=6%2E0
         super.addParam("AT", "HM");
 
-        super.addParam("MK", StringUtils.deleteSpaces(params[0]));
+        super.addParam("MK", StringUtils.deleteWhitespace(params[0]));
         super.addParam("WUN", USER_NAME);
-        super.addParam("PWPW", "P@ss123");
-        super.addParam("PPW", "");
+//        super.addParam("PWPW", USER_PASSWORD);
+        super.addParam("PPW", "P@ss123");
 
         super.addParam("EM", "rekan@cisco.com");
         super.addParam("DN", "steady wang");
@@ -65,9 +65,9 @@ public class HMCaller extends AbstractURLAPITest {
     public void testMC() throws IOException {
         RegistrationCaller loginCaller = new RegistrationCaller();
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
-//        super.addParam("SK", token);
+        super.addParam("SK", token);
 
-        Document docshow = super.callAPI("159 793 269", USER_NAME);
+        Document docshow = super.callAPI("212 829 481", USER_NAME);
         docshow = DocshowParser.getClientparam(docshow);
 
         String encryptedConfID2 = DocshowParser.getNodeContent(docshow, "//root/Security/EncryptedConfID2");

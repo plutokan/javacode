@@ -26,4 +26,7 @@ public final class Constants {
     public static final String VSCM_TSP_SITE_NAME = "tsp-pluto";
     public static final String VSCM_MP_SITE_NAME = "mp-pluto";
 
+    public static final String WEBEX_SITE_1 = "https://pluto.qa.webex.com/";
+    public static final String WEBEX_SITE_NAME_1 = "pluto";
+
 }

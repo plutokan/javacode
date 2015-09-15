@@ -21,8 +21,8 @@ import com.cisco.rekan.apicaller.HttpAPICaller;
  */
 public abstract class AbstractURLAPITest extends HttpAPICaller {
 
-    private String domainURL = Constants.VSCM_DOMAIN_URL;
-    private String siteName = Constants.VSCM_WEBEX_SITE_NAME;
+    private String domainURL = Constants.WEBEX_SITE_1;
+    private String siteName = Constants.WEBEX_SITE_NAME_1;
 
     /**
      * Gets the php name.
