@@ -12,7 +12,6 @@ import java.net.URLEncoder;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
-import com.cisco.rekan.apicaller.urlapi.Constants;
 
 /**
  * <code>OfficeDFCaller</code>
@@ -22,16 +21,6 @@ import com.cisco.rekan.apicaller.urlapi.Constants;
  *
  */
 public class OfficeDFCaller extends AbstractURLAPITest {
-
-    @Override
-    public String getDomainURL() {
-        return Constants.VSCM_DOMAIN_URL;
-    }
-
-    @Override
-    public String getSiteName() {
-        return Constants.VSCM_WEBEX_SITE_NAME;
-    }
 
     @Override
     public String getPhpName() {
@@ -49,7 +38,7 @@ public class OfficeDFCaller extends AbstractURLAPITest {
     public void test() throws UnsupportedEncodingException {
         // o.php?AT=DF&FN=5_Full.txt&BU=
         String serverURL = URLEncoder.encode(this.getDomainURL() + this.getSiteName(), "UTF-8");
-        super.callAPI("/5_Full.txt", serverURL);
+        super.callPostAPI("/5_Full.txt", serverURL);
     }
 
 }

@@ -11,8 +11,8 @@ import java.io.StringReader;
 import java.util.Properties;
 
 import org.junit.Assert;
-
 import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.lang.BitField;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
@@ -80,6 +80,29 @@ public final class DocshowParser {
         String uploadURL = node.getText();
 
         return uploadURL;
+    }
+
+    public static boolean[] getBitValue4Int(int holder) {
+        StringBuffer str = new StringBuffer();
+        boolean[] result = new boolean[32];
+
+        BitField bitField = null;
+        for (int shift = 0; shift < 32; shift++) {
+            int mask = 1 << shift;
+            bitField = new BitField(mask);
+            result[shift] = bitField.isSet(holder);
+        }
+
+        // print the result array.
+        for (int i = 31; i >= 0; i--) {
+            if (result[i]) {
+                str.append("1");
+            } else {
+                str.append("0");
+            }
+        }
+
+        return result;
     }
 
 }

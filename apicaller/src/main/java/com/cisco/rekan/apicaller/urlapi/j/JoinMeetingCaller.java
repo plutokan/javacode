@@ -9,7 +9,6 @@ package com.cisco.rekan.apicaller.urlapi.j;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
-import com.cisco.rekan.apicaller.urlapi.Constants;
 
 /**
  * <code>JoinMeetingCaller</code>
@@ -29,22 +28,6 @@ https://deweb2.qa.webex.com/mw0401lsp11/mywebex/default.do?service=1&main_url=%2
  *
  */
 public class JoinMeetingCaller extends AbstractURLAPITest {
-
-    /* (non-Javadoc)
-     * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getDomainURL()
-     */
-    @Override
-    public String getDomainURL() {
-        return Constants.VSCM_DOMAIN_URL;
-    }
-
-    /* (non-Javadoc)
-     * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getSiteName()
-     */
-    @Override
-    public String getSiteName() {
-        return "url0201lsp11";
-    }
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getPhpName()
@@ -67,7 +50,7 @@ public class JoinMeetingCaller extends AbstractURLAPITest {
 
     @Test
     public void test() {
-        super.callAPI("150631521");
+        super.callPostAPI("150631521");
     }
 
 }

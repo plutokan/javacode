@@ -4,9 +4,16 @@
 
 # Directories #
 target/
+doc/
 
 # Eclipse Files #
 .project
 .classpath
 .settings/
 /bin/
+
+# Log Files #
+log4j.log
+
+# Temp Files #
+temp.*

@@ -1,0 +1,334 @@
+<root>
+	<version>2.00</version>
+	<Site>
+		<T29CryptoFlag>0</T29CryptoFlag>
+		<MeetingSiteID>256787</MeetingSiteID>
+		<CBServerAddress isBase64="1">ZW0xY2JtbTExLnFhLndlYmV4LmNvbQ==
+		</CBServerAddress>
+		<GDMParameters isBase64="1">MToxNToyMDo3MHx8fHx8fHx8fA==
+		</GDMParameters>
+		<MedianetMSI isBase64="1">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPE1lZGlhbmV0IGVuYWJsZT0iMCIvPg==
+		</MedianetMSI>
+		<ClientServiceVersion isBase64="1">V0JTMzE=
+		</ClientServiceVersion>
+		<ClientBuildVersion isBase64="1">MzEuMC4wLjM5NA==
+		</ClientBuildVersion>
+		<CompatibleDesktopClients isBase64="1" />
+		<JMFLogUploadSupport>0</JMFLogUploadSupport>
+		<SptP2P>0</SptP2P>
+		<P2PSvr1 />
+		<P2PSvr2 />
+		<P2PSvr3 />
+		<OpenTSPMeetingRoom>0</OpenTSPMeetingRoom>
+		<ThirdPtyContSharingSupport>1</ThirdPtyContSharingSupport>
+		<DropboxContSharingSupport>0</DropboxContSharingSupport>
+		<BoxContSharingSupport>0</BoxContSharingSupport>
+		<GoogleDriveContSharingSupport>0</GoogleDriveContSharingSupport>
+		<AutoClearFilesAfterMeeting>0</AutoClearFilesAfterMeeting>
+		<DisableTPRemoteControl>0</DisableTPRemoteControl>
+		<DisableTPChat>0</DisableTPChat>
+		<DisplayTPWelcomeScreen>0</DisplayTPWelcomeScreen>
+		<EnableTPBandwidthControl>0</EnableTPBandwidthControl>
+		<LocalPingServer isBase64="1">ZW0xY2JtbTExLnFhLndlYmV4LmNvbQ==
+		</LocalPingServer>
+		<GdmPingServer isBase64="1" />
+		<ORServer isBase64="1" />
+		<maxSurveyNum>800000</maxSurveyNum>
+		<surveyAttendeeNum>88000000</surveyAttendeeNum>
+		<surveyRatio>0.3</surveyRatio>
+		<supportSurvey>0</supportSurvey>
+		<maxSurveyNumThin>1000</maxSurveyNumThin>
+		<surveyAttendeeNumThin>1600000</surveyAttendeeNumThin>
+		<surveyRatioThin>0.2</surveyRatioThin>
+		<EnforcePostFlag>0</EnforcePostFlag>
+		<AllowSaveAndPrintInDocSharing>1</AllowSaveAndPrintInDocSharing>
+		<siteAudioType>2</siteAudioType>
+		<EnableCertChecking>0</EnableCertChecking>
+		<EnableVideoCallBack>1</EnableVideoCallBack>
+		<TeleMetryInfo isBase64="1">PFRlbGVNZXRyeUluZm8+PE1ldHJpY3NFbmFibGU+MDwvTWV0cmljc0VuYWJsZT48TWV0cmljc1VSTD48L01ldHJpY3NVUkw+PE1ldHJpY3NQYXJhbWV0ZXJzPjxNZXRyaWNzVGlja2V0PjwvTWV0cmljc1RpY2tldD48VGltZVN0YW1wPjE0NDIzMDczMTcwNzI8L1RpbWVTdGFtcD48QVBQTmFtZT5TZXNzaW9uS2V5PC9BUFBOYW1lPjxDb25mSUQ+NDE5NDMxMzM3OTwvQ29uZklEPjxTaXRlSUQ+MjU2Nzg3PC9TaXRlSUQ+PC9NZXRyaWNzUGFyYW1ldGVycz48L1RlbGVNZXRyeUluZm8+
+		</TeleMetryInfo>
+	</Site>
+	<Meeting>
+		<ConfID>4194313379</ConfID>
+		<MeetingKey>211286163</MeetingKey>
+		<ConfNameID isBase64="1">UGx1dG8gS2FuJ3MgUGVyc29uYWwgUm9vbS40MTk0MzEzMzc5
+		</ConfNameID>
+		<MeetingTopic isBase64="1">UGx1dG8gS2FuJ3MgUGVyc29uYWwgUm9vbQ==
+		</MeetingTopic>
+		<WindowTitle isBase64="1">Q2lzY28gV2ViRXggTWVldGluZyBDZW50ZXI=
+		</WindowTitle>
+		<AgendaInfo isBase64="1" />
+		<SessionID>88093398</SessionID>
+		<TimezoneOffset>480</TimezoneOffset>
+		<MeetingDuration>720</MeetingDuration>
+		<StartTime>1442307317</StartTime>
+		<GreetingFlag>0</GreetingFlag>
+		<MeetingCreateFlag>0</MeetingCreateFlag>
+		<MeetingPassword isBase64="1" />
+		<AutoDisconnect>
+			<AutoDisconnectFlag>0</AutoDisconnectFlag>
+			<SingleDuration>0</SingleDuration>
+			<ResponseDuration>0</ResponseDuration>
+		</AutoDisconnect>
+		<DisplayExternal>0</DisplayExternal>
+		<MeetingTotalDuration />
+		<CETMeetingFlag>0</CETMeetingFlag>
+		<CETMeetingSIPURI />
+		<CMRMeetingFlag>1</CMRMeetingFlag>
+		<PilotNumber isBase64="1" />
+		<CMRExpiredLobbyTime>30</CMRExpiredLobbyTime>
+		<CMRLink isBase64="1">cGx1dG90c3AucWEud2ViZXguY29tL21lZXQvcGx1dG8=
+		</CMRLink>
+		<HostPin />
+		<DBMeetingStatus>0</DBMeetingStatus>
+	</Meeting>
+	<PD>
+		<UCF>
+			<UCFEnableFlag>0</UCFEnableFlag>
+			<UCFLoadFlag>2</UCFLoadFlag>
+			<UCFSizeLimit>500</UCFSizeLimit>
+		</UCF>
+		<QS>
+			<QSCustomizedFlag>0</QSCustomizedFlag>
+			<QSMD5 />
+			<QSURL>https://plutotsp.qa.webex.com/bnd3100/branding/html/img/QuickStart_MC.ucf
+			</QSURL>
+		</QS>
+		<AutoPlay>
+			<AutoPlayFlag>1</AutoPlayFlag>
+			<AutoPlayInterval>30</AutoPlayInterval>
+			<AutoPlayURL isBase64="1">ZmFpbA==</AutoPlayURL>
+		</AutoPlay>
+	</PD>
+	<AS>
+		<AutoLauch>
+			<AutoLauchType>-1</AutoLauchType>
+			<AppHandle>0</AppHandle>
+			<AppFileName />
+			<AppParameters />
+		</AutoLauch>
+		<WebTourTitle>Shared Web Browser</WebTourTitle>
+	</AS>
+	<User>
+		<UserID>214322</UserID>
+		<UserEmail>pluto@qa.webex.com</UserEmail>
+		<UserName isBase64="1">UGx1dG8gS2Fu</UserName>
+		<UserGUID4Spark>1FC58C85D23AE5CDE050E00A642B29A9</UserGUID4Spark>
+		<OriginalHostName isBase64="1">UGx1dG8gS2Fu
+		</OriginalHostName>
+		<AttendeeID>3</AttendeeID>
+		<AttendeeIDLabel isBase64="1">QXR0ZW5kZWUgSUQ=
+		</AttendeeIDLabel>
+		<HostKey>531060</HostKey>
+		<UserJoinType>1</UserJoinType>
+		<UserRole>1</UserRole>
+		<BrowserInfo>0%6</BrowserInfo>
+		<UserLanguageID>1</UserLanguageID>
+		<Mobile>
+			<ReplacedAttendeeID />
+			<ReplacedNodeID />
+		</Mobile>
+		<ExternalTag>0</ExternalTag>
+		<HostCETFlag>0</HostCETFlag>
+		<PMRNotify>1</PMRNotify>
+		<VideoCallBackInfo>amVyZW15J3MgVFA=;amVyZW15ZXgyQHFhLndlYmV4LmNvbQ==;0|
+		</VideoCallBackInfo>
+		<AvatarURL />
+	</User>
+	<MeetingType>
+		<SessionTypeOptions>33554427</SessionTypeOptions>
+		<SessionTypeOptionsExt>3907579</SessionTypeOptionsExt>
+		<SiteConfigExt>1056</SiteConfigExt>
+		<Privilege>954205183</Privilege>
+		<PrivilegeExt>403554534</PrivilegeExt>
+		<MiscOptions>571482129</MiscOptions>
+		<OneClickOptions>0</OneClickOptions>
+		<EMXParams>2</EMXParams>
+		<MtgPanelStatus>2436</MtgPanelStatus>
+		<SupportSDK>0</SupportSDK>
+		<PSOFlag>0</PSOFlag>
+		<InviteByPhone>1</InviteByPhone>
+		<SupportRLS6>0</SupportRLS6>
+		<AnnotationSupport>1</AnnotationSupport>
+		<WhiteboardSupport>1</WhiteboardSupport>
+	</MeetingType>
+	<Telephony>
+		<LocationName isBase64="1" />
+		<MajorCountryCode>1</MajorCountryCode>
+		<DialoutCountryCode>1</DialoutCountryCode>
+		<TeleFlag>2</TeleFlag>
+		<OtherTeleInfo isBase64="1" />
+		<TeleDisplayInfo isBase64="1" />
+		<CallOutNumber>1,,,,,</CallOutNumber>
+		<EndSessionPhone isBase64="1">MS04NzctNTAgV2ViRXggKDEtODc3LTUwOS0zMjM5LCBVLlMuICYgQ2FuYWRhIHRvbGwgZnJlZSk=
+		</EndSessionPhone>
+		<EndSessionInterPhone isBase64="1">MS00MDgtNDM1LTcwNDggKEludGVybmF0aW9uYWwgdG9sbCk=
+		</EndSessionInterPhone>
+		<TeleConfParam isBase64="1">TWFqb3JDb3VudHJ5Q29kZT0xO1RlbGVTZXJ2ZXJOYW1lPVRlbGVjb25mZXJlbmNpbmcgU2VydmljZTtPcmlnaW5hbFNlcnZlckNhbGxJbk51bWJlcj00NDA1ODA0NzAxJTQ0MDU4MDQ3MDE7VG9sbEZyZWU9MTtTdWJzY3JpYmVyYWNjZXNzY29kZT07UGFydGljaXBhbnRhY2Nlc3Njb2RlPTtTdWJEaXNOYW1lPUhvc3QgYWNjZXNzIGNvZGU7UGFyRGlzTmFtZT1BdHRlbmRlZSBhY2Nlc3MgY29kZTtUZWNoU3VwcG9ydD0wVGVjaFN1cHBvcnRBdHRlbmRlZT0wO1RlY2hTdXBwb3J0Um91bnRpbmc9JSU7QXR0ZW5kZWVJRERpc05hbWU9QXR0ZW5kZWUgSUQ7VFNQU2l0ZT0xO1JvbGxDYWxsPTMyO1NUPTgwMDtQY3NDb25mZXJlbmNlSUQ9O3RlbFN2clN0YXR1cz0xO1RlbGVTZXJ2ZXJJUExpc3Q9MS4xLjEuMTtUZWxlUGx1c0F0dGVuZGVlSUQ9MA==
+		</TeleConfParam>
+		<TeleConfParam2 isBase64="1">T3JpZ2luYWxTZXJ2ZXJDYWxsSW5OdW1iZXJfMj0xMDIyNDQzMTQ2MiUxMDIyNDQzMTQ2MDtCYWNrdXBTZXJ2ZXIxQ2FsbEluTnVtYmVyXzI9JTtCYWNrdXBTZXJ2ZXIyQ2FsbEluTnVtYmVyXzI9JTtUb2xsRnJlZV8yPTE7
+		</TeleConfParam2>
+		<BrandTele isBase64="1">Q2FsbC1pbiB0b2xsLWZyZWUgbnVtYmVyIChVUy9DYW5hZGEpJUNhbGwtaW4gdG9sbCBudW1iZXIgKFVTL0NhbmFkYSk7Q2FsbC1pbiB0b2xsLWZyZWUgbnVtYmVyIChVUy9DYW5hZGEpJUNhbGwtaW4gdG9sbCBudW1iZXIgKFVTL0NhbmFkYSk7QmFja3VwIGNhbGwtaW4gdG9sbC1mcmVlIG51bWJlciAoVVMvQ2FuYWRhKSVCYWNrdXAgY2FsbC1pbiB0b2xsIG51bWJlciAoVVMvQ2FuYWRhKTsx
+		</BrandTele>
+		<InstantTeleLabel isBase64="1">JQ==</InstantTeleLabel>
+		<CallBackDialogInfo>0;;;;;</CallBackDialogInfo>
+		<IPPhoneCallBack />
+		<CallBackCountries isBase64="1">QWxs</CallBackCountries>
+		<PreferredAdmin isBase64="1" />
+		<PreferredHost isBase64="1" />
+		<PreferredSelf isBase64="1" />
+		<TSPOptionCallerID>9379</TSPOptionCallerID>
+		<TSPAccounts>0|1||||||</TSPAccounts>
+		<TSPIdentityCodeSupport isBase64="1">MA==
+		</TSPIdentityCodeSupport>
+		<TSPIdentityCode isBase64="1">KjI0</TSPIdentityCode>
+		<TSPGlobalNumLabel isBase64="1">VmlldyBnbG9iYWwgbnVtYmVycw==
+		</TSPGlobalNumLabel>
+		<TSPActiveSpeakerVideo>0</TSPActiveSpeakerVideo>
+		<TSPTelephonyFlag>1</TSPTelephonyFlag>
+		<MPInfo>ParamName=AdapterType;ParamValue=0;ParamName=CustomerType;ParamValue=0;ParamName=MPMeetingID;ParamValue=211286163
+		</MPInfo>
+		<MPVersion />
+		<TSPOtherCountryCodeRestrictionFlag>1
+		</TSPOtherCountryCodeRestrictionFlag>
+		<TSPOtherCountryCodeRestriction
+			isBase64="1">MQ==</TSPOtherCountryCodeRestriction>
+		<InternalCallbackSupport>0</InternalCallbackSupport>
+		<InternalCallbackLabel isBase64="1" />
+		<InternalCallbackCountryCode />
+		<DialInSequences>AutoDialInSequence:[AccessNumber],,*00*[AccessCode]#,,,[AttendeeID]#|SilentDialInSequence:[AccessNumber],,*01*[AccessCode]#[AttendeeID]#*01*|AutoLGDialInSequence:[AccessNumber],,*00*[AccessCode]#,,,[ProfileID]#,,,[PIN]#|SilentLGDialInSequence:[AccessNumber],,*01*[AccessCode]#[ProfileID]#[PIN]#*01*|AutoLGPWDialInSequence:[AccessNumber],,*00*[AccessCode]#,,,[ProfileID]#,,,[PIN]#,,,[Password]#|SilentLGPWDialInSequence:[AccessNumber],,*01*[AccessCode]#[ProfileID]#[PIN]#[Password]#*01*
+		</DialInSequences>
+	</Telephony>
+	<AudioVideo>
+		<AudioFlag>3967</AudioFlag>
+		<WBXPBAutoVoipFlag />
+		<SwitchParameter isBase64="1" />
+		<AudioStream>AwAAAAMAAAAAAAAAsQHFRQ3nkVHRCHCYYlgrPPXL1UR%2F%2FSkJ3khJAUfPaucOpSnPPSeUQGdKGogg8ai8ulwnj3NaCAe2I%2FyANZifynUAGpXv2Xd5Aqaid%2BV0iuQwWJtA6CJbOBU%2FgMemTbuy3kxojhT7CmUqqhQumxTGfYjd9IHLuYihnMpJQjv1Bmx8pZtV0C37phdEbATrhFArYP9Kzg3GxoVurasqVm4FxTlJB7ChxjOV41Ry4Ap4ho4ymg%3D%3D%7Cmm1mcccl01.qa.webex.com%7C63c23bb942bdbe1636edf80ef99bd3cb%7C2
+		</AudioStream>
+		<WBXHybridFlag>0</WBXHybridFlag>
+		<TSPHybridFlag>1</TSPHybridFlag>
+		<HybridType>0</HybridType>
+		<VideoFrameRateForThumbnail>15</VideoFrameRateForThumbnail>
+		<VideoThumbnails>1</VideoThumbnails>
+		<CUVCFlag>0</CUVCFlag>
+		<CUVCURL isBase64="1" />
+		<HideVoIPInHybrid>0</HideVoIPInHybrid>
+		<VideoFrameRate>15</VideoFrameRate>
+	</AudioVideo>
+	<NBR>
+		<NBRFlag>1</NBRFlag>
+		<NBRForceRecording>0</NBRForceRecording>
+		<NBRAutoRecordingFailedMail />
+		<NBRDialoutSequence isBase64="1">UDhESEFDI1AxMERBSSNQMA==
+		</NBRDialoutSequence>
+		<NBRExceedCapacity>0</NBRExceedCapacity>
+	</NBR>
+	<URLs>
+		<RAURL>https://plutotsp.qa.webex.com/plutotsp/r.php?WID=pluto&amp;WPW=ABF4875E8DC8C9EF4FC52F6DB0BE0856A8C01CC9B7DFCDC7DB125385CE21A16E20293A217448BB7A9EBF4D43DE3DBE4E3B97D765DA1A990C921752485204B2EF&amp;PWflag=1
+		</RAURL>
+		<LandingPageURL isBase64="1" />
+		<GTNURL />
+		<SysDiagnosisURL>https://plutotsp.qa.webex.com/mc3100/systemdiagnosis.do?siteurl=plutotsp
+		</SysDiagnosisURL>
+		<BrandingLogoURL />
+		<BrandingIconURL />
+		<QSTemplateURL />
+		<QSHelpURL>https://help.webex.com/community/meeting-center</QSHelpURL>
+		<JMFLogURL>https://plutotsp.qa.webex.com/plutotsp/logevent.php?siteurl=plutotsp&amp;UserName=Pluto+Kan&amp;Email=pluto%40qa.webex.com&amp;UserID=214322
+		</JMFLogURL>
+		<LiveSupportURL />
+		<WMImgURL />
+		<RADebugServerURL>https://m1rmd.qa.webex.com/logadmin/upload.do?SiteUrl=plutotsp&amp;LanguageId=1&amp;clientBuild=31.0.0.394
+		</RADebugServerURL>
+		<UserProfileURL>https://plutotsp.qa.webex.com/mw3100/mywebex/preference.do?keeppage=1&amp;go_sec=mwx-lnk-audio&amp;config=HomePage%7CTimeZone%7CLang%7CLocale&amp;target=Frame&amp;siteurl=plutotsp&amp;popuplogin=true
+		</UserProfileURL>
+		<SiteURL>https://plutotsp.qa.webex.com/plutotsp</SiteURL>
+		<MCCIP>mm1mcccl01.qa.webex.com</MCCIP>
+		<SMSURL isBase64="1">aHR0cHM6Ly9wbHV0b3RzcC5xYS53ZWJleC5jb20vcGx1dG90c3Avc2VuZC53Yng/cHJvdG9jb2w9c21zJmhjb2RlPSRTTVNVUkxDb2RlJA==
+		</SMSURL>
+		<SparkAnimationURL>https://plutotsp.qa.webex.com/plutotsp/sparkanimation.php?LanguageID=1
+		</SparkAnimationURL>
+		<CreateSparkRoomURL host="1">https://plutotsp.qa.webex.com/plutotsp/createspr.php?guid=$SPRGUID$
+		</CreateSparkRoomURL>
+		<DoubleCheckSparkEntitleURL />
+		<HostGreetingURL>https://plutotsp.qa.webex.com/mc3100/meetingcenter/meetingroom/greeting.do?siteurl=plutotsp&amp;AT=Edit&amp;ConfID=4194313379&amp;code=$HostGreetingURLCode$
+		</HostGreetingURL>
+		<InviteURL>https://plutotsp.qa.webex.com/mc3100/meetingcenter/meetingroom/invite.do?siteurl=plutotsp&amp;confId=4194313379&amp;code=$InviteURLCode$
+		</InviteURL>
+		<QSInviteURL>https://plutotsp.qa.webex.com/mc3100/meetingcenter/common/getqsxml.do?siteurl=plutotsp&amp;confId=4194313379&amp;languageId=1&amp;needFilter=false&amp;code=$QSInviteURLCode$
+		</QSInviteURL>
+		<TSPGlobalNumURL isBase64="1" />
+		<WebtourURL>https://plutotsp.qa.webex.com/mc3100/meetingcenter/meetingroom/webtour.do?siteurl=plutotsp&amp;AT=Pilot&amp;SpecURL=&amp;LanguageID=1
+		</WebtourURL>
+		<HelpURL>https://help.webex.com/community/meeting-center</HelpURL>
+		<AttendeeGreetingURL>https://plutotsp.qa.webex.com/mc3100/meetingcenter/meetingroom/greeting.do?siteurl=plutotsp&amp;AT=Show&amp;ConfID=4194313379&amp;code=4832534b000000b38d7c528aa068540f363765889f34b7162677ae7118a8fb5f544973e247d9709e
+		</AttendeeGreetingURL>
+		<FeedbackURL />
+		<SendFeedbackToHostURL />
+		<MeetingEndURL>https://plutotsp.qa.webex.com/mc3100/meetingcenter/meetingend/meetingend.do?siteurl=plutotsp&amp;confID=4194313379&amp;un=pluto&amp;email=pluto%40qa.webex.com&amp;from=meeting&amp;backurl=&amp;uID=214322&amp;STD=1&amp;Rnd=0.7959079409932668
+		</MeetingEndURL>
+		<JMFLogUploadURL isBase64="1">aHR0cHM6Ly9sb2dzZXJ2ZXIud2ViZXhjb25uZWN0LmNvbS9sb2c=
+		</JMFLogUploadURL>
+		<surveySvrURL>http://survey.qa.webex.com</surveySvrURL>
+		<JoinURL>https://plutotsp.qa.webex.com/join/pluto</JoinURL>
+	</URLs>
+	<Download>
+		<SFSupporting isBase64="1" />
+		<SectionName>webexexe</SectionName>
+	</Download>
+	<WebACD>
+		<WebACDFlag>0</WebACDFlag>
+		<FAQurl />
+		<CustomersInfo />
+		<UN />
+		<PW />
+		<RequestID>0</RequestID>
+		<CSRInsertDBURL />
+		<AcdAttendeeInfoURL />
+		<mcData />
+	</WebACD>
+	<Mobile>
+		<MobileVersion>1.4</MobileVersion>
+		<BBDownloadPath>https://m.webex.com/update</BBDownloadPath>
+		<AndroidMarketDownloadPath>market://details?id=com.cisco.webex.meetings
+		</AndroidMarketDownloadPath>
+		<AndroidWebexDownloadPath>https://m.webex.com/install
+		</AndroidWebexDownloadPath>
+		<SPAServerAddr />
+		<CTMSprivilege>0</CTMSprivilege>
+		<MobileCreateMeetingFlag>1</MobileCreateMeetingFlag>
+	</Mobile>
+	<Security>
+		<EncryptedMeetingPwd />
+		<EncryptedConfID1>4194313379</EncryptedConfID1>
+		<EncryptedConfID2>Webx29914423073171884194313379</EncryptedConfID2>
+		<PKIEnable>0%1442307317191</PKIEnable>
+		<PKIRootCerts isBase64="1" />
+		<E2EKey>4832534b000000b3ecbf72ee99b11d1951652bc65d36d12f295c83400c88af11353d4ef33c64678d
+		</E2EKey>
+		<UserGID>44877</UserGID>
+		<HashHostKey>1006RzH//wAAAAGgDTYRcDs/jkxLX5YEd+0Of7jCftoDtE/FewXx9E1wMQ==
+		</HashHostKey>
+		<LoginFlag>1</LoginFlag>
+		<SupportSSL>1</SupportSSL>
+		<PresenterKey>NEW_ENC_FORMAT_002RzH//wAAAAHEKFpHP8DNOuAH9eOKYK2C9/tz3gOjR4Mya4uyD8DyNw==
+		</PresenterKey>
+		<PresenterKeyOption>0</PresenterKeyOption>
+		<InMeetingAccessControl isBase64="1">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPFByaUluZm8+PGF0dGVuZGVldGlja2V0cz48c2hyQVM+TkVXX0VOQ19GT1JNQVRfMDAyUnpILy93QUFBQUhzdnBxcWplOFA2MGVCcVhVYmVINDFoZWFDdUM2QWwxdmx1QWxrYzB3am13PT08L3NockFTPjxzaHJQRD5ORVdfRU5DX0ZPUk1BVF8wMDJSekgvL3dBQUFBSHN2cHFxamU4UDYwZUJxWFViZUg0MWhlYUN1QzZBbDF2bHVBbGtjMHdqbXc9PTwvc2hyUEQ+PC9hdHRlbmRlZXRpY2tldHM+PHRpY2tldHM+TkVXX0VOQ19GT1JNQVRfMDAxMDAxQWYwV3ZDYjhqMTdJdFE4T2Z4ZTRBSUtiZHN1TjI4YkxQZ2pxczNRZ1BlblBqWjB5ZkwyK1drcWEzaElxbUZhaThZNlZic3dZc1I0M3UwWTVsYnlWWXdhWDNtUEswOER5bnNsVmRIQk1MalFhNUppbCtpampDeUZaNzh6SzhFcHNRMFpVRUdMTi9Ybkk4L3VhVmJpLzZLc0NSM2NSdU9WNnVlNStMWWVqMmVLT0xmMXRKZGZES3FkM1VoZWI4eVVSeERJTHd1dzRQVm1wM05vbEcyUHNVNmFITmk0eWw3MzBDc3VYZDcrMjNxR3hOemJGYVNvSlJvTGIxRExWS1JtVS94NEhMNmlDcDNzQkdjTVlKYWVmWkZLcFFFZVZjRjBRYnRIWmdSd2NNa2JPV0lLUENsMmgyU1lXWWltbFZOMjVCdjZleCtFQWlNVTA5L3ZKT0YzTHdXeHlkTE5rQnlNNnVnSjl4aHVHazNLc1FTeFNqOEY0U2NtTFUvcmY3TmZnM0VRMlZtZ3ZEaVhlMlRKUHZ2ZDhqR3pOTURUdU96SFRmZVh6N2crUUNqb25OcWxsY1p1dkhyTlVIYy9OU2lRd24vd2pDRDI5U3BkTGZkMWV5ajFIVmZqVmlSWjRDVW5mYjZNN0lWOUhLUVl0aVlJQ21zUVREamRXRzNOdjFnTzRKbHp4eFdJVExWZUpIL0cyczh4NDFwS1JPeGMzQlhmUlNRSStLa2J0a2hCa3BvZjAwRVQvRlVWSTJ3b3pTK2lXL1hvaTNEc0V3NXRrRlJzQmx3cS9YRk5LN2RmMUdtZ051ejg2djBsaW9zRWxSUkVGdVl3aXN4aUt1a2wxMlFrVU1CNzJkV1g5UlRtTzRrNTNCWkVtQXpFKys4VThrL0wxTTgvSUt1b1Y4ZmNWTXIwOENmTDA2cnNtcTRQYVcyNWlPSVpJNzZ3THlSamFVb3c1aEc3NHBiWFRqSHR5b1hlVFZnazZPRkVsanhPTEJsQVFQcDZzWktxdmptcUN6NWhyN0VXVXdQaTNTVGNCTW45dktteGpseGhqaHJWSmFtdU1SUDBQLy9mVkNrblo3NjNvZWl3dFp2SUErWFhad3NnbThrWFA5QlAwS0F3MzJPeXRZWGZvWGwyc2J3QkZrODM5WTFmUjlsT2Z3Y2RhOUUrcytWbERUWWdyeXl0QjA5T0xOVTNicFJJaGI5dm93SzJNL0VoTWpNY2V4OThGRXFvcG02NHYzakVHQWpveC9tRElYSi93WExEN0R1ZDAyRG5tNXROc3JzV08xd3JKem5oWWMrcjdaYXVqc0Z6VTB3am9QMzM5VGF1ZkUzL0pFdTJiYmNxbitST1lZeklNOVN0VGFrYkJjb3NIRGk1UUZ0V2pUVnZ2YUJXWjcwRGgyRWt3dk5ITTRqMzFST0JEU0dKUHIrV1BsNjdsWUh6Z3c1TGNkSDlzVk1ZdzIvQllrRnEyaHZUa2dJSk8xdUF0ak83dUVZeWpFY3c1cWVVNW13R25DcnFldTl3a3VRcTRzWVREYzhoK0MydkRNQWV2SVA0ZURVZFA3OHpFbFFuRmRNdk5Wek1UNzNtYUJkSVZFakJrMDIvVE5kejEydVVEV1kwZ2RoV0doekQrNGE5RFNvZURNQjZUWWVDV0g1N0JZSW1UQVlpaXRzY2xMcncrRlNXOGh5c3R2UFZ5NkxkNnhXUEhwVmplYzQyTVVjMm93Z2dVdFdPc0dPSVFtT0o3MjVabkR3bm13Z2dFYjF2Wm5zOU1ralY5TnA2cGdqZEd1Rk1FM29GcG5GaldZYjVQZ2Mzc3ljbkJHeERDUkE4dTh2d1Y4dGM3NWk1RUR0aWxZYWVOaEdJS1pSS25UUkx4cFNPb1dZbFpHOUU4bmJqRXZRUlRLd2d1Y1M4RTZUMElueWZJK2k1M3ZiaExZNzZWZWpnVFVXNmV1U0FsOWdIMjExTW42b3YyNmRNR2VodUFSTDFyWmprVnlvMUpFbHNsUHNDb3kxWTZlWTd6U0ZweVFrajk4cjhYajkyM3JNVDlqZjZ0ZG56TlhvM0dCUVRJYWJ1YUc5amNxLzZLTmdwQ0xYaDVlN3B3a0pyMHBrcUpTbFFjdTAzMnMvTDVrV2w2WE9uREdwbStKZHhnNVNRUVR6eHJpRWJKMHhkbVZUMm1OVFJvN0lBK0RoWlV4RWdJZmdQTDdRU3N6RmtMYTQzK05kUHBiZEFOeXQrTUNxOFhLMHhuNG1LQVBoUm9RbVNxWlNhdHFZRzB0UlM2T2MxR1Nwd1lCNFRLZ3lheGtjQ0RYY1IyQXI4N3ZJQXlKaVY1Qkl1MW9Bd1pOQU1weUYxOFlGZGR2cDVQSUZkd2djQWRpT0t1Nmt4SklUTFduaWZzTFR5YUdIQkU4QzRUeUs0UVkyWmIyZkd1UG9jREpUM0c4VlF6OXlGWVpxeWRMeEtaeTIrRFprOHJWMnRscUVHQ0lRNGJPVnNud2JKNFRUdmVsVlpaZmFEc2J1bDJ1SkYvQzI2aXQvY2dXRDczSUplWkN0WldWakhVdlhoRE0vaWEyT1BvbnNtNmM5MVhYcGl3UXpPazdXUW9Rd0Z3bGpFejIzTlF0bGR1L1drUXdUT2Y5TDZrWXJLeGlObElZVGZjYzZxZ3NPVWhReXRlZVZoL09sVGxoUmZoeFJXZjQ1OWRlM3lCOHJ1bDNqVWRwOTlaTW5XQWsvVXo0dHlRdU5VYU5uT0ZZdEZ1eTZqSE9lL2F1NmdEK1NqcjFuWXhXeVVlY04ra3VwdHJiaTNWZ25XRG1RTUlvRzZhZkhRRVcvcy9zNEV6UU5KbzBJTjU3Zjhic0xHaUx4cWZVSU1vOHg1Z2RaZ2JpWXFCL2J6T1dPUDRSVGZjMUhkQUR6cG5weFMwS1JMTDFGaldibVhEa2JHRWFpb0ppTjJta1FNUTRDZG9FcU5oOVVQOHUxYkhITUtyYjROQkR6SWVJZEZhdW5Qb0pENVhkZXk0UUNPRkdOYTRQaGxRRlN6bUNROS84VWNOeS8yV3oyR0pUZkJhQ2wyaXhoSW1BN2RnNzZpZ3FOWU9VUU9ueXVrdXAxUHdqQzBTcWJGdDJxVyt2Z0FneEdndUtwTkdRMy9Pd1p2VER2SEM8L3RpY2tldHM+PC9QcmlJbmZvPg==
+		</InMeetingAccessControl>
+		<SecureTeleAccount isBase64="1">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPEF0dGVuZGVlSW5mbz5Ua1ZYWDBWT1ExOUdUMUpOUVZSZk1EQXhNREF4UVZSaFVqUTVXWFJ1VVdWUFdXTmhkSE40YWt4Vk1Vd3JabWRYZVZaeFVtcHdkR0oxZWtSUldVVTRZbkpQVlZaWGRXTTRTbTk1Wmtwc1IxWjBXVWxQWVZadmVGZFdlblZpVlN0WFREQmliRE5NVUVsclZXVmliVzFRVkRsVGVURnFLM1ZYVFVjNE4wNVlWaTlyPC9BdHRlbmRlZUluZm8+
+		</SecureTeleAccount>
+		<JMFLogUploadTicket isBase64="1" />
+		<MeetingAuthentication>%&lt;SMAC&gt;&lt;ver&gt;2&lt;/ver&gt;&lt;data&gt;RzH//wAAAAHUYLmwDuYQrIHMEBp5NUiNVtWr0pf7N8mE/96PeiHv2g==&lt;/data&gt;&lt;/SMAC&gt;%1442307317%%
+		</MeetingAuthentication>
+		<surveyTK isBase64="1" />
+		<clientProtocolVersion>0</clientProtocolVersion>
+		<SupportSvrSecParams>1</SupportSvrSecParams>
+		<SecureSMAC4Node>1</SecureSMAC4Node>
+		<TSPHybridSecureAccess>0</TSPHybridSecureAccess>
+		<CBSecParams encryption="AES">NEW_ENC_FORMAT_001001ARJXjwSSYDs2U7uB8LpcMaEaS/DeFiet625QvfHMFQdthGqgcsRqa3T5JyNtrAJlb9AvYot6R45NAr8HHxDR3oumxxWb0HdX+3tnr2cKeLst1XijjC2xaOWBGHXrWx5yZ3gLYhEv/wY4hAlPwbYFQN3IkeIuuhhXwU53+AU6VGPkXRwKfYU2wh2pHZib239AYS5g5V5oKYtiX+vkcVeCNp0=
+		</CBSecParams>
+		<TSSecParams encryption="AES">NEW_ENC_FORMAT_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
+		</TSSecParams>
+	</Security>
+</root>

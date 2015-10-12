@@ -7,7 +7,7 @@
 
 package com.cisco.rekan.apicaller;
 
-import org.dom4j.Document;
+import org.apache.http.HttpResponse;
 
 
 /**
@@ -20,11 +20,19 @@ import org.dom4j.Document;
 public interface IAPICaller {
 
     /**
-     * Call API.
+     * Call API via get method.
      *
      * @param params the parameters
      * @return the string
      */
-    Document callAPI(String... params);
+    HttpResponse getAPI(String... params);
+
+    /**
+     * Call API via post method.
+     *
+     * @param params the parameters
+     * @return the string
+     */
+    HttpResponse postAPI(String... params);
 
 }

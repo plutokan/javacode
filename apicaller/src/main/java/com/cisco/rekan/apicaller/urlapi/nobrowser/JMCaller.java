@@ -44,7 +44,7 @@ public class JMCaller extends AbstractURLAPITest {
     public void addParams(String... params) {
         // nobrowser.php?AT=HM&MK=017170569&DocshowVer=1.0&FeatureSupport=2&OS=iPhone&isUTF8=1&IT=15&VER=6%2E0
         super.addParam("AT", "JM");
-        super.addParam("MK", StringUtils.deleteSpaces(params[0]));
+        super.addParam("MK", StringUtils.deleteWhitespace(params[0]));
         super.addParam("WUN", USER_NAME);
         super.addParam("ST", "6");  // TC - 7, EC - 6.
         super.addParam("PPW", "");
@@ -65,9 +65,9 @@ public class JMCaller extends AbstractURLAPITest {
     public void testMC() throws IOException {
         RegistrationCaller loginCaller = new RegistrationCaller();
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
-//        super.addParam("SK", token);
+        super.addParam("SK", token);
 
-        Document docshow = super.callAPI("150 334 765", USER_NAME);
+        Document docshow = super.callPostAPI("150 334 765", USER_NAME);
         docshow = DocshowParser.getClientparam(docshow);
     }
 
@@ -77,7 +77,7 @@ public class JMCaller extends AbstractURLAPITest {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.callAPI("159 546 916");
+        Document docshow = super.callPostAPI("159 546 916");
         docshow = DocshowParser.getClientparam(docshow);
         System.out.println(docshow.toString());
         System.out.println("------------------------");
@@ -91,10 +91,10 @@ public class JMCaller extends AbstractURLAPITest {
     @Test
     public void testTC() throws IOException {
         RegistrationCaller loginCaller = new RegistrationCaller();
-//        String token = loginCaller.register(USER_NAME, USER_PASSWORD);
-//        super.addParam("SK", token);
+        String token = loginCaller.register(USER_NAME, USER_PASSWORD);
+        super.addParam("SK", token);
 
-        Document docshow = super.callAPI("157 322 706", USER_NAME);
+        Document docshow = super.callPostAPI("157 322 706", USER_NAME);
         docshow = DocshowParser.getClientparam(docshow);
 
         String uploadURL = DocshowParser.getUploadURL(docshow);

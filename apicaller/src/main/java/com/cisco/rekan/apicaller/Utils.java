@@ -6,23 +6,39 @@
 
 package com.cisco.rekan.apicaller;
 
+import static org.junit.Assert.assertEquals;
+
+import java.io.IOException;
 import java.io.StringReader;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
+import java.util.List;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang3.CharEncoding;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.conn.scheme.Scheme;
 import org.apache.http.conn.scheme.SchemeRegistry;
 import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
+import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
+import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.springframework.util.Assert;
 
 /**
  * <code>Utils</code>
@@ -31,6 +47,8 @@ import org.dom4j.io.SAXReader;
  * @since MyCode Oct 27, 2013
  */
 public final class Utils {
+
+    protected static Logger logger = Logger.getLogger(Utils.class);
 
     private Utils() {
     }
@@ -43,6 +61,7 @@ public final class Utils {
      * @return the document
      */
     public final static Document convertStr2Dom(final String xmlStr) {
+        Assert.notNull(xmlStr);
         StringReader reader = new StringReader(xmlStr);
         SAXReader saxReader = new SAXReader();
         Document document = null;
@@ -81,6 +100,7 @@ public final class Utils {
      * @return the http client
      */
     public static HttpClient getHttpClient() {
+//        HttpClient httpclient = HttpClients.createDefault();
         HttpClient httpclient = new DefaultHttpClient();
 
         return httpclient;
@@ -137,6 +157,76 @@ public final class Utils {
                 return null;
             }
         }
+    }
+
+    /**
+     * Assert xml result.
+     *
+     * @param dom the dom
+     * @param nodePath the node full path in document, like "/root/Meeting/...".
+     * @param expectedResult the expected result
+     */
+    public static void assertXMLResult(Document dom, String nodePath, String expectedResult) {
+        Element element = (Element) dom.selectSingleNode(nodePath);
+        Assert.notNull(element);
+        String result = element.getText();
+        assertEquals(expectedResult, result);
+    }
+
+    /**
+     * Parse the URI string to the name value pair list.
+     *
+     * @param uri URL like {@literal "http://www.example.com/something.html?one=1&two=2&three=3&three=3a"}.
+     * @return {@link java.util.List} name value pair list.
+     * @throws URISyntaxException If the parameter don't match the URI format.
+     */
+    private static List<NameValuePair> parseURI(String uri) throws URISyntaxException {
+        Assert.notNull(uri);
+        List<NameValuePair> params = URLEncodedUtils.parse(new URI(uri), CharEncoding.UTF_8);
+
+        if (CollectionUtils.isNotEmpty(params)) {
+            for (NameValuePair param : params) {
+                logger.info(param.getName() + " : " + param.getValue());
+            }
+        }
+
+        return params;
+    }
+
+    public static String getParamValue4URI(String uri, String paramName) {
+        Assert.notNull(paramName);
+
+        List<NameValuePair> params = null;
+        try {
+            params = parseURI(uri);
+        } catch (URISyntaxException e) {
+            logger.error(null, e);;
+        }
+
+        String paramValue = null;
+        if (CollectionUtils.isNotEmpty(params)) {
+            for (NameValuePair param : params) {
+                if (paramName.equals(param.getName())) {
+                    paramValue = param.getValue();
+                    break;
+                }
+            }
+        }
+        return paramValue;
+    }
+
+    /**
+     * @param response HttpResponse.
+     */
+    public static void printContent(HttpResponse response) {
+        HttpEntity responseEntity = response.getEntity();
+        String result = null;
+        try {
+            result = EntityUtils.toString(responseEntity);
+        } catch (IOException e) {
+            logger.error(null, e);
+        }
+        logger.info(result);
     }
 
 }

@@ -20,13 +20,16 @@ public final class Constants {
     private Constants() {
     }
 
-    public static final String VSCM_DOMAIN_URL = "https://deweb2.qa.webex.com/";
+    public static final String PROTOCOL_HTTP = "http";
+    public static final String PROTOCOL_HTTPS = "https";
 
-    public static final String VSCM_WEBEX_SITE_NAME = "dewd-pluto";
-    public static final String VSCM_TSP_SITE_NAME = "tsp-pluto";
-    public static final String VSCM_MP_SITE_NAME = "mp-pluto";
-
-    public static final String WEBEX_SITE_1 = "https://pluto.qa.webex.com/";
+    public static final String WEBEX_SITE_1 = "pluto.qa.webex.com";
     public static final String WEBEX_SITE_NAME_1 = "pluto";
+
+    public static final String TSP_SITE = "plutotsp.qa.webex.com";
+    public static final String TSP_SITE_NAME = "plutotsp";
+
+    public static final String QA_SITE = "cetd8.qa.webex.com";
+    public static final String QA_SITE_NAME = "cetd8";
 
 }
