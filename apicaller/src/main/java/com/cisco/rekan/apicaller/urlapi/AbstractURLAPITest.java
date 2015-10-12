@@ -7,6 +7,8 @@
 
 package com.cisco.rekan.apicaller.urlapi;
 
+import org.apache.commons.lang3.StringUtils;
+import org.apache.http.HttpResponse;
 import org.dom4j.Document;
 
 import com.cisco.rekan.apicaller.HttpAPICaller;
@@ -21,34 +23,64 @@ import com.cisco.rekan.apicaller.HttpAPICaller;
  */
 public abstract class AbstractURLAPITest extends HttpAPICaller {
 
-    private String domainURL = Constants.VSCM_DOMAIN_URL;
-    private String siteName = Constants.VSCM_WEBEX_SITE_NAME;
+    private String protocol = Constants.PROTOCOL_HTTPS;
+    private String domainURL = Constants.WEBEX_SITE_1;
+    private String siteName = Constants.WEBEX_SITE_NAME_1;
 
     /**
      * Gets the php name.
      *
      * @return the php name
      */
-    public abstract String getPhpName();
+    protected abstract String getPhpName();
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.IAPICaller#callAPI(java.lang.String[])
      */
     @Override
-    public Document callAPI(String... params) {
-        super.setServerURL(getDomainURL() + getSiteName() + "/" + this.getPhpName());
+    public Document callPostAPI(String... params) {
+        if (StringUtils.isEmpty(super.getServerURL())) {
+            super.setServerURL(this.setupURI());
+        }
 
-        return super.callAPI(params);
+        return super.callPostAPI(params);
+    }
+
+    private String setupURI() {
+        return getProtocol() + "://" + getDomainURL() + "/" + getSiteName() + "/" + this.getPhpName();
     }
 
     @Override
-    protected void callGetAPI(String... params) {
-        super.setServerURL(this.getDomainURL() + this.getSiteName() + "/" + this.getPhpName());
-        super.callGetAPI(params);
+    public HttpResponse getAPI(String... params) {
+        if (StringUtils.isEmpty(super.getServerURL())) {
+            super.setServerURL(this.setupURI());
+        }
 
-        return;
+        return super.getAPI(params);
     }
 
+    @Override
+    public HttpResponse postAPI(String... params) {
+        if (StringUtils.isEmpty(super.getServerURL())) {
+            super.setServerURL(this.setupURI());
+        }
+
+        return super.postAPI(params);
+    }
+
+    /**
+     * @return the protocol
+     */
+    protected String getProtocol() {
+        return protocol;
+    }
+
+    /**
+     * @param protocol the protocol to set
+     */
+    protected void setProtocol(String protocol) {
+        this.protocol = protocol;
+    }
 
     /**
      * @return the domainURL

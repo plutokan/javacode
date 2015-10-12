@@ -6,10 +6,11 @@
  */
 package com.cisco.rekan.apicaller.urlapi.user;
 
+import org.apache.http.HttpResponse;
 import org.junit.Test;
 
+import com.cisco.rekan.apicaller.Utils;
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
-import com.cisco.rekan.apicaller.urlapi.Constants;
 
 /**
  * <code>UserGetAuthInfoCaller</code>
@@ -21,22 +22,6 @@ http://deweb2.qa.webex.com/dewd-pluto/user.php?AT=GetAuthInfo&UN=pluto&PW=P@ss12
  *
  */
 public class UserGetAuthInfoCaller extends AbstractURLAPITest {
-
-    /* (non-Javadoc)
-     * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getDomainURL()
-     */
-    @Override
-    public String getDomainURL() {
-        return Constants.VSCM_DOMAIN_URL;
-    }
-
-    /* (non-Javadoc)
-     * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getSiteName()
-     */
-    @Override
-    public String getSiteName() {
-        return Constants.VSCM_WEBEX_SITE_NAME;
-    }
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getPhpName()
@@ -61,8 +46,8 @@ public class UserGetAuthInfoCaller extends AbstractURLAPITest {
 
     @Test
     public void test() {
-//        super.callAPI("pluto", "P@ss123");
-        super.callGetAPI("pluto", "P@ss123");
+        HttpResponse response = super.getAPI("pluto", "P@ss123");
+        Utils.printContent(response);
     }
 
 }

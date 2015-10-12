@@ -9,10 +9,9 @@ package com.cisco.rekan.apicaller.urlapi.datemeeting;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import junit.framework.Assert;
-
 import org.dom4j.Document;
 import org.dom4j.Element;
+import org.junit.Assert;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
@@ -61,7 +60,7 @@ public class RegistrationCaller extends AbstractURLAPITest {
      */
     public String register(String userName, String password) {
         // datameeting.php?AT=Registration&UN=admin&PW=P@ss123
-        Document dom = super.callAPI(userName, password);
+        Document dom = super.callPostAPI(userName, password);
 
         Element e1 = (Element) dom.selectSingleNode("//registrationResp/status");
         Assert.assertEquals("SUCCESS", e1.getText());

@@ -11,7 +11,6 @@ import java.io.UnsupportedEncodingException;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
-import com.cisco.rekan.apicaller.urlapi.Constants;
 
 /**
  * <code>ConnectMeetingCaller</code>
@@ -21,16 +20,6 @@ import com.cisco.rekan.apicaller.urlapi.Constants;
  *
  */
 public class ConnectMeetingCaller extends AbstractURLAPITest {
-
-    @Override
-    public String getDomainURL() {
-        return Constants.VSCM_DOMAIN_URL;
-    }
-
-    @Override
-    public String getSiteName() {
-        return Constants.VSCM_WEBEX_SITE_NAME;
-    }
 
     @Override
     public String getPhpName() {
@@ -45,8 +34,8 @@ public class ConnectMeetingCaller extends AbstractURLAPITest {
 
     @Test
     public void test() throws UnsupportedEncodingException {
-        // https://deweb2.qa.webex.com/dewd-pluto/cm.php?AT=JM&MK=150631521
-        super.callAPI("JM", "150631521");
+        // /cm.php?AT=JM&MK=150631521
+        super.callPostAPI("JM", "150631521");
     }
 
 }

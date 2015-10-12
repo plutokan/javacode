@@ -10,7 +10,6 @@ import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
-import com.cisco.rekan.apicaller.urlapi.Constants;
 
 /**
  * <code>GMRSCaller</code>
@@ -24,22 +23,6 @@ public class GMRSCaller extends AbstractURLAPITest {
     private static final String USER_NAME = "pluto";
     private static final String USER_PASSWORD = "P@ss123";
     private static final String USER_ENCRYPTED_PASSWORD = "2212d3586374481f0a5e40";
-
-    /* (non-Javadoc)
-     * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getDomainURL()
-     */
-    @Override
-    public String getDomainURL() {
-        return Constants.VSCM_DOMAIN_URL;
-    }
-
-    /* (non-Javadoc)
-     * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getSiteName()
-     */
-    @Override
-    public String getSiteName() {
-        return Constants.VSCM_WEBEX_SITE_NAME;
-    }
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getPhpName()
@@ -73,13 +56,13 @@ public class GMRSCaller extends AbstractURLAPITest {
         // outlook.php?AT=LI&WID=pluto&WPW=...
         super.addParam("WPW", USER_ENCRYPTED_PASSWORD);
         super.addParam("ST", "6");
-        super.callAPI("152 546 004");
+        super.callPostAPI("152 546 004");
 
         // outlook.php?AT=LI&WID=pluto&PWPW=P@ss123
         super.clear();
         super.addParam("PWPW", USER_PASSWORD);
         super.addParam("ST", "6");
-        super.callAPI("152 546 004");
+        super.callPostAPI("152 546 004");
     }
 
 }

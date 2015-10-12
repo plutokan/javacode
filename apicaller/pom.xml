@@ -8,13 +8,19 @@
     <version>1.0</version>
   </parent>
   <artifactId>apicaller</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <name>apicaller</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
+    <dependency>
+        <artifactId>learning</artifactId>
+        <groupId>com.plutokan.javacode</groupId>
+        <version>1.0</version>
+    </dependency>
+
     <dependency>
         <groupId>T29L10NSP8_3500_TOM_63</groupId>
         <artifactId>waf</artifactId>

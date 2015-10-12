@@ -7,8 +7,6 @@
 
 package com.cisco.rekan.apicaller;
 
-import static org.junit.Assert.assertEquals;
-
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -17,32 +15,56 @@ import java.util.List;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
 import org.dom4j.Document;
-import org.dom4j.Element;
 import org.springframework.util.Assert;
 
 
 /**
  * <code>HttpAPICaller</code>
  *
- * @author Pluto Kan, rekan@cisco.com
+ * @author <a href="mailto:pluto.kan@gmail.com">Pluto Kan</a>
  * @since MyCode Mar 21, 2014
  *
  */
 public abstract class HttpAPICaller implements IAPICaller {
+
+    /**
+     * logger of log4j 1.x.
+     */
+    protected static Logger logger = Logger.getLogger(HttpAPICaller.class);
 
     /** The server url. */
     private String serverURL = "";
 
     /** The parameters. */
     private List<NameValuePair> parameters = new ArrayList<NameValuePair>();
+
+    /**
+     * the caller.
+     */
+    private HttpClient httpClient = null;
+
+    /**
+     * @return the httpClient
+     */
+    public HttpClient getHttpClient() {
+        return httpClient;
+    }
+
+    /**
+     * @param httpClient the httpClient to set
+     */
+    public void setHttpClient(HttpClient httpClient) {
+        this.httpClient = httpClient;
+    }
 
     /**
      * @return the parameters
@@ -66,47 +88,11 @@ public abstract class HttpAPICaller implements IAPICaller {
     }
 
     /* (non-Javadoc)
-     * @see com.cisco.rekan.apitest.IAPICaller#callAPI(java.lang.String[])
+     * @see #callPostAPI()
      */
     @Override
-    public Document callAPI(String... params) {
-
-        String url = this.serverURL;
-        HttpClient httpclient = Utils.getHttpClient(url);
-
-        this.addParams(params);
-        HttpPost httpPost = new HttpPost(url);
-
-        Document resultDoc = null;
-        try {
-            UrlEncodedFormEntity formEntity = new UrlEncodedFormEntity(this.parameters);
-            httpPost.setEntity(formEntity);
-            HttpResponse response = httpclient.execute(httpPost);
-            HttpEntity responseEntity = response.getEntity();
-            String result = EntityUtils.toString(responseEntity);
-            System.out.println(result);
-
-            resultDoc = Utils.convertStr2Dom(result);
-        } catch (UnsupportedEncodingException e1) {
-            e1.printStackTrace();
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return resultDoc;
-    }
-
-    /**
-     * Call get api.
-     *
-     * @param params the params
-     */
-    protected void callGetAPI(String... params) {
-
-        String url = this.serverURL;
-        HttpClient httpclient = Utils.getHttpClient(url);
+    public HttpResponse getAPI(String... params) {
+        Assert.notNull(this.serverURL);
 
         this.addParams(params);
         StringBuffer queryStr = new StringBuffer();
@@ -117,31 +103,92 @@ public abstract class HttpAPICaller implements IAPICaller {
             queryStr.append(param.getValue());
         }
         String getStr = queryStr.toString().replaceFirst("&", "?");
-        getStr = url + getStr;
+        getStr = this.serverURL + getStr;
         HttpGet httpGet = new HttpGet(getStr);
 
-        try {
-            HttpResponse response = httpclient.execute(httpGet);
-            HttpEntity responseEntity = response.getEntity();
-            String result = EntityUtils.toString(responseEntity);
-            System.out.println(result);
+        HttpResponse response = this.call(httpGet);
 
-        } catch (UnsupportedEncodingException e1) {
-            e1.printStackTrace();
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
+        return response;
+    }
+
+    /**
+     * call this method:<br>
+     * <pre>
+     * 1. Set the server URL, like "https://pluto.qa.webex.com/pluto/p.php".
+     *    This method will construct the HttpClient via the kind of protocol. Now support "http" and "https".
+     * 2. Add the parameters into <code>this.parameters</code>.
+     *    (1) Please call the method {@link #addParam(String, String)}, like <code>super.addParam("userName", "pluto")</code>.
+     *    (2) Implement the method {@link #addParams(String...)}. You can specify the parameter name in the implement
+     *     method, like <code>super.addParam("userName", arg[0])</code>.
+     * </pre>
+     *
+     * @return HttpResponse http response.
+     */
+    @Override
+    public HttpResponse postAPI(String... params) {
+
+        this.addParams(params);
+
+        Assert.notNull(this.serverURL);
+        HttpPost httpPost = new HttpPost(this.serverURL);
+        try {
+            UrlEncodedFormEntity formEntity = new UrlEncodedFormEntity(this.parameters);
+            httpPost.setEntity(formEntity);
+        } catch (UnsupportedEncodingException e) {
+            logger.error(null, e);
         }
 
-        return;
+        HttpResponse response = call(httpPost);
+
+        return response;
+    }
+
+    /**
+     * @param httpUriRequest
+     * @return
+     */
+    private HttpResponse call(HttpUriRequest httpUriRequest) {
+        if (this.httpClient == null) {
+            this.httpClient = Utils.getHttpClient(this.serverURL);
+        }
+
+        HttpResponse response = null;
+        try {
+            response = httpClient.execute(httpUriRequest);
+            logger.info(response.getStatusLine());
+        } catch (IOException e) {
+            logger.error(null, e);
+        }
+        return response;
+    }
+
+
+    /**
+     * Call this method and return a DOM4J response.
+     *
+     * @param params HttpRequest parameters.
+     * @return a document of DOM4J.
+     */
+    public Document callPostAPI(String... params) {
+        HttpResponse response = this.postAPI(params);
+        HttpEntity responseEntity = response.getEntity();
+        String result = null;
+        try {
+            result = EntityUtils.toString(responseEntity);
+        } catch (IOException e) {
+            logger.error(null, e);
+        }
+        logger.debug(result);
+
+        Document resultDoc = Utils.convertStr2Dom(result);
+
+        return resultDoc;
     }
 
     /**
      * Adds the parms.
      *
      * @param params the params
-     * @return
      */
     public abstract void addParams(String... params);
 
@@ -161,19 +208,7 @@ public abstract class HttpAPICaller implements IAPICaller {
     protected void clear() {
         this.serverURL = "";
         this.parameters.clear();
-    }
-
-    /**
-     * Assert xml result.
-     *
-     * @param dom the dom
-     * @param expectedResult the expected result
-     */
-    public static void assertXMLResult(Document dom, String nodePath, String expectedResult) {
-        Element element = (Element) dom.selectSingleNode(nodePath);
-        Assert.notNull(element);
-        String result = element.getText();
-        assertEquals(expectedResult, result);
+        this.httpClient = null;
     }
 
 }
