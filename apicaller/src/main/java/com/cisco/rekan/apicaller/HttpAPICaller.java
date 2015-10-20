@@ -12,8 +12,10 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -156,6 +158,12 @@ public abstract class HttpAPICaller implements IAPICaller {
         try {
             response = httpClient.execute(httpUriRequest);
             logger.info(response.getStatusLine());
+            if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+                Header[] headers = response.getAllHeaders();
+                for (Header header : headers) {
+                    logger.debug(header.getName() + " : " + header.getValue());
+                }
+            }
         } catch (IOException e) {
             logger.error(null, e);
         }

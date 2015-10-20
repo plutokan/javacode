@@ -29,7 +29,10 @@ public final class Constants {
     public static final String TSP_SITE = "plutotsp.qa.webex.com";
     public static final String TSP_SITE_NAME = "plutotsp";
 
-    public static final String QA_SITE = "cetd8.qa.webex.com";
-    public static final String QA_SITE_NAME = "cetd8";
+    public static final String QA_SITE = "gohm.qa.webex.com";
+    public static final String QA_SITE_NAME = "gohm";
+
+    public static final String QA_SITE_F463 = "m1cweb6.qa.webex.com";
+    public static final String QA_SITE_NAME_F463 = "cete8";
 
 }

@@ -22,17 +22,27 @@ public class COCaller extends AbstractURLAPITest {
      */
     @Override
     protected String getPhpName() {
-        // TODO Auto-generated method stub
-        return null;
+        return "w.php";
     }
 
-    /* (non-Javadoc)
-     * @see com.cisco.rekan.apicaller.HttpAPICaller#addParams(java.lang.String[])
+
+    /**
+     * E.g. 
+     * {@literal
+     * w.php?AT=SO&PW=111111&BU=www.baidu.com&TP=OneClick+with+CSRF-MC&SP=3
+     *     &CSRF=d7b7890c-edff-40ba-987f-01592e32b178
+     * }
+     *
+     * @param params the parameters like example.
      */
     @Override
     public void addParams(String... params) {
-        // TODO Auto-generated method stub
+        super.addParam("AT", "CO");
+        super.addParam("BU", "www.baidu.com");
 
+        if (params.length >= 1) {
+            super.addParam("CSRF", params[0]);
+        }
     }
 
 }

@@ -10,7 +10,6 @@ import java.io.IOException;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang.StringUtils;
-import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.http.client.HttpClient;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
@@ -72,10 +71,10 @@ public class HMCaller extends AbstractURLAPITest {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.callPostAPI("214 502 632");
+        Document docshow = super.callPostAPI("213 627 366");
         docshow = DocshowParser.getClientparam(docshow);
 
-        printVideoAddresses(docshow);
+        DocshowParser.printVideoAddresses(docshow);
     }
 
     @Test
@@ -84,43 +83,6 @@ public class HMCaller extends AbstractURLAPITest {
         HttpClient httpClient = mCaller.getHttpClient();
         super.setHttpClient(httpClient);
         super.callPostAPI("210 493 470");
-    }
-
-    /**
-     * @param docshow
-     */
-    private void printVideoAddresses(Document docshow) {
-        logger.debug("------------------------------------------------------");
-        String enableVideoCallBack = DocshowParser.getNodeContent(docshow, "//root/Site/EnableVideoCallBack");
-        logger.debug("//root/Site/EnableVideoCallBack{" + enableVideoCallBack + "}");
-
-        // E.g. video address:
-        // SmVyZW15J3MgVFA=;amVyZW15ZXgyQHFhLndlYmV4LmNvbQ==;1|VFAwMg==;amVyZW15ZXgyQHFhLndlYmV4LmNvbQ==;0|
-        String encodeVA = DocshowParser.getNodeContent(docshow, "//root/User/VideoCallBackInfo");
-        StringBuffer decodeVA = new StringBuffer();
-        String[] videoAddresses = encodeVA.split("\\|");
-        for (String videoAddress : videoAddresses) {
-            if (StringUtils.isNotEmpty(videoAddress)) {
-                String [] arr = videoAddress.split(";");
-                for (String str : arr) {
-//                    if (Base64.isBase64(str)) {
-                    if (!NumberUtils.isDigits(str)) {
-                        decodeVA.append(new String(Base64.decodeBase64(str)));
-                    } else {
-                        decodeVA.append(str);
-                    }
-                    decodeVA.append(";");
-                }
-            }
-            decodeVA.append("|");
-        }
-        logger.debug("//root/User/VideoCallBackInfo{" + decodeVA.toString() + "}");
-
-        String miscOptions = DocshowParser.getNodeContent(docshow, "//root/MeetingType/MiscOptions");
-        boolean[] bits = DocshowParser.getBitValue4Int(NumberUtils.toInt(miscOptions));
-        String temp = "bit29 is " + bits[29] + ", bit28 is " + bits[28];
-        logger.debug("//root/MeetingType/MiscOptions{" + miscOptions + "}{"
-                + temp + "}");
     }
 
     @Test

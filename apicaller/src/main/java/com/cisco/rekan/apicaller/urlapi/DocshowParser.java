@@ -13,6 +13,9 @@ import java.util.Properties;
 import org.junit.Assert;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang.BitField;
+import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.math.NumberUtils;
+import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.Node;
 
@@ -27,6 +30,8 @@ import com.cisco.rekan.apicaller.Utils;
  */
 public final class DocshowParser {
 
+    static Logger logger = Logger.getLogger(DocshowParser.class);
+
     private DocshowParser() {
     }
 
@@ -38,10 +43,12 @@ public final class DocshowParser {
      */
     public static Document getClientparam(Document docshow) {
         Node statusNode = docshow.selectSingleNode("//MeetingData/Status");
+        Assert.assertNotNull(statusNode);
         String status = statusNode.getText();
         Assert.assertEquals("SUCCESS", status);
 
         Node node = docshow.selectSingleNode("//MeetingData/MeetingInfo");
+        Assert.assertNotNull(node);
         String meetingInfo = node.getText();
         Properties props = new Properties();
         try {
@@ -53,7 +60,7 @@ public final class DocshowParser {
         clientParams = new String(Base64.decodeBase64(clientParams));
 
         Document param = Utils.convertStr2Dom(clientParams);
-        System.out.println(param.asXML());
+        logger.debug(param.asXML());
 
         return param;
     }
@@ -103,6 +110,43 @@ public final class DocshowParser {
         }
 
         return result;
+    }
+
+    /**
+     * @param docshow
+     */
+    public static void printVideoAddresses(Document docshow) {
+        logger.debug("------------------------------------------------------");
+        String enableVideoCallBack = DocshowParser.getNodeContent(docshow, "//root/Site/EnableVideoCallBack");
+        logger.debug("//root/Site/EnableVideoCallBack{" + enableVideoCallBack + "}");
+
+        // E.g. video address:
+        // SmVyZW15J3MgVFA=;amVyZW15ZXgyQHFhLndlYmV4LmNvbQ==;1|VFAwMg==;amVyZW15ZXgyQHFhLndlYmV4LmNvbQ==;0|
+        String encodeVA = DocshowParser.getNodeContent(docshow, "//root/User/VideoCallBackInfo");
+        StringBuffer decodeVA = new StringBuffer();
+        String[] videoAddresses = encodeVA.split("\\|");
+        for (String videoAddress : videoAddresses) {
+            if (StringUtils.isNotEmpty(videoAddress)) {
+                String [] arr = videoAddress.split(";");
+                for (String str : arr) {
+//                    if (Base64.isBase64(str)) {
+                    if (!NumberUtils.isDigits(str)) {
+                        decodeVA.append(new String(Base64.decodeBase64(str)));
+                    } else {
+                        decodeVA.append(str);
+                    }
+                    decodeVA.append(";");
+                }
+            }
+            decodeVA.append("|");
+        }
+        logger.debug("//root/User/VideoCallBackInfo{" + decodeVA.toString() + "}");
+
+        String miscOptions = DocshowParser.getNodeContent(docshow, "//root/MeetingType/MiscOptions");
+        boolean[] bits = DocshowParser.getBitValue4Int(NumberUtils.toInt(miscOptions));
+        String temp = "bit29 is " + bits[29] + ", bit28 is " + bits[28];
+        logger.debug("//root/MeetingType/MiscOptions{" + miscOptions + "}{"
+                + temp + "}");
     }
 
 }

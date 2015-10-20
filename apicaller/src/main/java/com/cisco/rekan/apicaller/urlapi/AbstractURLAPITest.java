@@ -23,7 +23,7 @@ import com.cisco.rekan.apicaller.HttpAPICaller;
  */
 public abstract class AbstractURLAPITest extends HttpAPICaller {
 
-    private String protocol = Constants.PROTOCOL_HTTPS;
+    private String schema = Constants.PROTOCOL_HTTPS;
     private String domainURL = Constants.WEBEX_SITE_1;
     private String siteName = Constants.WEBEX_SITE_NAME_1;
 
@@ -47,7 +47,7 @@ public abstract class AbstractURLAPITest extends HttpAPICaller {
     }
 
     private String setupURI() {
-        return getProtocol() + "://" + getDomainURL() + "/" + getSiteName() + "/" + this.getPhpName();
+        return getSchema() + "://" + getDomainURL() + "/" + getSiteName() + "/" + this.getPhpName();
     }
 
     @Override
@@ -69,17 +69,17 @@ public abstract class AbstractURLAPITest extends HttpAPICaller {
     }
 
     /**
-     * @return the protocol
+     * @return the schema
      */
-    protected String getProtocol() {
-        return protocol;
+    public String getSchema() {
+        return schema;
     }
 
     /**
-     * @param protocol the protocol to set
+     * @param schema the schema to set
      */
-    protected void setProtocol(String protocol) {
-        this.protocol = protocol;
+    public void setSchema(String schema) {
+        this.schema = schema;
     }
 
     /**

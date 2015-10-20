@@ -6,8 +6,14 @@
  */
 package com.cisco.rekan.apicaller.urlapi.w;
 
+import org.apache.http.HttpResponse;
+import org.apache.log4j.Level;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 
+import com.cisco.rekan.apicaller.Utils;
+import com.cisco.rekan.apicaller.urlapi.Constants;
 import com.cisco.rekan.apicaller.urlapi.p.PLoginCaller;
 
 /**
@@ -21,13 +27,22 @@ public class CSCuw13669 {
 
     @Test
     public void test() {
+        Logger logger = LogManager.getLogger("com.cisco.rekan");
+        logger.setLevel(Level.DEBUG);
         PLoginCaller loginCaller = new PLoginCaller();
         String csrf = loginCaller.login("pluto", "P@ss1234");
+//        String csrf = "bc019a4d-3e99-4f45-baec-7cf64514589a";
 
-        SOCaller wSOCaller = new SOCaller();
+//        SOCaller wSOCaller = new SOCaller();
+////        wSOCaller.setProtocol(Constants.PROTOCOL_HTTP);
 //        wSOCaller.setHttpClient(loginCaller.getHttpClient());
-        wSOCaller.getAPI(csrf);
+//        HttpResponse response = wSOCaller.getAPI(csrf);
+//        Utils.printContent(response);
 
+        COCaller wCOCaller = new COCaller();
+        wCOCaller.setHttpClient(loginCaller.getHttpClient());
+        HttpResponse response2 = wCOCaller.getAPI(csrf);
+        Utils.printContent(response2);
     }
 
 }
