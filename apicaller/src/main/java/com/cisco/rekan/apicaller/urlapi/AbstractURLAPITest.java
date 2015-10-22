@@ -7,9 +7,7 @@
 
 package com.cisco.rekan.apicaller.urlapi;
 
-import org.apache.commons.lang3.StringUtils;
-import org.apache.http.HttpResponse;
-import org.dom4j.Document;
+import org.springframework.util.Assert;
 
 import com.cisco.rekan.apicaller.AbstractHttpCaller;
 
@@ -28,47 +26,6 @@ public abstract class AbstractURLAPITest extends AbstractHttpCaller {
     private String siteName = Constants.WEBEX_SITE_NAME_1;
 
     /**
-     * Gets the php name.
-     *
-     * @return the php name
-     */
-    protected abstract String getPhpName();
-
-    /* (non-Javadoc)
-     * @see com.cisco.rekan.apitest.IAPICaller#callAPI(java.lang.String[])
-     */
-    @Override
-    public Document callPostAPI(String... params) {
-        if (StringUtils.isEmpty(super.getServerURL())) {
-            super.setServerURL(this.setupURI());
-        }
-
-        return super.callPostAPI(params);
-    }
-
-    private String setupURI() {
-        return getScheme() + "://" + getDomainURL() + "/" + getSiteName() + "/" + this.getPhpName();
-    }
-
-    @Override
-    public HttpResponse getAPI(String... params) {
-        if (StringUtils.isEmpty(super.getServerURL())) {
-            super.setServerURL(this.setupURI());
-        }
-
-        return super.getAPI(params);
-    }
-
-    @Override
-    public HttpResponse postAPI(String... params) {
-        if (StringUtils.isEmpty(super.getServerURL())) {
-            super.setServerURL(this.setupURI());
-        }
-
-        return super.postAPI(params);
-    }
-
-    /**
      * @return the scheme
      */
     protected String getScheme() {
@@ -76,38 +33,52 @@ public abstract class AbstractURLAPITest extends AbstractHttpCaller {
     }
 
     /**
-     * @param scheme the scheme to set
-     */
-    protected void setScheme(String scheme) {
-        this.scheme = scheme;
-    }
-
-    /**
      * @return the domainURL
      */
-    public String getDomainURL() {
+    protected String getDomainURL() {
         return domainURL;
-    }
-
-    /**
-     * @param domainURL the domainURL to set
-     */
-    public void setDomainURL(String domainURL) {
-        this.domainURL = domainURL;
     }
 
     /**
      * @return the siteName
      */
-    public String getSiteName() {
+    protected String getSiteName() {
         return siteName;
     }
 
     /**
-     * @param siteName the siteName to set
+     * Gets the php name.
+     *
+     * @return the php name
      */
-    public void setSiteName(String siteName) {
+    protected abstract String getPhpName();
+
+    public AbstractURLAPITest() {
+        super();
+
+        super.setServerURL(this.setupURI());
+    }
+
+    /**
+     * @param scheme
+     * @param domainURL
+     * @param siteName
+     */
+    public AbstractURLAPITest(String scheme, String domainURL, String siteName) {
+        super();
+        this.scheme = scheme;
+        this.domainURL = domainURL;
         this.siteName = siteName;
+
+        super.setServerURL(this.setupURI());
+    }
+
+    private String setupURI() {
+        Assert.notNull(this.scheme);
+        Assert.notNull(this.domainURL);
+        Assert.notNull(this.siteName);
+
+        return this.scheme + "://" + this.domainURL + "/" + this.siteName + "/" + this.getPhpName();
     }
 
 }

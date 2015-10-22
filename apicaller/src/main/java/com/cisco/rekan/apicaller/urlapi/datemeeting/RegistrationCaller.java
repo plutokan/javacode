@@ -25,13 +25,6 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
  */
 public class RegistrationCaller extends AbstractURLAPITest {
 
-    /**
-     * Instantiates a new registration caller.
-     */
-    public RegistrationCaller() {
-        super();
-    }
-
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.HttpAPICaller#addParams(java.lang.String[])
      */
@@ -60,7 +53,7 @@ public class RegistrationCaller extends AbstractURLAPITest {
      */
     public String register(String userName, String password) {
         // datameeting.php?AT=Registration&UN=admin&PW=P@ss123
-        Document dom = super.callPostAPI(userName, password);
+        Document dom = super.post4Document(userName, password);
 
         Element e1 = (Element) dom.selectSingleNode("//registrationResp/status");
         Assert.assertEquals("SUCCESS", e1.getText());

@@ -17,7 +17,7 @@ import org.apache.http.HttpResponse;
  * @since MyCode Nov 5, 2013
  *
  */
-public interface IHttpCaller {
+public interface IHttpCaller extends ICookieSupport {
 
     /**
      * Call API via get method.
@@ -25,7 +25,7 @@ public interface IHttpCaller {
      * @param params the parameters
      * @return the string
      */
-    HttpResponse getAPI(String... params);
+    HttpResponse get(String... params);
 
     /**
      * Call API via post method.
@@ -33,6 +33,6 @@ public interface IHttpCaller {
      * @param params the parameters
      * @return the string
      */
-    HttpResponse postAPI(String... params);
+    HttpResponse post(String... params);
 
 }

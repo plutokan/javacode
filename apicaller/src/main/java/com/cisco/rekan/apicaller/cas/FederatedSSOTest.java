@@ -45,7 +45,7 @@ public class FederatedSSOTest extends AbstractCASTest {
 
     @Test
     public void troubleShooting_1() {
-        Document dom = super.callAPI("pfsso.com", "connect2");
+        Document dom = super.callCAS("pfsso.com", "connect2");
         assertXMLResultFailed(dom);
     }
 

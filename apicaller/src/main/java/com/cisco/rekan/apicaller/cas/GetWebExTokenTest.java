@@ -35,7 +35,7 @@ public class GetWebExTokenTest extends AbstractCASTest {
 
     @Test
     public void getwebextoken_JBR() {
-        Document dom = new GetWebExTokenTest().callAPI("brook1@szc761.com",
+        Document dom = new GetWebExTokenTest().callCAS("brook1@szc761.com",
                                                        "P@ss123",
                                                        "JBR",
                                                        null);
@@ -47,7 +47,7 @@ public class GetWebExTokenTest extends AbstractCASTest {
 
     @Test
     public void getwebextoken_connect() {
-        Document dom = new GetWebExTokenTest().callAPI("brook1@szc761.com",
+        Document dom = new GetWebExTokenTest().callCAS("brook1@szc761.com",
                                                        "P@ss123",
                                                        null,
                                                        "connect");
@@ -66,7 +66,7 @@ ciadmin@szv14efmeetingonly2.com
      */
     @Test
     public void getwebextoken_connect_EP() {
-        Document dom = new GetWebExTokenTest().callAPI("ciadmin@szv14epmeetonly.com",
+        Document dom = new GetWebExTokenTest().callCAS("ciadmin@szv14epmeetonly.com",
                                                        "P@ss123",
                                                        null,
                                                        "connect");
@@ -75,7 +75,7 @@ ciadmin@szv14efmeetingonly2.com
 
     @Test
     public void getwebextoken_connect_EF_MeetOnly() {
-        Document dom = new GetWebExTokenTest().callAPI("ciadmin@szv14efmeetingonly2.com",
+        Document dom = new GetWebExTokenTest().callCAS("ciadmin@szv14efmeetingonly2.com",
                                                        "P@ssword123",
                                                        null,
                                                        "connect");

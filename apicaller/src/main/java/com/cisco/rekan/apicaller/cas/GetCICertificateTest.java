@@ -60,7 +60,7 @@ public class GetCICertificateTest extends AbstractCASTest {
     public void test() throws IOException, ClassNotFoundException, WbxAppTokenException {
         String appToken = AppTokenUtil.makeToken(Constants.APPNAME_W11);
         
-        Document dom = super.callAPI(Constants.APPNAME_W11, appToken);
+        Document dom = super.callCAS(Constants.APPNAME_W11, appToken);
         Element element = (Element) dom.selectSingleNode("//CASResponse/certificate");
         String certStr = element.getText();
         byte[] certBytes = Base64.decodeBase64(certStr);
@@ -74,7 +74,7 @@ public class GetCICertificateTest extends AbstractCASTest {
     public void test2() throws IOException, ClassNotFoundException {
         String appToken = "failed token";
         
-        Document dom = super.callAPI(Constants.APPNAME_W11, appToken);
+        Document dom = super.callCAS(Constants.APPNAME_W11, appToken);
         Element element = (Element) dom.selectSingleNode("//CASResponse/result");
         assertEquals("FAILURE", element.getText());
     }

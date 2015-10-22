@@ -71,18 +71,10 @@ public class HMCaller extends AbstractURLAPITest {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.callPostAPI("213 627 366");
+        Document docshow = super.post4Document("213 627 366");
         docshow = DocshowParser.getClientparam(docshow);
 
         DocshowParser.printVideoAddresses(docshow);
-    }
-
-    @Test
-    public void testMC2() {
-        MCaller mCaller = new MCaller();
-        HttpClient httpClient = mCaller.getHttpClient();
-        super.setHttpClient(httpClient);
-        super.callPostAPI("210 493 470");
     }
 
     @Test
@@ -91,7 +83,7 @@ public class HMCaller extends AbstractURLAPITest {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.callPostAPI("159 546 916");
+        Document docshow = super.post4Document("159 546 916");
         docshow = DocshowParser.getClientparam(docshow);
         System.out.println(docshow.toString());
         System.out.println("------------------------");
@@ -108,7 +100,7 @@ public class HMCaller extends AbstractURLAPITest {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.callPostAPI("155 334 976", USER_NAME);
+        Document docshow = super.post4Document("155 334 976", USER_NAME);
         docshow = DocshowParser.getClientparam(docshow);
 
         String uploadURL = DocshowParser.getUploadURL(docshow);

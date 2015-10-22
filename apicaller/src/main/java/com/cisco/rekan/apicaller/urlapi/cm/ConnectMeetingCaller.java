@@ -35,7 +35,7 @@ public class ConnectMeetingCaller extends AbstractURLAPITest {
     @Test
     public void test() throws UnsupportedEncodingException {
         // /cm.php?AT=JM&MK=150631521
-        super.callPostAPI("JM", "150631521");
+        super.post4Document("JM", "150631521");
     }
 
 }

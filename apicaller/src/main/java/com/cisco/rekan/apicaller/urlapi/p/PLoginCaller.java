@@ -9,13 +9,13 @@ package com.cisco.rekan.apicaller.urlapi.p;
 import org.apache.http.HttpCoreUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.log4j.Logger;
 import org.jsoup.JsoupUtils;
 import org.junit.Test;
 import org.springframework.util.Assert;
 
 import com.cisco.rekan.apicaller.HttpGetCaller;
+import com.cisco.rekan.apicaller.IHttpCaller;
 import com.cisco.rekan.apicaller.Utils;
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
 
@@ -30,8 +30,8 @@ public class PLoginCaller extends AbstractURLAPITest {
 
     private String wid;
     private String pw;
+    private CookieStore cookieStore;
     static Logger logger = Logger.getLogger(PLoginCaller.class);
-    private CookieStore cookieStore = null;
 
     /**
      * Constructor.
@@ -74,38 +74,36 @@ RESPONSE: https://pluto.qa.webex.com/mw3100/mywebex/default.do?siteurl=pluto&AT=
      * @param password WebEx user password.
      * @return String CSRF string.
      */
-    public String login(String wid, String password) {
+    public HttpResponse login(String wid, String password) {
         this.setWid(wid);
         this.setPw(password);
-        HttpResponse response = super.getAPI();
+        HttpResponse response = super.post();
 //        Utils.printHeaders(response);
 //      CookieStore cookieStore = HttpCoreUtils.parseCookie4Headers(response, super.getDomainURL());
-        logger.info(this.getCookieStore());
+        logger.trace(super.getCookieStore());
 
         String url = JsoupUtils.parseLocationHref4JsScript(response, super.getServerURL());
         logger.info(url);
         String result = Utils.getParamValue4URI(url, "ST");
+        org.junit.Assert.assertEquals("p.php login failed!", "SUCCESS", result);
 
-        if (result.equals("SUCCESS")) {
-            HttpGetCaller caller = new HttpGetCaller(url);
-            ((DefaultHttpClient) caller.getHttpClient()).setCookieStore(this.getCookieStore());
-            HttpResponse response2 = caller.get();
-//            Utils.printHeaders(response2);
-            this.cookieStore = caller.getCookieStore();
-            logger.info(this.getCookieStore());
-            String ticket = HttpCoreUtils.getCookieValue(this.getCookieStore(), "ticket");
-            org.junit.Assert.assertNotNull(ticket);
-            logger.info(ticket);
-        }
+        IHttpCaller mwCaller = new HttpGetCaller(url);
+        mwCaller.setCookieStore(super.getCookieStore());
+        HttpResponse response2 = mwCaller.get();
+//        Utils.printHeaders(response2);
+        this.cookieStore = mwCaller.getCookieStore();
+        logger.trace(this.getCookieStore());
+        String ticket = HttpCoreUtils.getCookieValue(this.getCookieStore(), "ticket");
+        org.junit.Assert.assertNotNull(ticket);
+        logger.info(ticket);
 
-        return result;
+        return response2;
     }
 
     @Test
     public void testLogin() {
         PLoginCaller caller = new PLoginCaller();
-        String result = caller.login("pluto", "P@ss1234");
-        org.junit.Assert.assertEquals(null, "SUCCESS", result);
+        caller.login("pluto", "P@ss1234");
     }
 
     /**
@@ -139,11 +137,8 @@ RESPONSE: https://pluto.qa.webex.com/mw3100/mywebex/default.do?siteurl=pluto&AT=
     /**
      * @return the cookieStore
      */
+    @Override
     public CookieStore getCookieStore() {
-        if (null == cookieStore) {
-            cookieStore = ((DefaultHttpClient) super.getHttpClient()).getCookieStore();
-        }
-
         return cookieStore;
     }
 

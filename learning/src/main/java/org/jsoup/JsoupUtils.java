@@ -93,7 +93,7 @@ public class JsoupUtils {
         Pattern p = Pattern.compile("(?is)location.href=\"(.+?)\""); // Regex for the value of the key
         Matcher m = p.matcher(script.html()); // you have to use html here and NOT text! Text will drop the 'key' part
         while (m.find()) {
-            logger.info(m.group()); // the whole key ('key = value')
+            logger.trace(m.group()); // the whole key ('key = value')
             url = m.group(1); // value only
         }
 

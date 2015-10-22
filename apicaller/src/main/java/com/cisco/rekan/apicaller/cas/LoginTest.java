@@ -74,7 +74,7 @@ public class LoginTest extends AbstractCASTest {
     public void test4GLA() throws WbxAppTokenException {
         String appToken = AppTokenUtil.makeToken(Constants.APPNAME_GLA);
         
-        Document dom = super.callAPI(Constants.CLIENTID_GLA,
+        Document dom = super.callCAS(Constants.CLIENTID_GLA,
                                      "yong03@reaperxuguang01.com",
                                      "P@ssword12345",
                                      Constants.APPNAME_GLA,
@@ -84,60 +84,60 @@ public class LoginTest extends AbstractCASTest {
 
     @Test
     public void LoginNormalUser() {
-        Document dom = super.callAPI(Constants.CLIENTID_PAGE, Constants.EMALI_NORMAL,
+        Document dom = super.callCAS(Constants.CLIENTID_PAGE, Constants.EMALI_NORMAL,
                                      Constants.PASSWORD_NORMAL, Constants.APPNAME_CI);
         String token = getToken(dom);
 
-        Document userInfoDom = new GetUserMetaInfoTest().callAPI(Constants.EMALI_NORMAL, token, Constants.CLIENTID_PAGE);
+        Document userInfoDom = new GetUserMetaInfoTest().callCAS(Constants.EMALI_NORMAL, token, Constants.CLIENTID_PAGE);
         assertNotNull(userInfoDom);
 
     }
 
     @Test
     public void LoginMeetingIM1User() {
-        Document dom = super.callAPI(Constants.CLIENTID_PAGE,
+        Document dom = super.callCAS(Constants.CLIENTID_PAGE,
                                      Constants.EMALI_MEETING_IM_1,
                                      Constants.PASSWORD_NORMAL,
                                      Constants.APPNAME_CI);
         String token = getToken(dom);
 
         Document userInfoDom = new GetUserMetaInfoTest().
-                        callAPI(Constants.EMALI_MEETING_IM_1, token, Constants.CLIENTID_PAGE);
+                        callCAS(Constants.EMALI_MEETING_IM_1, token, Constants.CLIENTID_PAGE);
         assertNotNull(userInfoDom);
 
     }
 
     @Test
     public void LoginMeeting1User() {
-        Document dom = super.callAPI(Constants.CLIENTID_PAGE,
+        Document dom = super.callCAS(Constants.CLIENTID_PAGE,
                                      Constants.EMALI_MEETING_1,
                                      Constants.PASSWORD_NORMAL,
                                      Constants.APPNAME_CI);
         String token = getToken(dom);
 
         Document userInfo = new GetUserMetaInfoTest().
-                        callAPI(Constants.EMALI_MEETING_1, token, Constants.CLIENTID_PAGE);
+                        callCAS(Constants.EMALI_MEETING_1, token, Constants.CLIENTID_PAGE);
         assertNotNull(userInfo);
 
     }
 
     @Test
     public void LoginMeeting2User() {
-        Document dom = super.callAPI(Constants.CLIENTID_PAGE,
+        Document dom = super.callCAS(Constants.CLIENTID_PAGE,
                                      Constants.EMALI_MEETING_2,
                                      Constants.PASSWORD_NORMAL,
                                      Constants.APPNAME_CI);
         String token = getToken(dom);
 
         Document userInfo = new GetUserMetaInfoTest().
-                        callAPI(Constants.EMALI_MEETING_2, token, Constants.CLIENTID_PAGE);
+                        callCAS(Constants.EMALI_MEETING_2, token, Constants.CLIENTID_PAGE);
         assertNotNull(userInfo);
 
     }
 
     @Test
     public void login_MANU_EF_MeetOnly() {
-        Document dom = super.callAPI(Constants.CLIENTID_MANU,
+        Document dom = super.callCAS(Constants.CLIENTID_MANU,
                                      "ciadmin@szv14efmeetingonly2.com",
                                      Constants.PASSWORD_NORMAL,
                                      Constants.APPNAME_CI);
@@ -146,7 +146,7 @@ public class LoginTest extends AbstractCASTest {
 
     @Test
     public void login_MANU_EP_MeetOnly() {
-        Document dom = super.callAPI(Constants.CLIENTID_MANU,
+        Document dom = super.callCAS(Constants.CLIENTID_MANU,
                                      "ciadmin@szv14epmeetonly.com",
                                      Constants.PASSWORD_NORMAL,
                                      Constants.APPNAME_CI);

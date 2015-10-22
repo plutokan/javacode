@@ -46,7 +46,7 @@ public class UserGetAuthInfoCaller extends AbstractURLAPITest {
 
     @Test
     public void test() {
-        HttpResponse response = super.getAPI("pluto", "P@ss123");
+        HttpResponse response = super.get("pluto", "P@ss123");
         Utils.printContent(response);
     }
 

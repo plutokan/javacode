@@ -50,7 +50,7 @@ public class JoinMeetingCaller extends AbstractURLAPITest {
 
     @Test
     public void test() {
-        super.callPostAPI("150631521");
+        super.post4Document("150631521");
     }
 
 }

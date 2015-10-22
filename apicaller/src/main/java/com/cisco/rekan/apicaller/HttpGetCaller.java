@@ -6,16 +6,9 @@
  */
 package com.cisco.rekan.apicaller;
 
-import java.io.IOException;
-
-import org.apache.http.Header;
 import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
-import org.apache.http.client.CookieStore;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.log4j.Logger;
+import org.junit.Assert;
 
 /**
  * <code>HttpGetCaller</code>
@@ -24,63 +17,32 @@ import org.apache.log4j.Logger;
  * @since apicaller Oct 21, 2015
  *
  */
-public class HttpGetCaller {
+public final class HttpGetCaller extends AbstractHttpCaller {
 
     /**
      * logger of log4j 1.x.
      */
     protected static Logger logger = Logger.getLogger(HttpGetCaller.class);
 
-    /**
-     * the caller.
-     */
-    private HttpClient httpClient = Utils.getHttpsClient();
-
-    /**
-     * the http get.
-     */
-    private HttpGet httpGet = null;
-
     public HttpGetCaller(String url) {
-        httpGet = new HttpGet(url);
+        Assert.assertNotNull(url);
+
+        super.setServerURL(url);
     }
 
-    public final HttpResponse get() {
-
-        HttpResponse response = null;
-        try {
-            response = httpClient.execute(httpGet);
-            logger.info(response.getStatusLine());
-        } catch (IOException e) {
-            logger.error(null, e);
-        }
-        return response;
-
-    }
-
-    /**
-     * @return the httpClient
+    /* (non-Javadoc)
+     * @see com.cisco.rekan.apicaller.AbstractHttpCaller#addParams(java.lang.String[])
      */
-    public HttpClient getHttpClient() {
-        return httpClient;
+    @Override
+    public void addParams(String... params) {
+        Assert.assertArrayEquals(new String[0], params);
     }
 
-    /**
-     * @param httpClient the httpClient to set
-     */
-    public void setHttpClient(HttpClient httpClient) {
-        this.httpClient = httpClient;
-    }
+    @Override
+    public final HttpResponse post(String... params) {
+        Assert.fail();
 
-    /**
-     * This method must call after method "call".
-     *
-     * @return cookie store.
-     */
-    public final CookieStore getCookieStore() {
-        CookieStore cookieStore = ((DefaultHttpClient) httpClient).getCookieStore();
-
-        return cookieStore;
+        return null;
     }
 
 }

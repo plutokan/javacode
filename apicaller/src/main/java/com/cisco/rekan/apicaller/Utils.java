@@ -259,8 +259,7 @@ public final class Utils {
 //        }
     }
 
-    public static void printCookies(DefaultHttpClient httpClient) {
-        CookieStore cookieStore = httpClient.getCookieStore();
+    public static void printCookies(CookieStore cookieStore) {
         logger.info(cookieStore.toString());
     }
 

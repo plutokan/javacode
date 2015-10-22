@@ -41,7 +41,7 @@ public class GenerateWebExTokenTest extends AbstractCASTest {
 
     @Test
     public void generatewebextoken() {
-        Document dom = new GenerateWebExTokenTest().callAPI(Constants.APPNAME_CI,
+        Document dom = new GenerateWebExTokenTest().callCAS(Constants.APPNAME_CI,
                                                             Constants.USER_NORMAL);
         assertXMLResultSuccess(dom);
     }

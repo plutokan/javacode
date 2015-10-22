@@ -6,6 +6,8 @@
  */
 package com.cisco.rekan.apicaller.urlapi.w;
 
+import org.apache.http.HttpResponse;
+
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
 
 /**
@@ -25,12 +27,15 @@ public class COCaller extends AbstractURLAPITest {
         return "w.php";
     }
 
+    // TODO
+    public HttpResponse saveOneClickMeeting() {
+        return null;
+    }
 
     /**
      * E.g. 
      * {@literal
-     * w.php?AT=SO&PW=111111&BU=www.baidu.com&TP=OneClick+with+CSRF-MC&SP=3
-     *     &CSRF=d7b7890c-edff-40ba-987f-01592e32b178
+     * w.php?AT=CO&BU=www.baidu.com&CSRF=d7b7890c-edff-40ba-987f-01592e32b178
      * }
      *
      * @param params the parameters like example.

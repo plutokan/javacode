@@ -38,7 +38,7 @@ public class OfficeDFCaller extends AbstractURLAPITest {
     public void test() throws UnsupportedEncodingException {
         // o.php?AT=DF&FN=5_Full.txt&BU=
         String serverURL = URLEncoder.encode(this.getDomainURL() + this.getSiteName(), "UTF-8");
-        super.callPostAPI("/5_Full.txt", serverURL);
+        super.post4Document("/5_Full.txt", serverURL);
     }
 
 }

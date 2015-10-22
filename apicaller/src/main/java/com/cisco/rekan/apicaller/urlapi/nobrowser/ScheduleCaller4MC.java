@@ -6,8 +6,6 @@
  */
 package com.cisco.rekan.apicaller.urlapi.nobrowser;
 
-import java.io.IOException;
-
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.Node;
@@ -15,7 +13,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
-import com.cisco.rekan.apicaller.urlapi.Constants;
 import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
 
 /**
@@ -46,19 +43,13 @@ public class ScheduleCaller4MC extends AbstractURLAPITest {
     public void addParams(String... params) {
     }
 
-    /**
-     * CSCuw69997
-     *
-     * @throws IOException
-     */
-    @Test
-    public void schedule() throws IOException {
+    public long schedule() {
 
         super.addParam("AT", "HM");
         super.addParam("WUN", USER_NAME);
         super.addParam("MN", "test meeting 002");
         super.addParam("MPW", "y3BsuC29");
-        super.addParam("MDT", "10-21-2015 1:0");
+        super.addParam("MDT", "10-23-2015 1:0");
         super.addParam("DU", "60");
         super.addParam("FeatureSupport", "3");
         super.addParam("scheduled", "1");
@@ -68,19 +59,28 @@ public class ScheduleCaller4MC extends AbstractURLAPITest {
         super.addParam("VER", "8.5");
 
         RegistrationCaller loginCaller = new RegistrationCaller();
-        loginCaller.setDomainURL(Constants.QA_SITE);
-        loginCaller.setSiteName(Constants.QA_SITE_NAME);
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        this.setDomainURL(Constants.QA_SITE);
-        this.setSiteName(Constants.QA_SITE_NAME);
-        Document docshow = super.callPostAPI();
+        Document docshow = super.post4Document();
         Node statusNode = docshow.selectSingleNode("//MeetingData/Status");
         Assert.assertNotNull(statusNode);
         String status = statusNode.getText();
         Assert.assertEquals("SUCCESS", status);
+        Node meetingKeyNode = docshow.selectSingleNode("//MeetingData/MeetingKey");
+        Assert.assertNotNull(meetingKeyNode);
+        long meetingKey = Long.parseLong(meetingKeyNode.getText());
+        return meetingKey;
 
+    }
+
+    /**
+     * CSCuw69997
+     */
+    @Test
+    public void testSchedule() {
+        long meetingKey = this.schedule();
+        Assert.assertNotEquals(0l, meetingKey);
     }
 
 }

@@ -54,12 +54,12 @@ public class LICaller extends AbstractURLAPITest {
     public void testLI() {
         // outlook.php?AT=LI&WID=pluto&WPW=...
         super.addParam("WPW", USER_ENCRYPTED_PASSWORD);
-        super.callPostAPI("LI");
+        super.post4Document("LI");
 
         // outlook.php?AT=LI&WID=pluto&PWPW=P@ss123
         super.reset();
         super.addParam("PWPW", USER_PASSWORD);
-        super.callPostAPI("LI");
+        super.post4Document("LI");
     }
 
     @Test
@@ -67,12 +67,12 @@ public class LICaller extends AbstractURLAPITest {
         // outlook.php?AT=LI&WID=pluto&WPW=...&NPW=...
         super.addParam("WPW", USER_ENCRYPTED_PASSWORD);
         super.addParam("NPW", USER_NEW_ENCRYPTED_PASSWORD);
-        super.callPostAPI("LI");
+        super.post4Document("LI");
 
         // outlook.php?AT=LI&WID=pluto&PWPW=...&PNPW=...
         super.reset();
         super.addParam("PWPW", USER_NEW_PASSWORD);
         super.addParam("PNPW", USER_PASSWORD);
-        super.callPostAPI("LI");    }
+        super.post4Document("LI");    }
 
 }

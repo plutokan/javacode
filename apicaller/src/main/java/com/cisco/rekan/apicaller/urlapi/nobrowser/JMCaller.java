@@ -67,7 +67,7 @@ public class JMCaller extends AbstractURLAPITest {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.callPostAPI("150 334 765", USER_NAME);
+        Document docshow = super.post4Document("150 334 765", USER_NAME);
         docshow = DocshowParser.getClientparam(docshow);
     }
 
@@ -77,7 +77,7 @@ public class JMCaller extends AbstractURLAPITest {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.callPostAPI("159 546 916");
+        Document docshow = super.post4Document("159 546 916");
         docshow = DocshowParser.getClientparam(docshow);
         System.out.println(docshow.toString());
         System.out.println("------------------------");
@@ -94,7 +94,7 @@ public class JMCaller extends AbstractURLAPITest {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.callPostAPI("157 322 706", USER_NAME);
+        Document docshow = super.post4Document("157 322 706", USER_NAME);
         docshow = DocshowParser.getClientparam(docshow);
 
         String uploadURL = DocshowParser.getUploadURL(docshow);

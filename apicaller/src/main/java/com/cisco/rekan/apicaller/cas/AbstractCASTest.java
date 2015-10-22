@@ -20,17 +20,18 @@ import com.cisco.rekan.apicaller.Utils;
  * @since MyCode Nov 5, 2013
  *
  */
-public abstract class AbstractCASTest extends AbstractHttpCaller {
+public abstract class AbstractCASTest extends AbstractHttpCaller implements ICasCaller {
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.IAPICaller#callAPI(java.lang.String[])
      */
-    public Document callAPI(String... params) {
+    @Override
+    public Document callCAS(String... params) {
         if (null == super.getServerURL()) {
             super.setServerURL(Constants.CAS_SERVER_URL);
         }
 
-        return super.callPostAPI(params);
+        return super.post4Document(params);
     }
 
     /**

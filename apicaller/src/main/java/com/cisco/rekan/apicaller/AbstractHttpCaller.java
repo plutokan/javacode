@@ -23,6 +23,7 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
@@ -46,7 +47,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
     protected static Logger logger = Logger.getLogger(AbstractHttpCaller.class);
 
     /** The server url. */
-    private String serverURL = "";
+    private String serverURL = null;
 
     /** The parameters. */
     private List<NameValuePair> parameters = new ArrayList<NameValuePair>();
@@ -55,20 +56,6 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      * the caller.
      */
     private HttpClient httpClient = null;
-
-    /**
-     * @return the httpClient
-     */
-    public HttpClient getHttpClient() {
-        return httpClient;
-    }
-
-    /**
-     * @param httpClient the httpClient to set
-     */
-    public void setHttpClient(HttpClient httpClient) {
-        this.httpClient = httpClient;
-    }
 
     /**
      * @return the parameters
@@ -95,7 +82,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      * @see #callPostAPI()
      */
     @Override
-    public HttpResponse getAPI(String... params) {
+    public HttpResponse get(String... params) {
         Assert.notNull(this.serverURL);
 
         this.addParams(params);
@@ -110,7 +97,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
         getStr = this.serverURL + getStr;
         HttpGet httpGet = new HttpGet(getStr);
 
-        HttpResponse response = this.call(httpGet);
+        HttpResponse response = this.callViaHttpClient(httpGet);
 
         return response;
     }
@@ -129,7 +116,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      * @return HttpResponse http response.
      */
     @Override
-    public HttpResponse postAPI(String... params) {
+    public HttpResponse post(String... params) {
 
         this.addParams(params);
 
@@ -142,7 +129,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
             logger.error(null, e);
         }
 
-        HttpResponse response = call(httpPost);
+        HttpResponse response = callViaHttpClient(httpPost);
 
         return response;
     }
@@ -151,7 +138,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      * @param httpUriRequest
      * @return
      */
-    private HttpResponse call(HttpUriRequest httpUriRequest) {
+    protected HttpResponse callViaHttpClient(HttpUriRequest httpUriRequest) {
         if (this.httpClient == null) {
             this.httpClient = Utils.getHttpClient(this.serverURL);
         }
@@ -181,8 +168,8 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      * @param params HttpRequest parameters.
      * @return a document of DOM4J.
      */
-    public Document callPostAPI(String... params) {
-        HttpResponse response = this.postAPI(params);
+    public Document post4Document(String... params) {
+        HttpResponse response = this.post(params);
         HttpEntity responseEntity = response.getEntity();
         String result = null;
         try {
@@ -212,6 +199,47 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      */
     public void addParam(String paramName, String paramValue) {
         this.parameters.add(new BasicNameValuePair(paramName, paramValue));
+    }
+
+    /**
+     * This method must call before method "call".
+     *
+     * @return cookie store.
+     */
+    @Override
+    public void setCookieStore(CookieStore cookieStore) {
+        if (null == httpClient) {
+            Assert.notNull(this.serverURL);
+            httpClient = Utils.getHttpClient(serverURL);
+        }
+
+        if (null != httpClient
+                && httpClient instanceof DefaultHttpClient) {
+            ((DefaultHttpClient) httpClient).setCookieStore(cookieStore);
+            logger.info("Set cookie successfully! " + cookieStore.toString());
+        }
+
+        return;
+    }
+
+
+    /**
+     * This method must call after method "call".
+     *
+     * @return cookie store.
+     */
+    @Override
+    public CookieStore getCookieStore() {
+        CookieStore cookieStore;
+
+        if (null != httpClient
+                && httpClient instanceof DefaultHttpClient) {
+            cookieStore = ((DefaultHttpClient) httpClient).getCookieStore();
+        } else {
+            cookieStore = new BasicCookieStore();
+        }
+
+        return cookieStore;
     }
 
     /**
