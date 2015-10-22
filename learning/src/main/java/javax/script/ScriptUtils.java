@@ -42,7 +42,7 @@ public final class ScriptUtils {
         ScriptEngineManager factory = new ScriptEngineManager();
         ScriptEngine engine = factory.getEngineByName("JavaScript");
         Object o = engine.eval("decodeURIComponent('" + jsEncodeUrl + "')");
-        logger.info(o);
+        logger.debug(o);
 
         Assert.notNull(o);
         return o.toString();

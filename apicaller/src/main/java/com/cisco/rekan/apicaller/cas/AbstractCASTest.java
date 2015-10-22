@@ -9,7 +9,7 @@ package com.cisco.rekan.apicaller.cas;
 
 import org.dom4j.Document;
 
-import com.cisco.rekan.apicaller.HttpAPICaller;
+import com.cisco.rekan.apicaller.AbstractHttpCaller;
 import com.cisco.rekan.apicaller.Utils;
 
 
@@ -20,7 +20,7 @@ import com.cisco.rekan.apicaller.Utils;
  * @since MyCode Nov 5, 2013
  *
  */
-public abstract class AbstractCASTest extends HttpAPICaller {
+public abstract class AbstractCASTest extends AbstractHttpCaller {
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.IAPICaller#callAPI(java.lang.String[])

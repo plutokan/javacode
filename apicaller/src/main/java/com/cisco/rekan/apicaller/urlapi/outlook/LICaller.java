@@ -57,7 +57,7 @@ public class LICaller extends AbstractURLAPITest {
         super.callPostAPI("LI");
 
         // outlook.php?AT=LI&WID=pluto&PWPW=P@ss123
-        super.clear();
+        super.reset();
         super.addParam("PWPW", USER_PASSWORD);
         super.callPostAPI("LI");
     }
@@ -70,7 +70,7 @@ public class LICaller extends AbstractURLAPITest {
         super.callPostAPI("LI");
 
         // outlook.php?AT=LI&WID=pluto&PWPW=...&PNPW=...
-        super.clear();
+        super.reset();
         super.addParam("PWPW", USER_NEW_PASSWORD);
         super.addParam("PNPW", USER_PASSWORD);
         super.callPostAPI("LI");    }

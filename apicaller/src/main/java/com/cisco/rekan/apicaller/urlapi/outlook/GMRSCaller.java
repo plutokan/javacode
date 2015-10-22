@@ -59,7 +59,7 @@ public class GMRSCaller extends AbstractURLAPITest {
         super.callPostAPI("152 546 004");
 
         // outlook.php?AT=LI&WID=pluto&PWPW=P@ss123
-        super.clear();
+        super.reset();
         super.addParam("PWPW", USER_PASSWORD);
         super.addParam("ST", "6");
         super.callPostAPI("152 546 004");

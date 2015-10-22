@@ -22,15 +22,20 @@ import javax.net.ssl.X509TrustManager;
 
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.CharEncoding;
+import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.CookieStore;
 import org.apache.http.client.HttpClient;
+import org.apache.http.client.params.ClientPNames;
+import org.apache.http.client.params.CookiePolicy;
 import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.http.conn.scheme.Scheme;
 import org.apache.http.conn.scheme.SchemeRegistry;
 import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
@@ -39,6 +44,8 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.springframework.util.Assert;
+
+import com.cisco.rekan.apicaller.urlapi.Constants;
 
 /**
  * <code>Utils</code>
@@ -83,12 +90,12 @@ public final class Utils {
     public static HttpClient getHttpClient(String url) {
         HttpClient httpclient = null;
 
-        if (url.startsWith("https://")) {
+        if (url.startsWith(Constants.PROTOCOL_HTTPS)) {
             httpclient = Utils.getHttpsClient();
-        } else if (url.startsWith("http://")) {
+        } else if (url.startsWith(Constants.PROTOCOL_HTTP)) {
             httpclient = Utils.getHttpClient();
         } else {
-            throw new RuntimeException("Not supported protocol.");
+            throw new RuntimeException("Not supported scheme.");
         }
 
         return httpclient;
@@ -101,7 +108,9 @@ public final class Utils {
      */
     public static HttpClient getHttpClient() {
 //        HttpClient httpclient = HttpClients.createDefault();
-        HttpClient httpclient = new DefaultHttpClient();
+        DefaultHttpClient httpclient = new DefaultHttpClient();
+        // Fixed the issue: reject cookie with the domain not start with a dot.
+        httpclient.getParams().setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.BROWSER_COMPATIBILITY); 
 
         return httpclient;
     }
@@ -113,6 +122,18 @@ public final class Utils {
      */
     public static HttpClient getHttpsClient() {
         HttpClient httpclient = getHttpClient();
+        httpclient = WebClientDevWrapper.wrapClient(httpclient);
+
+        return httpclient;
+    }
+
+    /**
+     * Gets the https client.
+     *
+     * @return the https client
+     */
+    public static HttpClient getHttpsClientWithCookies(CookieStore cookieStore) {
+        HttpClient httpclient = HttpClientBuilder.create().setDefaultCookieStore(cookieStore).build();
         httpclient = WebClientDevWrapper.wrapClient(httpclient);
 
         return httpclient;
@@ -147,8 +168,8 @@ public final class Utils {
                 ctx.init(null, new TrustManager[] { tm }, null);
                 SSLSocketFactory ssf = new SSLSocketFactory(ctx, SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
                 SchemeRegistry registry = new SchemeRegistry();
-                registry.register(new Scheme("https", 443, ssf));
-                registry.register(new Scheme("http", 80, ssf));
+                registry.register(new Scheme(Constants.PROTOCOL_HTTPS, 443, ssf));
+                registry.register(new Scheme(Constants.PROTOCOL_HTTP, 80, ssf));
                 ThreadSafeClientConnManager mgr = new ThreadSafeClientConnManager(registry);
 
                 return new DefaultHttpClient(mgr, base.getParams());
@@ -184,11 +205,11 @@ public final class Utils {
         Assert.notNull(uri);
         List<NameValuePair> params = URLEncodedUtils.parse(new URI(uri), CharEncoding.UTF_8);
 
-        if (CollectionUtils.isNotEmpty(params)) {
-            for (NameValuePair param : params) {
-                logger.info(param.getName() + " : " + param.getValue());
-            }
-        }
+//        if (CollectionUtils.isNotEmpty(params)) {
+//            for (NameValuePair param : params) {
+//                logger.debug(param.getName() + " : " + param.getValue());
+//            }
+//        }
 
         return params;
     }
@@ -206,7 +227,7 @@ public final class Utils {
         String paramValue = null;
         if (CollectionUtils.isNotEmpty(params)) {
             for (NameValuePair param : params) {
-                if (paramName.equals(param.getName())) {
+                if (paramName.equalsIgnoreCase(param.getName())) {
                     paramValue = param.getValue();
                     break;
                 }
@@ -227,6 +248,20 @@ public final class Utils {
             logger.error(null, e);
         }
         logger.info(result);
+    }
+
+    public static void printHeaders(HttpResponse response) {
+//        if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
+            Header[] headers = response.getAllHeaders();
+            for (Header header : headers) {
+                logger.info(header.getName() + " : " + header.getValue());
+            }
+//        }
+    }
+
+    public static void printCookies(DefaultHttpClient httpClient) {
+        CookieStore cookieStore = httpClient.getCookieStore();
+        logger.info(cookieStore.toString());
     }
 
 }

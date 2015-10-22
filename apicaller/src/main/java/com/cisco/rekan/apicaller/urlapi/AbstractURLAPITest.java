@@ -11,7 +11,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpResponse;
 import org.dom4j.Document;
 
-import com.cisco.rekan.apicaller.HttpAPICaller;
+import com.cisco.rekan.apicaller.AbstractHttpCaller;
 
 
 /**
@@ -21,9 +21,9 @@ import com.cisco.rekan.apicaller.HttpAPICaller;
  * @since MyCode Mar 21, 2014
  *
  */
-public abstract class AbstractURLAPITest extends HttpAPICaller {
+public abstract class AbstractURLAPITest extends AbstractHttpCaller {
 
-    private String schema = Constants.PROTOCOL_HTTPS;
+    private String scheme = Constants.PROTOCOL_HTTPS;
     private String domainURL = Constants.WEBEX_SITE_1;
     private String siteName = Constants.WEBEX_SITE_NAME_1;
 
@@ -47,7 +47,7 @@ public abstract class AbstractURLAPITest extends HttpAPICaller {
     }
 
     private String setupURI() {
-        return getSchema() + "://" + getDomainURL() + "/" + getSiteName() + "/" + this.getPhpName();
+        return getScheme() + "://" + getDomainURL() + "/" + getSiteName() + "/" + this.getPhpName();
     }
 
     @Override
@@ -69,17 +69,17 @@ public abstract class AbstractURLAPITest extends HttpAPICaller {
     }
 
     /**
-     * @return the schema
+     * @return the scheme
      */
-    public String getSchema() {
-        return schema;
+    protected String getScheme() {
+        return scheme;
     }
 
     /**
-     * @param schema the schema to set
+     * @param scheme the scheme to set
      */
-    public void setSchema(String schema) {
-        this.schema = schema;
+    protected void setScheme(String scheme) {
+        this.scheme = scheme;
     }
 
     /**

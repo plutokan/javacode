@@ -17,11 +17,13 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
+import org.apache.http.client.CookieStore;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
@@ -30,18 +32,18 @@ import org.springframework.util.Assert;
 
 
 /**
- * <code>HttpAPICaller</code>
+ * <code>AbstractHttpCaller</code>
  *
  * @author <a href="mailto:pluto.kan@gmail.com">Pluto Kan</a>
  * @since MyCode Mar 21, 2014
  *
  */
-public abstract class HttpAPICaller implements IAPICaller {
+public abstract class AbstractHttpCaller implements IHttpCaller {
 
     /**
      * logger of log4j 1.x.
      */
-    protected static Logger logger = Logger.getLogger(HttpAPICaller.class);
+    protected static Logger logger = Logger.getLogger(AbstractHttpCaller.class);
 
     /** The server url. */
     private String serverURL = "";
@@ -161,9 +163,11 @@ public abstract class HttpAPICaller implements IAPICaller {
             if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
                 Header[] headers = response.getAllHeaders();
                 for (Header header : headers) {
-                    logger.debug(header.getName() + " : " + header.getValue());
+                    logger.trace(header.getName() + " : " + header.getValue());
                 }
             }
+            CookieStore cookieStore = ((DefaultHttpClient) httpClient).getCookieStore();
+            logger.trace(cookieStore.toString());
         } catch (IOException e) {
             logger.error(null, e);
         }
@@ -213,7 +217,7 @@ public abstract class HttpAPICaller implements IAPICaller {
     /**
      * Clear.
      */
-    protected void clear() {
+    protected void reset() {
         this.serverURL = "";
         this.parameters.clear();
         this.httpClient = null;

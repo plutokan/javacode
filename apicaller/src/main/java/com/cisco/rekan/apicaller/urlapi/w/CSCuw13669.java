@@ -7,6 +7,9 @@
 package com.cisco.rekan.apicaller.urlapi.w;
 
 import org.apache.http.HttpResponse;
+import org.apache.http.client.CookieStore;
+import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.log4j.Level;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -31,18 +34,27 @@ public class CSCuw13669 {
         logger.setLevel(Level.DEBUG);
         PLoginCaller loginCaller = new PLoginCaller();
         String csrf = loginCaller.login("pluto", "P@ss1234");
-//        String csrf = "bc019a4d-3e99-4f45-baec-7cf64514589a";
+        CookieStore cookieStore = loginCaller.getCookieStore();
 
+        // javax.net.ssl.SSLHandshakeException: Remote host closed connection during handshake
 //        SOCaller wSOCaller = new SOCaller();
 ////        wSOCaller.setProtocol(Constants.PROTOCOL_HTTP);
 //        wSOCaller.setHttpClient(loginCaller.getHttpClient());
 //        HttpResponse response = wSOCaller.getAPI(csrf);
 //        Utils.printContent(response);
 
+//        HttpClient client = Utils.getHttpsClientWithCookies(cookieStore);
         COCaller wCOCaller = new COCaller();
-        wCOCaller.setHttpClient(loginCaller.getHttpClient());
+        HttpClient client = Utils.getHttpsClient();
+        ((DefaultHttpClient) client).setCookieStore(cookieStore);
+        wCOCaller.setHttpClient(client);
         HttpResponse response2 = wCOCaller.getAPI(csrf);
         Utils.printContent(response2);
+    }
+
+    @Test
+    public void getSession() {
+        
     }
 
 }

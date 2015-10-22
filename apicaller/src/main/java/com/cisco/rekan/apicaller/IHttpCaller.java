@@ -11,13 +11,13 @@ import org.apache.http.HttpResponse;
 
 
 /**
- * <code>IAPICaller</code>
+ * <code>IHttpCaller</code>
  *
  * @author Pluto Kan, rekan@cisco.com
  * @since MyCode Nov 5, 2013
  *
  */
-public interface IAPICaller {
+public interface IHttpCaller {
 
     /**
      * Call API via get method.
