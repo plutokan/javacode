@@ -89,6 +89,7 @@ public class JsoupUtils {
         String url = null;
         Document doc = Jsoup.parse(inStream, charsetName, baseUri);
         Element script = doc.select("script").first();
+        Assert.notNull(script);
 
         Pattern p = Pattern.compile("(?is)location.href=\"(.+?)\""); // Regex for the value of the key
         Matcher m = p.matcher(script.html()); // you have to use html here and NOT text! Text will drop the 'key' part
