@@ -6,9 +6,15 @@
  */
 package com.cisco.rekan.apicaller.urlapi.w;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpResponse;
+import org.apache.http.client.CookieStore;
+import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.Utils;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
+import com.cisco.rekan.apicaller.urlapi.URLAPIUtils;
+import com.cisco.rekan.apicaller.urlapi.p.PLoginCaller;
 
 /**
  * <code>COCaller</code>
@@ -17,7 +23,38 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
  * @since apicaller Oct 12, 2015
  *
  */
-public class COCaller extends AbstractURLAPITest {
+public class COCaller extends AbstractURLAPICaller {
+
+    private String bu = "www.baidu.com";
+    private String csrf = null;
+
+    /**
+     * @return the bu
+     */
+    protected String getBu() {
+        return bu;
+    }
+
+    /**
+     * @param bu the bu to set
+     */
+    protected void setBu(String bu) {
+        this.bu = bu;
+    }
+
+    /**
+     * @return the csrf
+     */
+    protected String getCsrf() {
+        return csrf;
+    }
+
+    /**
+     * @param csrf the csrf to set
+     */
+    protected void setCsrf(String csrf) {
+        this.csrf = csrf;
+    }
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest#getPhpName()
@@ -28,8 +65,26 @@ public class COCaller extends AbstractURLAPITest {
     }
 
     // TODO
-    public HttpResponse saveOneClickMeeting() {
-        return null;
+    public HttpResponse createOneClickMeeting() {
+        return get();
+    }
+
+    public HttpResponse get() {
+        HttpResponse response = super.get(csrf);
+        Utils.printHeaders(response);
+        logger.debug(super.getCookieStore());
+
+        HttpResponse response2 = super.redirectViaJsp(response);
+        return response2;
+    }
+
+    public HttpResponse post() {
+        HttpResponse response = super.post(csrf);
+        Utils.printHeaders(response);
+        logger.debug(super.getCookieStore());
+
+        HttpResponse response2 = super.redirectViaJsp(response);
+        return response2;
     }
 
     /**
@@ -43,11 +98,29 @@ public class COCaller extends AbstractURLAPITest {
     @Override
     public void addParams(String... params) {
         super.addParam("AT", "CO");
-        super.addParam("BU", "www.baidu.com");
 
         if (params.length >= 1) {
-            super.addParam("CSRF", params[0]);
+            csrf = params[0];
         }
+        if (StringUtils.isNotEmpty(bu)) {
+            super.addParam("BU", bu);
+        }
+        if (StringUtils.isNotEmpty(csrf)) {
+            super.addParam("CSRF", csrf);
+        }
+    }
+
+    @Test
+    public void testCreate() {
+        PLoginCaller loginCaller = new PLoginCaller();
+        loginCaller.login("pluto", "P@ss1234");
+        CookieStore cookieStore = loginCaller.getCookieStore();
+
+        COCaller coCaller = new COCaller();
+        coCaller.setCookieStore(cookieStore);
+        coCaller.setCsrf(URLAPIUtils.getCsrf(cookieStore));
+        HttpResponse response = coCaller.get();
+        Utils.printContent(response);
     }
 
 }

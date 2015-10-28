@@ -12,7 +12,7 @@ import org.dom4j.Node;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
 
 /**
@@ -22,7 +22,7 @@ import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
  * @since apicaller Oct 20, 2015
  *
  */
-public class ScheduleCaller4MC extends AbstractURLAPITest {
+public class ScheduleCaller4MC extends AbstractURLAPICaller {
 
     private static final String USER_NAME = "pluto";
     private static final String USER_PASSWORD = "P@ss1234";

@@ -36,6 +36,7 @@ import org.apache.http.conn.scheme.SchemeRegistry;
 import org.apache.http.conn.ssl.SSLSocketFactory;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.LaxRedirectStrategy;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
@@ -110,7 +111,8 @@ public final class Utils {
 //        HttpClient httpclient = HttpClients.createDefault();
         DefaultHttpClient httpclient = new DefaultHttpClient();
         // Fixed the issue: reject cookie with the domain not start with a dot.
-        httpclient.getParams().setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.BROWSER_COMPATIBILITY); 
+        httpclient.getParams().setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.BROWSER_COMPATIBILITY);
+        httpclient.setRedirectStrategy(new LaxRedirectStrategy());
 
         return httpclient;
     }
@@ -240,6 +242,8 @@ public final class Utils {
      * @param response HttpResponse.
      */
     public static void printContent(HttpResponse response) {
+        Assert.notNull(response);
+
         HttpEntity responseEntity = response.getEntity();
         String result = null;
         try {
@@ -251,6 +255,8 @@ public final class Utils {
     }
 
     public static void printHeaders(HttpResponse response) {
+        Assert.notNull(response);
+
 //        if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
             Header[] headers = response.getAllHeaders();
             for (Header header : headers) {
@@ -260,6 +266,8 @@ public final class Utils {
     }
 
     public static void printCookies(CookieStore cookieStore) {
+        Assert.notNull(cookieStore);
+
         logger.info(cookieStore.toString());
     }
 

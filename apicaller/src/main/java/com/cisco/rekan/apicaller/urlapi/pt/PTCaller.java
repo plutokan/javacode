@@ -7,7 +7,7 @@
 
 package com.cisco.rekan.apicaller.urlapi.pt;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 
 /**
@@ -17,7 +17,7 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
  * @since MyCode Mar 21, 2014
  *
  */
-public class PTCaller extends AbstractURLAPITest {
+public class PTCaller extends AbstractURLAPICaller {
 
     @Override
     public void addParams(String... params) {

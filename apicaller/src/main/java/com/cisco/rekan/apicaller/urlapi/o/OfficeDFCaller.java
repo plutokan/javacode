@@ -11,7 +11,7 @@ import java.net.URLEncoder;
 
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
  * <code>OfficeDFCaller</code>
@@ -20,7 +20,7 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
  * @since MyCode Aug 14, 2014
  *
  */
-public class OfficeDFCaller extends AbstractURLAPITest {
+public class OfficeDFCaller extends AbstractURLAPICaller {
 
     @Override
     public String getPhpName() {

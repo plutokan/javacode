@@ -9,7 +9,7 @@ package com.cisco.rekan.apicaller.urlapi.outlook;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
  * <code>GMRSCaller</code>
@@ -18,7 +18,7 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
  * @since MyCode Aug 25, 2014
  *
  */
-public class XLICaller extends AbstractURLAPITest {
+public class XLICaller extends AbstractURLAPICaller {
 
     private static final String USER_NAME = "pluto";
     private static final String USER_PASSWORD = "P@ss123";

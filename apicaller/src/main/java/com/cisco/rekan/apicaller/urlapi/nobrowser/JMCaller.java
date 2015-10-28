@@ -13,7 +13,7 @@ import org.apache.commons.lang.StringUtils;
 import org.dom4j.Document;
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 import com.cisco.rekan.apicaller.urlapi.DocshowParser;
 import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
 
@@ -24,7 +24,7 @@ import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
  * @since MyCode Aug 27, 2014
  *
  */
-public class JMCaller extends AbstractURLAPITest {
+public class JMCaller extends AbstractURLAPICaller {
 
     private static final String USER_NAME = "pluto4";
     private static final String USER_PASSWORD = "P@ss123";

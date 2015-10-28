@@ -8,7 +8,7 @@ package com.cisco.rekan.apicaller.urlapi.j;
 
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
  * <code>JoinMeetingCaller</code>
@@ -27,7 +27,7 @@ https://deweb2.qa.webex.com/mw0401lsp11/mywebex/default.do?service=1&main_url=%2
  * @since MyCode Aug 21, 2014
  *
  */
-public class JoinMeetingCaller extends AbstractURLAPITest {
+public class JoinMeetingCaller extends AbstractURLAPICaller {
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getPhpName()

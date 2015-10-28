@@ -17,7 +17,7 @@ import org.junit.Assert;
  * @since apicaller Oct 21, 2015
  *
  */
-public final class HttpGetCaller extends AbstractHttpCaller {
+public final class HttpGetCaller extends AbstractHttpCaller implements ICaller<HttpResponse> {
 
     /**
      * logger of log4j 1.x.
@@ -43,6 +43,14 @@ public final class HttpGetCaller extends AbstractHttpCaller {
         Assert.fail();
 
         return null;
+    }
+
+    /* (non-Javadoc)
+     * @see com.cisco.rekan.apicaller.ICaller#call(java.lang.Object)
+     */
+    @Override
+    public HttpResponse call() {
+        return get();
     }
 
 }

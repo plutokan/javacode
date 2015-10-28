@@ -14,7 +14,7 @@ import org.dom4j.Element;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
  * <code>RegistrationCaller</code>
@@ -23,7 +23,7 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
  * @since MyCode Aug 27, 2014
  *
  */
-public class RegistrationCaller extends AbstractURLAPITest {
+public class RegistrationCaller extends AbstractURLAPICaller {
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.HttpAPICaller#addParams(java.lang.String[])

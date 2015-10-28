@@ -10,7 +10,7 @@ import java.io.UnsupportedEncodingException;
 
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
  * <code>ConnectMeetingCaller</code>
@@ -19,7 +19,7 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
  * @since MyCode Aug 14, 2014
  *
  */
-public class ConnectMeetingCaller extends AbstractURLAPITest {
+public class ConnectMeetingCaller extends AbstractURLAPICaller {
 
     @Override
     public String getPhpName() {

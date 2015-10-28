@@ -6,7 +6,6 @@
  */
 package com.cisco.rekan.apicaller.urlapi.w;
 
-import org.apache.http.HttpCoreUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.log4j.Level;
@@ -15,6 +14,7 @@ import org.apache.log4j.Logger;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.Utils;
+import com.cisco.rekan.apicaller.urlapi.URLAPIUtils;
 import com.cisco.rekan.apicaller.urlapi.p.PLoginCaller;
 
 /**
@@ -44,8 +44,8 @@ public class CSCuw13669 {
 //        HttpClient client = Utils.getHttpsClientWithCookies(cookieStore);
         COCaller wCOCaller = new COCaller();
         wCOCaller.setCookieStore(cookieStore);
-        String csrf = HttpCoreUtils.getCookieValue(cookieStore, "_csrf_");
-        HttpResponse response2 = wCOCaller.get(csrf);
+        wCOCaller.setCsrf(URLAPIUtils.getCsrf(cookieStore));
+        HttpResponse response2 = wCOCaller.post();
         Utils.printHeaders(response2);
         Utils.printCookies(wCOCaller.getCookieStore());
         Utils.printContent(response2);

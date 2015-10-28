@@ -6,18 +6,12 @@
  */
 package com.cisco.rekan.apicaller.urlapi.p;
 
-import org.apache.http.HttpCoreUtils;
 import org.apache.http.HttpResponse;
-import org.apache.http.client.CookieStore;
 import org.apache.log4j.Logger;
-import org.jsoup.JsoupUtils;
 import org.junit.Test;
 import org.springframework.util.Assert;
 
-import com.cisco.rekan.apicaller.HttpGetCaller;
-import com.cisco.rekan.apicaller.IHttpCaller;
-import com.cisco.rekan.apicaller.Utils;
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
  * <code>PLoginCaller</code>
@@ -26,11 +20,10 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
  * @since apicaller Sep 30, 2015
  *
  */
-public class PLoginCaller extends AbstractURLAPITest {
+public class PLoginCaller extends AbstractURLAPICaller {
 
     private String wid;
     private String pw;
-    private CookieStore cookieStore;
     static Logger logger = Logger.getLogger(PLoginCaller.class);
 
     /**
@@ -79,23 +72,7 @@ RESPONSE: https://pluto.qa.webex.com/mw3100/mywebex/default.do?siteurl=pluto&AT=
         this.setPw(password);
         HttpResponse response = super.post();
 //        Utils.printHeaders(response);
-//      CookieStore cookieStore = HttpCoreUtils.parseCookie4Headers(response, super.getDomainURL());
-        logger.trace(super.getCookieStore());
-
-        String url = JsoupUtils.parseLocationHref4JsScript(response, super.getServerURL());
-        logger.info(url);
-        String result = Utils.getParamValue4URI(url, "ST");
-        org.junit.Assert.assertEquals("p.php login failed!", "SUCCESS", result);
-
-        IHttpCaller mwCaller = new HttpGetCaller(url);
-        mwCaller.setCookieStore(super.getCookieStore());
-        HttpResponse response2 = mwCaller.get();
-//        Utils.printHeaders(response2);
-        this.cookieStore = mwCaller.getCookieStore();
-        logger.trace(this.getCookieStore());
-        String ticket = HttpCoreUtils.getCookieValue(this.getCookieStore(), "ticket");
-        org.junit.Assert.assertNotNull(ticket);
-        logger.info(ticket);
+        HttpResponse response2 = super.redirectViaJsp(response);
 
         return response2;
     }
@@ -132,14 +109,6 @@ RESPONSE: https://pluto.qa.webex.com/mw3100/mywebex/default.do?siteurl=pluto&AT=
      */
     protected void setPw(String pw) {
         this.pw = pw;
-    }
-
-    /**
-     * @return the cookieStore
-     */
-    @Override
-    public CookieStore getCookieStore() {
-        return cookieStore;
     }
 
 }

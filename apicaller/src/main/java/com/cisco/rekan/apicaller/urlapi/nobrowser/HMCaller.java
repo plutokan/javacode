@@ -15,7 +15,7 @@ import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 import com.cisco.rekan.apicaller.urlapi.DocshowParser;
 import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
 import com.cisco.rekan.apicaller.urlapi.m.MCaller;
@@ -27,7 +27,7 @@ import com.cisco.rekan.apicaller.urlapi.m.MCaller;
  * @since MyCode Aug 27, 2014
  *
  */
-public class HMCaller extends AbstractURLAPITest {
+public class HMCaller extends AbstractURLAPICaller {
 
     private static final String USER_NAME = "pluto";
     private static final String USER_PASSWORD = "P@ss1234";

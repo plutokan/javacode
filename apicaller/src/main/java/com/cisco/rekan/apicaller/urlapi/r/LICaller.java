@@ -8,7 +8,7 @@ package com.cisco.rekan.apicaller.urlapi.r;
 
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
  * <code>LICaller</code>
@@ -17,7 +17,7 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
  * @since MyCode Aug 26, 2014
  *
  */
-public class LICaller extends AbstractURLAPITest {
+public class LICaller extends AbstractURLAPICaller {
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getPhpName()

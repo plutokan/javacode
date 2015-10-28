@@ -3,7 +3,7 @@ package com.cisco.rekan.apicaller.urlapi.m;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
  * <code>MCaller</code>
@@ -33,7 +33,7 @@ Error. Invalid input or system error. Please try again or contact your site admi
  * @since 2.0
  *
  */
-public class MCaller extends AbstractURLAPITest {
+public class MCaller extends AbstractURLAPICaller {
 
     @Before
     public void initilize() {

@@ -10,7 +10,7 @@ import org.apache.http.HttpResponse;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.Utils;
-import com.cisco.rekan.apicaller.urlapi.AbstractURLAPITest;
+import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
  * <code>UserGetAuthInfoCaller</code>
@@ -21,7 +21,7 @@ http://deweb2.qa.webex.com/dewd-pluto/user.php?AT=GetAuthInfo&UN=pluto&PW=P@ss12
  * @since MyCode Aug 22, 2014
  *
  */
-public class UserGetAuthInfoCaller extends AbstractURLAPITest {
+public class UserGetAuthInfoCaller extends AbstractURLAPICaller {
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getPhpName()

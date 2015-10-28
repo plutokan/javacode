@@ -57,6 +57,9 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      */
     private HttpClient httpClient = null;
 
+    private CookieStore cookieStore;
+
+
     /**
      * @return the parameters
      */
@@ -153,8 +156,8 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
                     logger.trace(header.getName() + " : " + header.getValue());
                 }
             }
-            CookieStore cookieStore = ((DefaultHttpClient) httpClient).getCookieStore();
-            logger.trace(cookieStore.toString());
+            cookieStore = ((DefaultHttpClient) httpClient).getCookieStore();
+            logger.trace(cookieStore);
         } catch (IOException e) {
             logger.error(null, e);
         }
@@ -177,7 +180,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
         } catch (IOException e) {
             logger.error(null, e);
         }
-        logger.debug(result);
+        logger.trace(result);
 
         Document resultDoc = Utils.convertStr2Dom(result);
 
@@ -216,7 +219,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
         if (null != httpClient
                 && httpClient instanceof DefaultHttpClient) {
             ((DefaultHttpClient) httpClient).setCookieStore(cookieStore);
-            logger.info("Set cookie successfully! " + cookieStore.toString());
+            logger.trace("Set cookie successfully! " + cookieStore.toString());
         }
 
         return;
@@ -230,7 +233,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      */
     @Override
     public CookieStore getCookieStore() {
-        CookieStore cookieStore;
+/*        CookieStore cookieStore;
 
         if (null != httpClient
                 && httpClient instanceof DefaultHttpClient) {
@@ -238,7 +241,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
         } else {
             cookieStore = new BasicCookieStore();
         }
-
+*/
         return cookieStore;
     }
 
