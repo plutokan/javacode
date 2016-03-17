@@ -16,7 +16,6 @@ import com.cisco.rekan.apicaller.AbstractHttpCaller;
 import com.cisco.rekan.apicaller.HttpPostCaller;
 import com.cisco.rekan.apicaller.ICaller;
 import com.cisco.rekan.apicaller.IHttpCaller;
-import com.cisco.rekan.apicaller.Utils;
 
 
 /**
@@ -29,8 +28,8 @@ import com.cisco.rekan.apicaller.Utils;
 public abstract class AbstractURLAPICaller extends AbstractHttpCaller {
 
     private String scheme = Constants.PROTOCOL_HTTPS;
-    private String domainURL = Constants.WEBEX_SITE_1;
-    private String siteName = Constants.WEBEX_SITE_NAME_1;
+    private String domainURL = Constants.WEBEX_SITE_2;
+    private String siteName = Constants.WEBEX_SITE_NAME_2;
 
     /**
      * @return the scheme
@@ -120,6 +119,27 @@ public abstract class AbstractURLAPICaller extends AbstractHttpCaller {
         Assert.notNull(this.siteName);
 
         return this.scheme + "://" + this.domainURL + "/" + this.siteName + "/" + this.getPhpName();
+    }
+
+    protected HttpResponse get2post(HttpResponse src) {
+
+        String url = JsoupUtils.parsePostUrlFromJS(src, super.getServerURL());
+        if (null == url) {
+            return null;
+        }
+        if (url.startsWith("/")) {
+            url = this.scheme + "://" + this.domainURL + url;
+        }
+        logger.info(url);
+
+        ICaller<HttpResponse> caller = new HttpPostCaller(url);
+        ((IHttpCaller) caller).setCookieStore(getCookieStore());
+        HttpResponse response2 = caller.call();
+        String ticket = HttpCoreUtils.getCookieValue(getCookieStore(), "ticket");
+        org.junit.Assert.assertNotNull(ticket);
+        logger.info("Redirect successfully, tiket in cookie: " + ticket);
+
+        return response2;
     }
 
 }

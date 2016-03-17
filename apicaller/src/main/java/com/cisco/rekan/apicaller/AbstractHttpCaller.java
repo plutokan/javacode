@@ -180,7 +180,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
         } catch (IOException e) {
             logger.error(null, e);
         }
-        logger.trace(result);
+        logger.info(result);
 
         Document resultDoc = Utils.convertStr2Dom(result);
 

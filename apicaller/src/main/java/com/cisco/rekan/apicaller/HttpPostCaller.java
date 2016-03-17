@@ -6,7 +6,16 @@
  */
 package com.cisco.rekan.apicaller;
 
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.List;
+
+import org.apache.commons.collections.CollectionUtils;
+import org.apache.commons.lang3.CharEncoding;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.utils.URLEncodedUtils;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
 
@@ -25,8 +34,21 @@ public final class HttpPostCaller extends AbstractHttpCaller implements ICaller<
     protected static Logger logger = Logger.getLogger(HttpPostCaller.class);
 
     public HttpPostCaller(String url) {
+        super();
         Assert.assertNotNull(url);
+        try {
+            List<NameValuePair> params = URLEncodedUtils.parse(new URI(url), CharEncoding.UTF_8);
 
+            if (CollectionUtils.isNotEmpty(params)) {
+                for (NameValuePair param : params) {
+                    super.addParam(param.getName(), param.getValue());
+                }
+            }
+        } catch (URISyntaxException e) {
+            logger.error(null, e);
+        }
+
+//        url = StringUtils.substringBefore(url, "?");
         super.setServerURL(url);
     }
 

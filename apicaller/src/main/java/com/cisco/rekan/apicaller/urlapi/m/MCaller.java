@@ -37,7 +37,7 @@ public class MCaller extends AbstractURLAPICaller {
 
     @Before
     public void initilize() {
-        super.setServerURL("https://pluto.qa.webex.com/pluto/");
+//        super.setServerURL("https://pluto.qa.webex.com/pluto/");
     }
 
     @Test

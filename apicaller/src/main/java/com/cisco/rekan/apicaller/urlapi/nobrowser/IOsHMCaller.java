@@ -10,6 +10,7 @@ import java.io.IOException;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.junit.Test;
 
@@ -17,17 +18,19 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 import com.cisco.rekan.apicaller.urlapi.DocshowParser;
 import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
 
+
 /**
- * <code>HMCaller</code>
+ * <code>MobileHMCaller</code>
  *
- * @author Pluto Kan, rekan@cisco.com
- * @since MyCode Aug 27, 2014
+ * @author <a href="mailto:pluto.kan@gmail.com">Pluto Kan</a>
+ * @since apicaller Oct 28, 2015
  *
  */
-public class JMCaller extends AbstractURLAPICaller {
+public class IOsHMCaller extends AbstractURLAPICaller {
 
-    private static final String USER_NAME = "pluto4";
-    private static final String USER_PASSWORD = "P@ss123";
+    private static final String USER_NAME = "pluto";
+    private static final String USER_PASSWORD = "P@ss1234";
+    static Logger logger = Logger.getLogger(IOsHMCaller.class);
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.urlapi.AbstractURLAPITest#getPhpName()
@@ -43,17 +46,17 @@ public class JMCaller extends AbstractURLAPICaller {
     @Override
     public void addParams(String... params) {
         // nobrowser.php?AT=HM&MK=017170569&DocshowVer=1.0&FeatureSupport=2&OS=iPhone&isUTF8=1&IT=15&VER=6%2E0
-        super.addParam("AT", "JM");
-        super.addParam("MK", StringUtils.deleteWhitespace(params[0]));
+        super.addParam("AT", "HM");
+
+        if (params.length > 0) {
+            super.addParam("MK", StringUtils.deleteWhitespace(params[0]));
+        }
         super.addParam("WUN", USER_NAME);
-        super.addParam("ST", "6");  // TC - 7, EC - 6.
-        super.addParam("PPW", "");
-        super.addParam("PWPW", USER_PASSWORD);
 
         super.addParam("EM", "rekan@cisco.com");
-        super.addParam("DN", "steady wang");
+        super.addParam("DN", "Renhua Kan");
 
-        super.addParam("DocshowVer", "1.0");
+        super.addParam("DocshowVer", "2.0");
         super.addParam("FeatureSupport", "2");
         super.addParam("OS", "iPhone");
         super.addParam("isUTF8", "1");
@@ -62,13 +65,29 @@ public class JMCaller extends AbstractURLAPICaller {
     }
 
     @Test
-    public void testMC() throws IOException {
+    public void startScheduledMC() throws IOException {
         RegistrationCaller loginCaller = new RegistrationCaller();
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.post4Document("150 334 765", USER_NAME);
+        Document docshow = super.post4Document("219 218 546");
         docshow = DocshowParser.getClientparam(docshow);
+
+        DocshowParser.printVideoAddresses(docshow);
+    }
+
+    @Test
+    public void startInstantMC() throws IOException {
+        RegistrationCaller loginCaller = new RegistrationCaller();
+        String token = loginCaller.register(USER_NAME, USER_PASSWORD);
+        super.addParam("SK", token);
+
+        Document docshow = super.post4Document();
+        docshow = DocshowParser.getClientparam(docshow);
+
+        String meetingTopic = DocshowParser.getNodeContent(docshow, "//root/Meeting/MeetingTopic");
+        System.out.println("@" + new String(Base64.decodeBase64(meetingTopic)) + "@");
+        DocshowParser.printVideoAddresses(docshow);
     }
 
     @Test
@@ -94,12 +113,11 @@ public class JMCaller extends AbstractURLAPICaller {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.post4Document("157 322 706", USER_NAME);
+        Document docshow = super.post4Document("155 334 976", USER_NAME);
         docshow = DocshowParser.getClientparam(docshow);
 
         String uploadURL = DocshowParser.getUploadURL(docshow);
         System.out.println(uploadURL);
-
     }
 
 }

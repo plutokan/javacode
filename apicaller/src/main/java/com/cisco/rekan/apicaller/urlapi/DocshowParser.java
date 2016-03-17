@@ -42,10 +42,7 @@ public final class DocshowParser {
      * @return the clientparam
      */
     public static Document getClientparam(Document docshow) {
-        Node statusNode = docshow.selectSingleNode("//MeetingData/Status");
-        Assert.assertNotNull(statusNode);
-        String status = statusNode.getText();
-        Assert.assertEquals("SUCCESS", status);
+        assertSuccess(docshow);
 
         Node node = docshow.selectSingleNode("//MeetingData/MeetingInfo");
         Assert.assertNotNull(node);
@@ -63,6 +60,16 @@ public final class DocshowParser {
         logger.debug(param.asXML());
 
         return param;
+    }
+
+    /**
+     * @param docshow docshow document.
+     */
+    public static void assertSuccess(Document docshow) {
+        Node statusNode = docshow.selectSingleNode("//MeetingData/Status");
+        Assert.assertNotNull(statusNode);
+        String status = statusNode.getText();
+        Assert.assertEquals(docshow.asXML(), "SUCCESS", status);
     }
 
     /**
@@ -87,6 +94,29 @@ public final class DocshowParser {
         String uploadURL = node.getText();
 
         return uploadURL;
+    }
+
+    public static boolean[] getBitValue4Long(int holder) {
+        StringBuffer str = new StringBuffer();
+        boolean[] result = new boolean[32];
+
+        BitField bitField = null;
+        for (int shift = 0; shift < 32; shift++) {
+            int mask = 1 << shift;
+            bitField = new BitField(mask);
+            result[shift] = bitField.isSet(holder);
+        }
+
+        // print the result array.
+        for (int i = 31; i >= 0; i--) {
+            if (result[i]) {
+                str.append("1");
+            } else {
+                str.append("0");
+            }
+        }
+
+        return result;
     }
 
     public static boolean[] getBitValue4Int(int holder) {
