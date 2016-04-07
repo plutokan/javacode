@@ -15,6 +15,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
+import com.cisco.rekan.apicaller.urlapi.URLAPIUtils;
 
 /**
  * <code>RegistrationCaller</code>
@@ -41,7 +42,9 @@ public class RegistrationCaller extends AbstractURLAPICaller {
     @Test
     public void testRegister() {
         RegistrationCaller caller = new RegistrationCaller();
-        caller.register("pluto", "P@ss123");
+        caller.register("pluto", "P@ss1234");
+
+        URLAPIUtils.getSessionTicket2("pluto", "P@ss1234");
     }
 
     /**

@@ -23,7 +23,6 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
@@ -200,8 +199,20 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      * @param paramName the param name
      * @param paramValue the param value
      */
-    public void addParam(String paramName, String paramValue) {
-        this.parameters.add(new BasicNameValuePair(paramName, paramValue));
+    public void addParam(String paramName, Object paramValue) {
+        if (noParam(paramName)) {
+            this.parameters.add(new BasicNameValuePair(paramName, String.valueOf(paramValue)));
+        }
+    }
+
+    private boolean noParam(String paramName) {
+        for (NameValuePair param : parameters) {
+            if (param.getName().equals(paramName)) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     /**

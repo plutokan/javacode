@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OutlookScheduleMeeting>
+	<Status>SUCCESS</Status>
+	<MK>213841518</MK>
+	<ConfID>25502023427296658</ConfID>
+	<MT>
+		<ID>3</ID>
+		<MTN>Pro meeting</MTN>
+		<supportTelePresence>false</supportTelePresence>
+	</MT>
+	<JoinURL><![CDATA[https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=m60623d7cbcfbeaffa5be083ab5d35029]]></JoinURL>
+	<MeetingInfoURL><![CDATA[https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=m60623d7cbcfbeaffa5be083ab5d35029]]></MeetingInfoURL>
+	<PPUMeeting>0</PPUMeeting>
+	<isRecurring>true</isRecurring>
+	<hasException>true</hasException>
+	<exceptionMeetings>
+		<exceptionMeeting>
+			<meetingKey>213841518</meetingKey>
+			<siteID>0</siteID>
+			<exceptionMeetingKey>219628974</exceptionMeetingKey>
+			<originalStartTime>2016-04-09 12:00:00</originalStartTime>
+		</exceptionMeeting>
+		<exceptionMeeting>
+			<meetingKey>213841518</meetingKey>
+			<siteID>0</siteID>
+			<exceptionMeetingKey>216223056</exceptionMeetingKey>
+			<originalStartTime>2016-04-10 12:00:00</originalStartTime>
+		</exceptionMeeting>
+	</exceptionMeetings>
+	<isExceptional>false</isExceptional>
+	<firstStartTime>2016-04-09 12:00:00</firstStartTime>
+	<seriesLocalStartTime>2016-04-09 20:00:00</seriesLocalStartTime>
+	<PN><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.&#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262&#13;&#10;&#13;&#10;Having trouble dialing in&#63; Try these backup numbers&#58;&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262 &#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#10;&#10;Access code&#58;213 841 518&#10;Global call-in numbers&#58; https&#58;&#47;&#47;pluto-killers.qa.webex.com&#47;pluto-killers&#47;globalcallin.php&#63;serviceType&#61;MC&#38;ED&#61;118772&#38;tollFree&#61;1&#10;Toll-free dialing restrictions&#58; https&#58;&#47;&#47;www.webex.com&#47;pdf&#47;tollfree_restrictions.pdf]]></PN>
+	<PNA><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.&#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262&#13;&#10;&#13;&#10;Having trouble dialing in&#63; Try these backup numbers&#58;&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262 &#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#10;&#10;Access code&#58;213 841 518&#10;Global call-in numbers&#58; https&#58;&#47;&#47;pluto-killers.qa.webex.com&#47;pluto-killers&#47;globalcallin.php&#63;serviceType&#61;MC&#38;ED&#61;118772&#38;tollFree&#61;1&#10;Toll-free dialing restrictions&#58; https&#58;&#47;&#47;www.webex.com&#47;pdf&#47;tollfree_restrictions.pdf]]></PNA>
+	<Host></Host>
+	<Disclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. By joining this session, you automatically consent to such recordings. If you do not consent to the recording, discuss your concerns with the meeting host prior to the start of the recording or do not join the session. Please note that any such recordings may be subject to discovery in the event of litigation.]]></Disclaimer>
+	<HostDisclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. You should inform all meeting attendees prior to recording if you intend to record the meeting. Please note that any such recordings may be subject to discovery in the event of litigation.]]></HostDisclaimer>
+	<HostEmailTemplate>
+		<Message><![CDATA[-- Do not delete or change any of the following text. --
+
+
+JOIN WEBEX MEETING
+%MeetingInfoURL%
+%MeetingNumberLabelText% %Meeting Number%%MeetingPasswordText%%NumericMeetingPasswordText%
+
+%AttendeeTPInformationText_Simple%%HostKeyUrlText%%AttendeeJoinByPhoneText_Simple%
+
+Can't join the meeting?
+https://help.webex.com/docs/DOC-5412
+
+
+%DisclaimerText%
+]]></Message>
+	</HostEmailTemplate>
+	<AttendeeEmailTemplate>
+		<Message><![CDATA[-- Do not delete or change any of the following text. --
+
+
+JOIN WEBEX MEETING
+%MeetingInfoURL%
+%MeetingNumberLabelText% %Meeting Number%%MeetingPasswordText%%NumericMeetingPasswordText%
+
+%AttendeeTPInformationText_Simple%%HostKeyUrlText%%AttendeeJoinByPhoneText_Simple%
+
+Can't join the meeting?
+https://help.webex.com/docs/DOC-5412
+
+
+%DisclaimerText%
+]]></Message>
+	</AttendeeEmailTemplate>
+	<EmailNewVarNodeList>
+		<VarNode>
+			<NodeName>EmailFooter</NodeName>
+			<VarName>%EmailFooter%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>iPhoneJoinMeetingDesc</NodeName>
+			<VarName>%iPhoneJoinMeetingDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinMeetingTitle4SmartPhone</NodeName>
+			<VarName>%JoinMeetingTitle4SmartPhone%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallParticipantHtml</NodeName>
+			<VarName>%ConfCallParticipantHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallParticipant</NodeName>
+			<VarName>%ConfCallParticipant%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallModerator</NodeName>
+			<VarName>%ConfCallModerator%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimer</NodeName>
+			<VarName>%HostDisclaimer%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>PasswordDesc</NodeName>
+			<VarName>%PasswordDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberLabelWithValue</NodeName>
+			<VarName>%MeetingNumberLabelWithValue%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordLabel</NodeName>
+			<VarName>%MeetingPasswordLabel%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ActionOnAudioMeeting</NodeName>
+			<VarName>%ActionOnAudioMeeting%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ActionOnAudioMeetingAttendee</NodeName>
+			<VarName>%ActionOnAudioMeetingAttendee%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>StartMeetingLink</NodeName>
+			<VarName>%StartMeetingLink%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberNS</NodeName>
+			<VarName>%MeetingNumberNS%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPDescription</NodeName>
+			<VarName>%TPDescription%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformation</NodeName>
+			<VarName>%TPInformation%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyDesc</NodeName>
+			<VarName>%HostKeyDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingInfoURL</NodeName>
+			<VarName>%MeetingInfoURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ServiceNameURL</NodeName>
+			<VarName>%ServiceNameURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneIcs</NodeName>
+			<VarName>%JoinByPhoneIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationIcs</NodeName>
+			<VarName>%TPInformationIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneIcs</NodeName>
+			<VarName>%AttendeeJoinByPhoneIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneText</NodeName>
+			<VarName>%AttendeeJoinByPhoneText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostMeetingPasswordIcs</NodeName>
+			<VarName>%HostMeetingPasswordIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordIcs</NodeName>
+			<VarName>%MeetingPasswordIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerIcs</NodeName>
+			<VarName>%DisclaimerIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimerIcs</NodeName>
+			<VarName>%HostDisclaimerIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>Hostnumber</NodeName>
+			<VarName>%Hostnumber%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationText</NodeName>
+			<VarName>%TPInformationText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneText</NodeName>
+			<VarName>%JoinByPhoneText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordText</NodeName>
+			<VarName>%MeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostMeetingPasswordText</NodeName>
+			<VarName>%HostMeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimerText</NodeName>
+			<VarName>%HostDisclaimerText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerText</NodeName>
+			<VarName>%DisclaimerText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyUrlText</NodeName>
+			<VarName>%HostKeyUrlText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyUrlHtml</NodeName>
+			<VarName>%HostKeyUrlHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AccessCodeURL</NodeName>
+			<VarName>%AccessCodeURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AudioSettingsUrl</NodeName>
+			<VarName>%AudioSettingsUrl%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumber</NodeName>
+			<VarName>%MeetingNumber%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPJoinDescriptionHtml</NodeName>
+			<VarName>%TPJoinDescriptionHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneEntHtml</NodeName>
+			<VarName>%JoinByPhoneEntHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerHtml</NodeName>
+			<VarName>%DisclaimerHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPJoinDescriptionText</NodeName>
+			<VarName>%TPJoinDescriptionText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneEntText</NodeName>
+			<VarName>%JoinByPhoneEntText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationText</NodeName>
+			<VarName>%AttendeeTPInformationText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationIcs</NodeName>
+			<VarName>%AttendeeTPInformationIcs%</VarName>
+		</VarNode>
+	</EmailNewVarNodeList>
+	<EmailFooter><![CDATA[https://www.webex.com]]></EmailFooter>
+	<PasswordDesc></PasswordDesc>
+	<MeetingPasswordLabel></MeetingPasswordLabel>
+	<ShowMtgPwdLabel></ShowMtgPwdLabel>
+	<AccessCodeURL></AccessCodeURL>
+	<AudioSettingsUrl><![CDATA[]]>
+	</AudioSettingsUrl>
+	<DisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerIcs>
+	<DisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerText>
+	<HostDisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerIcs>
+	<HostDisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerText>
+	<HostMeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="arial">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></HostMeetingPasswordIcs>
+	<MeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="arial">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></MeetingPasswordIcs>
+	<MeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></MeetingPasswordText>
+	<HostMeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></HostMeetingPasswordText>
+	<Hostnumber>323836</Hostnumber>
+	<HostNumberDesIcs><![CDATA[<P><FONT SIZE="2" COLOR="#666666" FACE="Arial">Host key:323836</FONT>]]></HostNumberDesIcs>
+	<TPInformationIcs><![CDATA[]]>
+	</TPInformationIcs>
+	<TPInformationText><![CDATA[]]>
+	</TPInformationText>
+	<AttendeeTPInformationIcs><![CDATA[]]>
+	</AttendeeTPInformationIcs>
+	<AttendeeTPInformationText><![CDATA[]]>
+	</AttendeeTPInformationText>
+	<JoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462260</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 213 841 518</FONT>&nbsp; <BR><a href="https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118772&tollFree=1"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></JoinByPhoneIcs>
+	<JoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224462260 Call-in toll number (US/Canada)
+10224462262 Call-in toll-free number (US/Canada)
+Access code: 213 841 518
+
+Global call-in numbers:
+https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118772&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></JoinByPhoneText>
+	<AttendeeJoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462260</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 213 841 518</FONT>&nbsp; <BR><a href="https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118772&tollFree=1"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs>
+	<AttendeeJoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224462260 Call-in toll number (US/Canada)
+10224462262 Call-in toll-free number (US/Canada)
+Access code: 213 841 518
+
+Global call-in numbers:
+https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118772&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></AttendeeJoinByPhoneText>
+	<ServiceNameURL>https://pluto-killers.qa.webex.com/pluto-killers/mc
+	</ServiceNameURL>
+	<HostKeyUrlHtml><![CDATA[<FONT SIZE="2" COLOR="#666666" FACE="arial">If you are the host, you can use the meeting host key to pass the host privilege to another participant or to start the meeting from a video conferencing system or application. To find the host key for this meeting, </FONT><A HREF="https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=mc8ed174c1ac9368b81ad9e99924b05c0"><FONT SIZE="2" COLOR="#00AFF9" FACE="Arial">go here.</FONT></A><BR><BR>]]></HostKeyUrlHtml>
+	<HostKeyUrlText><![CDATA[If you are the host, you can use the meeting host key to pass the host privilege to another participant or to start the meeting from a video conferencing system or application. To find the host key for this meeting, go here:
+https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=mc8ed174c1ac9368b81ad9e99924b05c0
+
+]]></HostKeyUrlText>
+	<HostKeyURL><![CDATA[https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=mc8ed174c1ac9368b81ad9e99924b05c0]]></HostKeyURL>
+	<iPhoneJoinMeetingDesc><![CDATA[------------------------------------------------------- 
+To join the meeting on iPhone
+-------------------------------------------------------
+Go to wbx://pluto-killers.qa.webex.com/pluto-killers?MK=213841518&amp;MPW=501fe884fdbbb0bceafff5f4fd2f3423cd32d435e96a0a85e56cdf067a632894&amp;MTGTK=SDJTSwAAALO4_1lKJb9gnvazWl7rsixbejS1reaiCgwS2SHEaLVtRA2&amp;r2sec=1
+
+Don&apos;t have the iPhone WebEx application yet? 
+Go to http://itunes.apple.com/app/cisco-webex-meetings/id298844386 ]]></iPhoneJoinMeetingDesc>
+	<EncryptedMtgPwd><![CDATA[]]>
+	</EncryptedMtgPwd>
+	<JoinMeetingTitle4SmartPhone><![CDATA[(Now from mobile devices!)]]></JoinMeetingTitle4SmartPhone>
+	<ConfCallParticipant></ConfCallParticipant>
+	<ConfCallModerator></ConfCallModerator>
+	<MeetingNumberNS>213841518</MeetingNumberNS>
+	<MPCallInNumberList></MPCallInNumberList>
+	<ExceptionMeetingList>
+		<Count>2</Count>
+		<ExceptionMeeting>
+			<Status>SUCCESS</Status>
+			<MK>219628974</MK>
+			<ConfID>25504603155991955</ConfID>
+			<MT>
+				<ID>3</ID>
+				<MTN>Pro meeting</MTN>
+				<supportTelePresence>false</supportTelePresence>
+			</MT>
+			<JoinURL><![CDATA[https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=m04305607ea79562dbde3dc81cb3c3860]]></JoinURL>
+			<MeetingInfoURL><![CDATA[https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=m04305607ea79562dbde3dc81cb3c3860]]></MeetingInfoURL>
+			<PPUMeeting>0</PPUMeeting>
+			<isRecurring>false</isRecurring>
+			<isExceptional>true</isExceptional>
+			<seriesMeetingKey>213841518</seriesMeetingKey>
+			<OriginalStartTime>2016-04-09 12:00:00</OriginalStartTime>
+			<firstStartTime>2016-04-09 12:00:00</firstStartTime>
+			<seriesLocalStartTime>2016-04-09 20:00:00</seriesLocalStartTime>
+			<PN><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.&#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262&#13;&#10;&#13;&#10;Having trouble dialing in&#63; Try these backup numbers&#58;&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262 &#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#10;&#10;Access code&#58;219 628 974&#10;Global call-in numbers&#58; https&#58;&#47;&#47;pluto-killers.qa.webex.com&#47;pluto-killers&#47;globalcallin.php&#63;serviceType&#61;MC&#38;ED&#61;118777&#38;tollFree&#61;1&#10;Toll-free dialing restrictions&#58; https&#58;&#47;&#47;www.webex.com&#47;pdf&#47;tollfree_restrictions.pdf]]></PN>
+			<PNA><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.&#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262&#13;&#10;&#13;&#10;Having trouble dialing in&#63; Try these backup numbers&#58;&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262 &#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#10;&#10;Access code&#58;219 628 974&#10;Global call-in numbers&#58; https&#58;&#47;&#47;pluto-killers.qa.webex.com&#47;pluto-killers&#47;globalcallin.php&#63;serviceType&#61;MC&#38;ED&#61;118777&#38;tollFree&#61;1&#10;Toll-free dialing restrictions&#58; https&#58;&#47;&#47;www.webex.com&#47;pdf&#47;tollfree_restrictions.pdf]]></PNA>
+			<Host></Host>
+			<Disclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. By joining this session, you automatically consent to such recordings. If you do not consent to the recording, discuss your concerns with the meeting host prior to the start of the recording or do not join the session. Please note that any such recordings may be subject to discovery in the event of litigation.]]></Disclaimer>
+			<HostDisclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. You should inform all meeting attendees prior to recording if you intend to record the meeting. Please note that any such recordings may be subject to discovery in the event of litigation.]]></HostDisclaimer>
+			<HostEmailTemplate>
+				<Message><![CDATA[-- Do not delete or change any of the following text. --
+
+
+JOIN WEBEX MEETING
+%MeetingInfoURL%
+%MeetingNumberLabelText% %Meeting Number%%MeetingPasswordText%%NumericMeetingPasswordText%
+
+%AttendeeTPInformationText_Simple%%HostKeyUrlText%%AttendeeJoinByPhoneText_Simple%
+
+Can't join the meeting?
+https://help.webex.com/docs/DOC-5412
+
+
+%DisclaimerText%
+]]></Message>
+			</HostEmailTemplate>
+			<AttendeeEmailTemplate>
+				<Message><![CDATA[-- Do not delete or change any of the following text. --
+
+
+JOIN WEBEX MEETING
+%MeetingInfoURL%
+%MeetingNumberLabelText% %Meeting Number%%MeetingPasswordText%%NumericMeetingPasswordText%
+
+%AttendeeTPInformationText_Simple%%HostKeyUrlText%%AttendeeJoinByPhoneText_Simple%
+
+Can't join the meeting?
+https://help.webex.com/docs/DOC-5412
+
+
+%DisclaimerText%
+]]></Message>
+			</AttendeeEmailTemplate>
+			<EmailNewVarNodeList>
+				<VarNode>
+					<NodeName>EmailFooter</NodeName>
+					<VarName>%EmailFooter%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>iPhoneJoinMeetingDesc</NodeName>
+					<VarName>%iPhoneJoinMeetingDesc%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinMeetingTitle4SmartPhone</NodeName>
+					<VarName>%JoinMeetingTitle4SmartPhone%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ConfCallParticipantHtml</NodeName>
+					<VarName>%ConfCallParticipantHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ConfCallParticipant</NodeName>
+					<VarName>%ConfCallParticipant%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ConfCallModerator</NodeName>
+					<VarName>%ConfCallModerator%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostDisclaimer</NodeName>
+					<VarName>%HostDisclaimer%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>PasswordDesc</NodeName>
+					<VarName>%PasswordDesc%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingNumberLabelWithValue</NodeName>
+					<VarName>%MeetingNumberLabelWithValue%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingPasswordLabel</NodeName>
+					<VarName>%MeetingPasswordLabel%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ActionOnAudioMeeting</NodeName>
+					<VarName>%ActionOnAudioMeeting%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ActionOnAudioMeetingAttendee</NodeName>
+					<VarName>%ActionOnAudioMeetingAttendee%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>StartMeetingLink</NodeName>
+					<VarName>%StartMeetingLink%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingNumberNS</NodeName>
+					<VarName>%MeetingNumberNS%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPDescription</NodeName>
+					<VarName>%TPDescription%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPInformation</NodeName>
+					<VarName>%TPInformation%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostKeyDesc</NodeName>
+					<VarName>%HostKeyDesc%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingInfoURL</NodeName>
+					<VarName>%MeetingInfoURL%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ServiceNameURL</NodeName>
+					<VarName>%ServiceNameURL%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinByPhoneIcs</NodeName>
+					<VarName>%JoinByPhoneIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPInformationIcs</NodeName>
+					<VarName>%TPInformationIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AttendeeJoinByPhoneIcs</NodeName>
+					<VarName>%AttendeeJoinByPhoneIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AttendeeJoinByPhoneText</NodeName>
+					<VarName>%AttendeeJoinByPhoneText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostMeetingPasswordIcs</NodeName>
+					<VarName>%HostMeetingPasswordIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingPasswordIcs</NodeName>
+					<VarName>%MeetingPasswordIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>DisclaimerIcs</NodeName>
+					<VarName>%DisclaimerIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostDisclaimerIcs</NodeName>
+					<VarName>%HostDisclaimerIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>Hostnumber</NodeName>
+					<VarName>%Hostnumber%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPInformationText</NodeName>
+					<VarName>%TPInformationText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinByPhoneText</NodeName>
+					<VarName>%JoinByPhoneText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingPasswordText</NodeName>
+					<VarName>%MeetingPasswordText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostMeetingPasswordText</NodeName>
+					<VarName>%HostMeetingPasswordText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostDisclaimerText</NodeName>
+					<VarName>%HostDisclaimerText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>DisclaimerText</NodeName>
+					<VarName>%DisclaimerText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostKeyUrlText</NodeName>
+					<VarName>%HostKeyUrlText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostKeyUrlHtml</NodeName>
+					<VarName>%HostKeyUrlHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AccessCodeURL</NodeName>
+					<VarName>%AccessCodeURL%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AudioSettingsUrl</NodeName>
+					<VarName>%AudioSettingsUrl%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingNumber</NodeName>
+					<VarName>%MeetingNumber%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPJoinDescriptionHtml</NodeName>
+					<VarName>%TPJoinDescriptionHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinByPhoneEntHtml</NodeName>
+					<VarName>%JoinByPhoneEntHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>DisclaimerHtml</NodeName>
+					<VarName>%DisclaimerHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPJoinDescriptionText</NodeName>
+					<VarName>%TPJoinDescriptionText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinByPhoneEntText</NodeName>
+					<VarName>%JoinByPhoneEntText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AttendeeTPInformationText</NodeName>
+					<VarName>%AttendeeTPInformationText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AttendeeTPInformationIcs</NodeName>
+					<VarName>%AttendeeTPInformationIcs%</VarName>
+				</VarNode>
+			</EmailNewVarNodeList>
+			<EmailFooter><![CDATA[https://www.webex.com]]></EmailFooter>
+			<PasswordDesc></PasswordDesc>
+			<MeetingPasswordLabel></MeetingPasswordLabel>
+			<ShowMtgPwdLabel></ShowMtgPwdLabel>
+			<AccessCodeURL></AccessCodeURL>
+			<AudioSettingsUrl><![CDATA[]]>
+			</AudioSettingsUrl>
+			<DisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerIcs>
+			<DisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerText>
+			<HostDisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerIcs>
+			<HostDisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerText>
+			<HostMeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="arial">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></HostMeetingPasswordIcs>
+			<MeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="arial">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></MeetingPasswordIcs>
+			<MeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></MeetingPasswordText>
+			<HostMeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></HostMeetingPasswordText>
+			<Hostnumber>323836</Hostnumber>
+			<HostNumberDesIcs><![CDATA[<P><FONT SIZE="2" COLOR="#666666" FACE="Arial">Host key:323836</FONT>]]></HostNumberDesIcs>
+			<TPInformationIcs><![CDATA[]]>
+			</TPInformationIcs>
+			<TPInformationText><![CDATA[]]>
+			</TPInformationText>
+			<AttendeeTPInformationIcs><![CDATA[]]>
+			</AttendeeTPInformationIcs>
+			<AttendeeTPInformationText><![CDATA[]]>
+			</AttendeeTPInformationText>
+			<JoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462260</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 219 628 974</FONT>&nbsp; <BR><a href="https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118777&tollFree=1"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></JoinByPhoneIcs>
+			<JoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224462260 Call-in toll number (US/Canada)
+10224462262 Call-in toll-free number (US/Canada)
+Access code: 219 628 974
+
+Global call-in numbers:
+https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118777&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></JoinByPhoneText>
+			<AttendeeJoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462260</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 219 628 974</FONT>&nbsp; <BR><a href="https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118777&tollFree=1"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs>
+			<AttendeeJoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224462260 Call-in toll number (US/Canada)
+10224462262 Call-in toll-free number (US/Canada)
+Access code: 219 628 974
+
+Global call-in numbers:
+https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118777&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></AttendeeJoinByPhoneText>
+			<ServiceNameURL>https://pluto-killers.qa.webex.com/pluto-killers/mc
+			</ServiceNameURL>
+			<HostKeyUrlHtml><![CDATA[<FONT SIZE="2" COLOR="#666666" FACE="arial">If you are the host, you can use the meeting host key to pass the host privilege to another participant or to start the meeting from a video conferencing system or application. To find the host key for this meeting, </FONT><A HREF="https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=mc85561accd056e6c9669914311d6b489"><FONT SIZE="2" COLOR="#00AFF9" FACE="Arial">go here.</FONT></A><BR><BR>]]></HostKeyUrlHtml>
+			<HostKeyUrlText><![CDATA[If you are the host, you can use the meeting host key to pass the host privilege to another participant or to start the meeting from a video conferencing system or application. To find the host key for this meeting, go here:
+https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=mc85561accd056e6c9669914311d6b489
+
+]]></HostKeyUrlText>
+			<HostKeyURL><![CDATA[https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=mc85561accd056e6c9669914311d6b489]]></HostKeyURL>
+			<iPhoneJoinMeetingDesc><![CDATA[------------------------------------------------------- 
+To join the meeting on iPhone
+-------------------------------------------------------
+Go to wbx://pluto-killers.qa.webex.com/pluto-killers?MK=219628974&amp;MPW=501fe884fdbbb0bceafff5f4fd2f3423cd32d435e96a0a85e56cdf067a632894&amp;MTGTK=SDJTSwAAALMOGmoUezt-eJtTGjY4lUes4Xg42SN-m-z2GKFpYbNVrg2&amp;r2sec=1
+
+Don&apos;t have the iPhone WebEx application yet? 
+Go to http://itunes.apple.com/app/cisco-webex-meetings/id298844386 ]]></iPhoneJoinMeetingDesc>
+			<EncryptedMtgPwd><![CDATA[]]>
+			</EncryptedMtgPwd>
+			<JoinMeetingTitle4SmartPhone><![CDATA[(Now from mobile devices!)]]></JoinMeetingTitle4SmartPhone>
+			<ConfCallParticipant></ConfCallParticipant>
+			<ConfCallModerator></ConfCallModerator>
+			<MeetingNumberNS>219628974</MeetingNumberNS>
+			<MPCallInNumberList></MPCallInNumberList>
+		</ExceptionMeeting>
+		<ExceptionMeeting>
+			<Status>SUCCESS</Status>
+			<MK>216223056</MK>
+			<ConfID>25505584275000724</ConfID>
+			<MT>
+				<ID>3</ID>
+				<MTN>Pro meeting</MTN>
+				<supportTelePresence>false</supportTelePresence>
+			</MT>
+			<JoinURL><![CDATA[https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=m3805f9f5aabc72e8f83948976dab72fb]]></JoinURL>
+			<MeetingInfoURL><![CDATA[https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=m3805f9f5aabc72e8f83948976dab72fb]]></MeetingInfoURL>
+			<PPUMeeting>0</PPUMeeting>
+			<isRecurring>false</isRecurring>
+			<isExceptional>true</isExceptional>
+			<seriesMeetingKey>213841518</seriesMeetingKey>
+			<OriginalStartTime>2016-04-10 12:00:00</OriginalStartTime>
+			<firstStartTime>2016-04-10 12:00:00</firstStartTime>
+			<seriesLocalStartTime>2016-04-10 20:00:00</seriesLocalStartTime>
+			<PN><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.&#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262&#13;&#10;&#13;&#10;Having trouble dialing in&#63; Try these backup numbers&#58;&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262 &#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#10;&#10;Access code&#58;216 223 056&#10;Global call-in numbers&#58; https&#58;&#47;&#47;pluto-killers.qa.webex.com&#47;pluto-killers&#47;globalcallin.php&#63;serviceType&#61;MC&#38;ED&#61;118782&#38;tollFree&#61;1&#10;Toll-free dialing restrictions&#58; https&#58;&#47;&#47;www.webex.com&#47;pdf&#47;tollfree_restrictions.pdf]]></PN>
+			<PNA><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.&#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262&#13;&#10;&#13;&#10;Having trouble dialing in&#63; Try these backup numbers&#58;&#13;&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262 &#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462260&#10;&#10;Access code&#58;216 223 056&#10;Global call-in numbers&#58; https&#58;&#47;&#47;pluto-killers.qa.webex.com&#47;pluto-killers&#47;globalcallin.php&#63;serviceType&#61;MC&#38;ED&#61;118782&#38;tollFree&#61;1&#10;Toll-free dialing restrictions&#58; https&#58;&#47;&#47;www.webex.com&#47;pdf&#47;tollfree_restrictions.pdf]]></PNA>
+			<Host></Host>
+			<Disclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. By joining this session, you automatically consent to such recordings. If you do not consent to the recording, discuss your concerns with the meeting host prior to the start of the recording or do not join the session. Please note that any such recordings may be subject to discovery in the event of litigation.]]></Disclaimer>
+			<HostDisclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. You should inform all meeting attendees prior to recording if you intend to record the meeting. Please note that any such recordings may be subject to discovery in the event of litigation.]]></HostDisclaimer>
+			<HostEmailTemplate>
+				<Message><![CDATA[-- Do not delete or change any of the following text. --
+
+
+JOIN WEBEX MEETING
+%MeetingInfoURL%
+%MeetingNumberLabelText% %Meeting Number%%MeetingPasswordText%%NumericMeetingPasswordText%
+
+%AttendeeTPInformationText_Simple%%HostKeyUrlText%%AttendeeJoinByPhoneText_Simple%
+
+Can't join the meeting?
+https://help.webex.com/docs/DOC-5412
+
+
+%DisclaimerText%
+]]></Message>
+			</HostEmailTemplate>
+			<AttendeeEmailTemplate>
+				<Message><![CDATA[-- Do not delete or change any of the following text. --
+
+
+JOIN WEBEX MEETING
+%MeetingInfoURL%
+%MeetingNumberLabelText% %Meeting Number%%MeetingPasswordText%%NumericMeetingPasswordText%
+
+%AttendeeTPInformationText_Simple%%HostKeyUrlText%%AttendeeJoinByPhoneText_Simple%
+
+Can't join the meeting?
+https://help.webex.com/docs/DOC-5412
+
+
+%DisclaimerText%
+]]></Message>
+			</AttendeeEmailTemplate>
+			<EmailNewVarNodeList>
+				<VarNode>
+					<NodeName>EmailFooter</NodeName>
+					<VarName>%EmailFooter%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>iPhoneJoinMeetingDesc</NodeName>
+					<VarName>%iPhoneJoinMeetingDesc%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinMeetingTitle4SmartPhone</NodeName>
+					<VarName>%JoinMeetingTitle4SmartPhone%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ConfCallParticipantHtml</NodeName>
+					<VarName>%ConfCallParticipantHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ConfCallParticipant</NodeName>
+					<VarName>%ConfCallParticipant%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ConfCallModerator</NodeName>
+					<VarName>%ConfCallModerator%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostDisclaimer</NodeName>
+					<VarName>%HostDisclaimer%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>PasswordDesc</NodeName>
+					<VarName>%PasswordDesc%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingNumberLabelWithValue</NodeName>
+					<VarName>%MeetingNumberLabelWithValue%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingPasswordLabel</NodeName>
+					<VarName>%MeetingPasswordLabel%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ActionOnAudioMeeting</NodeName>
+					<VarName>%ActionOnAudioMeeting%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ActionOnAudioMeetingAttendee</NodeName>
+					<VarName>%ActionOnAudioMeetingAttendee%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>StartMeetingLink</NodeName>
+					<VarName>%StartMeetingLink%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingNumberNS</NodeName>
+					<VarName>%MeetingNumberNS%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPDescription</NodeName>
+					<VarName>%TPDescription%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPInformation</NodeName>
+					<VarName>%TPInformation%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostKeyDesc</NodeName>
+					<VarName>%HostKeyDesc%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingInfoURL</NodeName>
+					<VarName>%MeetingInfoURL%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>ServiceNameURL</NodeName>
+					<VarName>%ServiceNameURL%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinByPhoneIcs</NodeName>
+					<VarName>%JoinByPhoneIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPInformationIcs</NodeName>
+					<VarName>%TPInformationIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AttendeeJoinByPhoneIcs</NodeName>
+					<VarName>%AttendeeJoinByPhoneIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AttendeeJoinByPhoneText</NodeName>
+					<VarName>%AttendeeJoinByPhoneText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostMeetingPasswordIcs</NodeName>
+					<VarName>%HostMeetingPasswordIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingPasswordIcs</NodeName>
+					<VarName>%MeetingPasswordIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>DisclaimerIcs</NodeName>
+					<VarName>%DisclaimerIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostDisclaimerIcs</NodeName>
+					<VarName>%HostDisclaimerIcs%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>Hostnumber</NodeName>
+					<VarName>%Hostnumber%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPInformationText</NodeName>
+					<VarName>%TPInformationText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinByPhoneText</NodeName>
+					<VarName>%JoinByPhoneText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingPasswordText</NodeName>
+					<VarName>%MeetingPasswordText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostMeetingPasswordText</NodeName>
+					<VarName>%HostMeetingPasswordText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostDisclaimerText</NodeName>
+					<VarName>%HostDisclaimerText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>DisclaimerText</NodeName>
+					<VarName>%DisclaimerText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostKeyUrlText</NodeName>
+					<VarName>%HostKeyUrlText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>HostKeyUrlHtml</NodeName>
+					<VarName>%HostKeyUrlHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AccessCodeURL</NodeName>
+					<VarName>%AccessCodeURL%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AudioSettingsUrl</NodeName>
+					<VarName>%AudioSettingsUrl%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>MeetingNumber</NodeName>
+					<VarName>%MeetingNumber%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPJoinDescriptionHtml</NodeName>
+					<VarName>%TPJoinDescriptionHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinByPhoneEntHtml</NodeName>
+					<VarName>%JoinByPhoneEntHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>DisclaimerHtml</NodeName>
+					<VarName>%DisclaimerHtml%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>TPJoinDescriptionText</NodeName>
+					<VarName>%TPJoinDescriptionText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>JoinByPhoneEntText</NodeName>
+					<VarName>%JoinByPhoneEntText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AttendeeTPInformationText</NodeName>
+					<VarName>%AttendeeTPInformationText%</VarName>
+				</VarNode>
+				<VarNode>
+					<NodeName>AttendeeTPInformationIcs</NodeName>
+					<VarName>%AttendeeTPInformationIcs%</VarName>
+				</VarNode>
+			</EmailNewVarNodeList>
+			<EmailFooter><![CDATA[https://www.webex.com]]></EmailFooter>
+			<PasswordDesc></PasswordDesc>
+			<MeetingPasswordLabel></MeetingPasswordLabel>
+			<ShowMtgPwdLabel></ShowMtgPwdLabel>
+			<AccessCodeURL></AccessCodeURL>
+			<AudioSettingsUrl><![CDATA[]]>
+			</AudioSettingsUrl>
+			<DisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerIcs>
+			<DisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerText>
+			<HostDisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerIcs>
+			<HostDisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerText>
+			<HostMeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="arial">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></HostMeetingPasswordIcs>
+			<MeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="arial">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></MeetingPasswordIcs>
+			<MeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></MeetingPasswordText>
+			<HostMeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></HostMeetingPasswordText>
+			<Hostnumber>323836</Hostnumber>
+			<HostNumberDesIcs><![CDATA[<P><FONT SIZE="2" COLOR="#666666" FACE="Arial">Host key:323836</FONT>]]></HostNumberDesIcs>
+			<TPInformationIcs><![CDATA[]]>
+			</TPInformationIcs>
+			<TPInformationText><![CDATA[]]>
+			</TPInformationText>
+			<AttendeeTPInformationIcs><![CDATA[]]>
+			</AttendeeTPInformationIcs>
+			<AttendeeTPInformationText><![CDATA[]]>
+			</AttendeeTPInformationText>
+			<JoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462260</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 216 223 056</FONT>&nbsp; <BR><a href="https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118782&tollFree=1"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></JoinByPhoneIcs>
+			<JoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224462260 Call-in toll number (US/Canada)
+10224462262 Call-in toll-free number (US/Canada)
+Access code: 216 223 056
+
+Global call-in numbers:
+https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118782&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></JoinByPhoneText>
+			<AttendeeJoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462260</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 216 223 056</FONT>&nbsp; <BR><a href="https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118782&tollFree=1"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs>
+			<AttendeeJoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224462260 Call-in toll number (US/Canada)
+10224462262 Call-in toll-free number (US/Canada)
+Access code: 216 223 056
+
+Global call-in numbers:
+https://pluto-killers.qa.webex.com/pluto-killers/globalcallin.php?serviceType=MC&ED=118782&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></AttendeeJoinByPhoneText>
+			<ServiceNameURL>https://pluto-killers.qa.webex.com/pluto-killers/mc
+			</ServiceNameURL>
+			<HostKeyUrlHtml><![CDATA[<FONT SIZE="2" COLOR="#666666" FACE="arial">If you are the host, you can use the meeting host key to pass the host privilege to another participant or to start the meeting from a video conferencing system or application. To find the host key for this meeting, </FONT><A HREF="https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=m79d7d5e9cfcacd71d469918da584b2f5"><FONT SIZE="2" COLOR="#00AFF9" FACE="Arial">go here.</FONT></A><BR><BR>]]></HostKeyUrlHtml>
+			<HostKeyUrlText><![CDATA[If you are the host, you can use the meeting host key to pass the host privilege to another participant or to start the meeting from a video conferencing system or application. To find the host key for this meeting, go here:
+https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=m79d7d5e9cfcacd71d469918da584b2f5
+
+]]></HostKeyUrlText>
+			<HostKeyURL><![CDATA[https://pluto-killers.qa.webex.com/pluto-killers/j.php?MTID=m79d7d5e9cfcacd71d469918da584b2f5]]></HostKeyURL>
+			<iPhoneJoinMeetingDesc><![CDATA[------------------------------------------------------- 
+To join the meeting on iPhone
+-------------------------------------------------------
+Go to wbx://pluto-killers.qa.webex.com/pluto-killers?MK=216223056&amp;MPW=501fe884fdbbb0bceafff5f4fd2f3423cd32d435e96a0a85e56cdf067a632894&amp;MTGTK=SDJTSwAAALOEJH_AmiVRq3ClrnSf7r1C8ZqAq1HKp3DKkSFh3VETBw2&amp;r2sec=1
+
+Don&apos;t have the iPhone WebEx application yet? 
+Go to http://itunes.apple.com/app/cisco-webex-meetings/id298844386 ]]></iPhoneJoinMeetingDesc>
+			<EncryptedMtgPwd><![CDATA[]]>
+			</EncryptedMtgPwd>
+			<JoinMeetingTitle4SmartPhone><![CDATA[(Now from mobile devices!)]]></JoinMeetingTitle4SmartPhone>
+			<ConfCallParticipant></ConfCallParticipant>
+			<ConfCallModerator></ConfCallModerator>
+			<MeetingNumberNS>216223056</MeetingNumberNS>
+			<MPCallInNumberList></MPCallInNumberList>
+		</ExceptionMeeting>
+	</ExceptionMeetingList>
+</OutlookScheduleMeeting>

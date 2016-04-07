@@ -20,8 +20,8 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 public class LICaller extends AbstractURLAPICaller {
 
     private static final String USER_NAME = "pluto";
-    private static final String USER_PASSWORD = "P@ss123";
-    private static final String USER_ENCRYPTED_PASSWORD = "2212d3586374481f0a5e40";
+    private static final String USER_PASSWORD = "P@ss1234";
+    private static final String USER_ENCRYPTED_PASSWORD = "b85c743317185d581717";
     private static final String USER_NEW_PASSWORD = "P@ssword123";
     private static final String USER_NEW_ENCRYPTED_PASSWORD = "49ad251d013d203b2b3835020076";
 

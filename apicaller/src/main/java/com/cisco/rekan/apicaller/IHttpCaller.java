@@ -17,6 +17,37 @@ import org.apache.http.HttpResponse;
  * @since MyCode Nov 5, 2013
  *
  */
+/*
+ * @startuml
+ * title: Class Diagram of callers
+ * 
+ * interface ICookieSupport {
+ *     void setCookieStore(CookieStore)
+ *     CookieStore getCookieStore()
+ * }
+ * interface IHttpCaller {
+ *     HttpResponse get(String...)
+ *     HttpResponse post(String...)
+ * }
+ * abstract class AbstractHttpCaller
+ * abstract class AbstractCASCaller
+ * abstract class AbstractURLAPICaller
+ * interface ICaller {
+ *     T call()
+ * }
+ * class HttpGetCaller
+ * class HttpPostCaller
+ * 
+ * ICookieSupport <|-- IHttpCaller
+ * IHttpCaller <|-- AbstractHttpCaller
+ * AbstractHttpCaller <|-- AbstractCASCaller
+ * AbstractHttpCaller <|-- AbstractURLAPICaller
+ * AbstractHttpCaller <|-- HttpGetCaller
+ * AbstractHttpCaller <|-- HttpPostCaller
+ * ICaller <|-- HttpGetCaller
+ * ICaller <|-- HttpPostCaller
+ * @enduml
+ */
 public interface IHttpCaller extends ICookieSupport {
 
     /**

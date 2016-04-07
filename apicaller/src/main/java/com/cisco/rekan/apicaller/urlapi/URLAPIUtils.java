@@ -8,8 +8,11 @@ package com.cisco.rekan.apicaller.urlapi;
 
 import org.apache.http.HttpCoreUtils;
 import org.apache.http.client.CookieStore;
+import org.apache.log4j.Logger;
 
 import com.cisco.rekan.apicaller.Utils;
+import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
+import com.cisco.rekan.apicaller.urlapi.user.UserGetAuthInfoCaller;
 
 /**
  * <code>URLAPIUtils</code>
@@ -19,6 +22,8 @@ import com.cisco.rekan.apicaller.Utils;
  *
  */
 public final class URLAPIUtils {
+
+    protected static Logger logger = Logger.getLogger(URLAPIUtils.class);
 
     private URLAPIUtils() {
     }
@@ -39,6 +44,18 @@ public final class URLAPIUtils {
 
         String csrf = Utils.getParamValue4URI(url, "CSRF");
         return csrf;
+    }
+
+    public static String getSessionTicket(final String userID, final String password) {
+        UserGetAuthInfoCaller caller = new UserGetAuthInfoCaller();
+
+        return caller.getSessionTicket(userID, password);
+    }
+
+    public static String getSessionTicket2(final String userID, final String password) {
+        RegistrationCaller caller = new RegistrationCaller();
+
+        return caller.register(userID, password);
     }
 
 }

@@ -6,11 +6,16 @@
  */
 package com.cisco.rekan.apicaller.urlapi.user;
 
+import java.io.IOException;
+
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.util.EntityUtils;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.Utils;
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
+import com.cisco.rekan.apicaller.urlapi.URLAPIUtils;
 
 /**
  * <code>UserGetAuthInfoCaller</code>
@@ -44,10 +49,30 @@ public class UserGetAuthInfoCaller extends AbstractURLAPICaller {
         super.addParam("getEncryptedPwd", "true");
     }
 
+    public String getSessionTicket(final String userID, final String password) {
+        HttpResponse response = this.post(userID, password);
+
+        HttpEntity responseEntity = response.getEntity();
+        String result = null;
+        try {
+            result = EntityUtils.toString(responseEntity);
+        } catch (IOException e) {
+            logger.error(null, e);
+        }
+
+        return result;
+    }
+
     @Test
-    public void test() {
-        HttpResponse response = super.get("pluto", "P@ss123");
+    public void testGet() {
+        HttpResponse response = super.get("pluto", "P@ss1234");
         Utils.printContent(response);
+    }
+
+    @Test
+    public void testPost() {
+        String sk = this.getSessionTicket("pluto", "P@ss1234");
+        System.out.println(sk);
     }
 
 }
