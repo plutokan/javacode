@@ -14,6 +14,8 @@ import org.dom4j.Node;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.cisco.rekan.apicaller.urlapi.DateUtils;
+
 /**
  * <code>Test4F994</code>
  *
@@ -64,7 +66,7 @@ public class Test4F994 {
 
     private ExceptionMeetingParam getException(String expMeetingKey, int dayOffset) {
         Calendar expCal = ScheduleCaller.getStartCalendar(dayOffset);
-        String originalStartTime = ScheduleExceptionCaller.ISO_DATETIME_FORMAT.format(expCal);
+        String originalStartTime = DateUtils.ISO_DATETIME_FORMAT.format(expCal);
         ExceptionMeetingParam param = new ExceptionMeetingParam("EM", expMeetingKey, originalStartTime);
 
         return param;

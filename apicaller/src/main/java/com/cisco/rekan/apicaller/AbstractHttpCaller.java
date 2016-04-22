@@ -45,7 +45,9 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      */
     protected static Logger logger = Logger.getLogger(AbstractHttpCaller.class);
 
-    /** The server url. */
+    /**
+     * The server url. E.g. "https://pluto.qa.webex.com/pluto/nobrowser.php".
+     */
     private String serverURL = null;
 
     /** The parameters. */
@@ -171,6 +173,13 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
      * @return a document of DOM4J.
      */
     public Document post4Document(String... params) {
+        String result = post4String(params);
+        Document resultDoc = Utils.convertStr2Dom(result);
+
+        return resultDoc;
+    }
+
+    public String post4String(String... params) {
         HttpResponse response = this.post(params);
         HttpEntity responseEntity = response.getEntity();
         String result = null;
@@ -181,9 +190,7 @@ public abstract class AbstractHttpCaller implements IHttpCaller {
         }
         logger.info(result);
 
-        Document resultDoc = Utils.convertStr2Dom(result);
-
-        return resultDoc;
+        return result;
     }
 
     /**

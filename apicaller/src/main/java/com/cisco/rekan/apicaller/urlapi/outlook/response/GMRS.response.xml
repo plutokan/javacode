@@ -1,44 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
 <OutlookGetSM>
 	<Status>SUCCESS</Status>
-	<MK>152546004</MK>
-	<PN>To receive a call back, provide your phone number when you join the
-		event, or call the number below and enter the access code.
-		Primary Large_Enable_Call-in toll-free number (US/Canada)_Jerry:
-		7,0/5;8:0,9,9[0]2%+7(0)5-8,0 9#9
-		Primary Large_Enable_Call-in toll number (US/Canada)_Jerry:
-		7,0/5;8:0,9,9[0]2%+7(0)5-8,0 9#9
-		Toll-free dialing restrictions:
-		http://www.webex.com/pdf/tollfree_restrictions.pdf
-		Access code: 152 546 004
-	</PN>
-	<PNA>To receive a call back, provide your phone number when you join
-		the event, or call the number below and enter the access code.
-		Primary Large_Enable_Call-in toll-free number (US/Canada)_Jerry:
-		7,0/5;8:0,9,9[0]2%+7(0)5-8,0 9#9
-		Primary Large_Enable_Call-in toll number (US/Canada)_Jerry:
-		7,0/5;8:0,9,9[0]2%+7(0)5-8,0 9#9
-		Toll-free dialing restrictions:
-		http://www.webex.com/pdf/tollfree_restrictions.pdf
-		Access code: 152 546 004
-	</PNA>
-	<StartURL>https://deweb2.qa.webex.com/dewd-pluto/j.php?S=152546004
-	</StartURL>
-	<JoinURL>https://deweb2.qa.webex.com/dewd-pluto/j.php?J=152546004
-	</JoinURL>
-	<Disclaimer>IMPORTANT NOTICE: This WebEx service includes a feature
-		that allows audio and any documents and other materials exchanged or
-		viewed during the session to be recorded. By joining this session, you
-		automatically consent to such recordings. If you do not consent to the
-		recording, discuss your concerns with the meeting host prior to the
-		start of the recording or do not join the session. Please note that
-		any such recordings may be subject to discovery in the event of
-		litigation.</Disclaimer>
-	<HostDisclaimer>IMPORTANT NOTICE: This WebEx service includes a feature
-		that allows audio and any documents and other materials exchanged or
-		viewed during the session to be recorded. You should inform all
-		meeting attendees prior to recording if you intend to record the
-		meeting. Please note that any such recordings may be subject to
-		discovery in the event of litigation.</HostDisclaimer>
-	<EmailFooter>http://www.webex.com</EmailFooter>
-	<PROFILEID></PROFILEID>
+	<MK>216552062</MK>
+	<JoinURL><![CDATA[https://hm1web.qa.webex.com/qat30pt3/j.php?MTID=m2ea325813bf949759ddeba834479eef0]]></JoinURL>
+	<MeetingInfoURL><![CDATA[https://hm1web.qa.webex.com/qat30pt3/j.php?MTID=m2ea325813bf949759ddeba834479eef0]]></MeetingInfoURL>
+	<PN><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262 &#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462261&#10;&#10;Access code&#58;216 552 062&#10;Toll-free dialing restrictions&#58; https&#58;&#47;&#47;www.webex.com&#47;pdf&#47;tollfree_restrictions.pdf]]></PN>
+	<PNA><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.&#10;Call-in toll-free number &#40;US&#47;Canada&#41;&#58; 10224462262 &#10;Call-in toll number &#40;US&#47;Canada&#41;&#58; 10224462261&#10;&#10;Access code&#58;216 552 062&#10;Toll-free dialing restrictions&#58; https&#58;&#47;&#47;www.webex.com&#47;pdf&#47;tollfree_restrictions.pdf]]></PNA>
+	<Host></Host>
+	<Disclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. By joining this session, you automatically consent to such recordings. If you do not consent to the recording, discuss your concerns with the meeting host prior to the start of the recording or do not join the session. Please note that any such recordings may be subject to discovery in the event of litigation.]]></Disclaimer>
+	<HostDisclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. You should inform all meeting attendees prior to recording if you intend to record the meeting. Please note that any such recordings may be subject to discovery in the event of litigation.]]></HostDisclaimer>
+	<HostEmailTemplate>
+		<Message><![CDATA[
+
+Host key: %Hostnumber%
+
+
+
+
+
+JOIN WEBEX MEETING
+
+%MeetingInfoURL%
+
+Meeting number:   %Meeting Number%%HostMeetingPasswordText%
+
+
+
+%TPInformationText%%JoinByPhoneText%
+
+
+
+Can't join the meeting? Contact support here:
+
+%ServiceNameURL%
+
+
+
+%HostDisclaimerText%
+
+]]></Message>
+	</HostEmailTemplate>
+	<AttendeeEmailTemplate>
+		<Message><![CDATA[-- Do not delete or change any of the following text. --
+
+
+
+
+
+JOIN WEBEX MEETING
+
+%MeetingInfoURL%
+
+Meeting number:   %Meeting Number%%MeetingPasswordText%
+
+
+
+%AttendeeTPInformationText%%HostKeyUrlText%%AttendeeJoinByPhoneText%
+
+
+
+Can't join the meeting?
+
+https://help.webex.com/docs/DOC-5412
+
+
+
+
+
+%DisclaimerText%
+
+]]></Message>
+	</AttendeeEmailTemplate>
+	<EmailNewVarNodeList>
+		<VarNode>
+			<NodeName>EmailFooter</NodeName>
+			<VarName>%EmailFooter%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>iPhoneJoinMeetingDesc</NodeName>
+			<VarName>%iPhoneJoinMeetingDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinMeetingTitle4SmartPhone</NodeName>
+			<VarName>%JoinMeetingTitle4SmartPhone%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallParticipantHtml</NodeName>
+			<VarName>%ConfCallParticipantHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallParticipant</NodeName>
+			<VarName>%ConfCallParticipant%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallModerator</NodeName>
+			<VarName>%ConfCallModerator%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimer</NodeName>
+			<VarName>%HostDisclaimer%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>PasswordDesc</NodeName>
+			<VarName>%PasswordDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberLabelWithValue</NodeName>
+			<VarName>%MeetingNumberLabelWithValue%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordLabel</NodeName>
+			<VarName>%MeetingPasswordLabel%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ActionOnAudioMeeting</NodeName>
+			<VarName>%ActionOnAudioMeeting%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ActionOnAudioMeetingAttendee</NodeName>
+			<VarName>%ActionOnAudioMeetingAttendee%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>StartMeetingLink</NodeName>
+			<VarName>%StartMeetingLink%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberNS</NodeName>
+			<VarName>%MeetingNumberNS%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPDescription</NodeName>
+			<VarName>%TPDescription%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformation</NodeName>
+			<VarName>%TPInformation%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyDesc</NodeName>
+			<VarName>%HostKeyDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingInfoURL</NodeName>
+			<VarName>%MeetingInfoURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ServiceNameURL</NodeName>
+			<VarName>%ServiceNameURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneIcs</NodeName>
+			<VarName>%JoinByPhoneIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationIcs</NodeName>
+			<VarName>%TPInformationIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneIcs</NodeName>
+			<VarName>%AttendeeJoinByPhoneIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneText</NodeName>
+			<VarName>%AttendeeJoinByPhoneText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostMeetingPasswordIcs</NodeName>
+			<VarName>%HostMeetingPasswordIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordIcs</NodeName>
+			<VarName>%MeetingPasswordIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerIcs</NodeName>
+			<VarName>%DisclaimerIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimerIcs</NodeName>
+			<VarName>%HostDisclaimerIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>Hostnumber</NodeName>
+			<VarName>%Hostnumber%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationText</NodeName>
+			<VarName>%TPInformationText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneText</NodeName>
+			<VarName>%JoinByPhoneText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordText</NodeName>
+			<VarName>%MeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostMeetingPasswordText</NodeName>
+			<VarName>%HostMeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimerText</NodeName>
+			<VarName>%HostDisclaimerText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerText</NodeName>
+			<VarName>%DisclaimerText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyUrlText</NodeName>
+			<VarName>%HostKeyUrlText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyUrlHtml</NodeName>
+			<VarName>%HostKeyUrlHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AccessCodeURL</NodeName>
+			<VarName>%AccessCodeURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AudioSettingsUrl</NodeName>
+			<VarName>%AudioSettingsUrl%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumber</NodeName>
+			<VarName>%MeetingNumber%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPJoinDescriptionHtml</NodeName>
+			<VarName>%TPJoinDescriptionHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneEntHtml</NodeName>
+			<VarName>%JoinByPhoneEntHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerHtml</NodeName>
+			<VarName>%DisclaimerHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPJoinDescriptionText</NodeName>
+			<VarName>%TPJoinDescriptionText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneEntText</NodeName>
+			<VarName>%JoinByPhoneEntText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationText</NodeName>
+			<VarName>%AttendeeTPInformationText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationIcs</NodeName>
+			<VarName>%AttendeeTPInformationIcs%</VarName>
+		</VarNode>
+	</EmailNewVarNodeList>
+	<EmailFooter><![CDATA[https://www.webex.com]]></EmailFooter>
+	<DisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerIcs>
+	<DisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerText>
+	<HostDisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerIcs>
+	<HostDisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerText>
+	<HostMeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="arial">111111</FONT>&nbsp; <BR> ]]></HostMeetingPasswordIcs>
+	<MeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="arial">111111</FONT>&nbsp; <BR> ]]></MeetingPasswordIcs>
+	<MeetingPasswordText><![CDATA[
+
+Meeting password: 111111]]></MeetingPasswordText>
+	<HostMeetingPasswordText><![CDATA[
+
+Meeting password: 111111]]></HostMeetingPasswordText>
+	<Hostnumber>590556</Hostnumber>
+	<HostNumberDesIcs><![CDATA[<P><FONT SIZE="2" COLOR="#666666" FACE="Arial">Host key:590556</FONT>]]></HostNumberDesIcs>
+	<TPInformationIcs><![CDATA[]]>
+	</TPInformationIcs>
+	<TPInformationText><![CDATA[]]>
+	</TPInformationText>
+	<AttendeeTPInformationIcs><![CDATA[]]>
+	</AttendeeTPInformationIcs>
+	<AttendeeTPInformationText><![CDATA[]]>
+	</AttendeeTPInformationText>
+	<JoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 216 552 062</FONT>&nbsp; <BR><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></JoinByPhoneIcs>
+	<JoinByPhoneText><![CDATA[
+
+JOIN BY PHONE
+
+10224462262 Call-in toll-free number (US/Canada) 
+
+10224462261 Call-in toll number (US/Canada)
+
+Access code: 216 552 062
+
+
+
+Toll-free dialing restrictions: 
+
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+
+]]></JoinByPhoneText>
+	<AttendeeJoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 216 552 062</FONT>&nbsp; <BR><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs>
+	<AttendeeJoinByPhoneText><![CDATA[
+
+JOIN BY PHONE
+
+10224462262 Call-in toll-free number (US/Canada) 
+
+10224462261 Call-in toll number (US/Canada)
+
+Access code: 216 552 062
+
+
+
+Toll-free dialing restrictions: 
+
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+
+]]></AttendeeJoinByPhoneText>
+	<ServiceNameURL>https://hm1web.qa.webex.com/qat30pt3/mc
+	</ServiceNameURL>
+	<HostKeyUrlHtml><![CDATA[<FONT SIZE="2" COLOR="#666666" FACE="arial">If you are the host, you can use the meeting host key to pass the host privilege to another participant or to start the meeting from a video conferencing system or application. To find the host key for this meeting, </FONT><A HREF="https://hm1web.qa.webex.com/qat30pt3/j.php?MTID=m3c8fdf799d3558f5f5a111fb2fbb2790"><FONT SIZE="2" COLOR="#00AFF9" FACE="Arial">go here.</FONT></A><BR><BR>]]></HostKeyUrlHtml>
+	<HostKeyUrlText><![CDATA[If you are the host, you can use the meeting host key to pass the host privilege to another participant or to start the meeting from a video conferencing system or application. To find the host key for this meeting, go here:
+
+https://hm1web.qa.webex.com/qat30pt3/j.php?MTID=m3c8fdf799d3558f5f5a111fb2fbb2790
+
+
+
+]]></HostKeyUrlText>
+	<HostKeyURL><![CDATA[https://hm1web.qa.webex.com/qat30pt3/j.php?MTID=m3c8fdf799d3558f5f5a111fb2fbb2790]]></HostKeyURL>
+	<iPhoneJoinMeetingDesc><![CDATA[------------------------------------------------------- 
+
+
+To join the meeting on iPhone
+
+
+-------------------------------------------------------
+
+
+Go to wbx://hm1web.qa.webex.com/qat30pt3?MK=216552062&amp;MPW=bcb15f821479b4d5772bd0ca866c00ad5f926e3580720659cc80d39c9d09802a&amp;MTGTK=SDJTSwAAALM_X8v39mipbtGi8TiMWLUKlCScnDmjSBLf4W1vA4wbYg2&amp;r2sec=1
+
+
+
+
+
+Don&apos;t have the iPhone WebEx application yet? 
+
+
+Go to http://itunes.apple.com/app/cisco-webex-meetings/id298844386 ]]></iPhoneJoinMeetingDesc>
+	<EncryptedMtgPwd><![CDATA[]]>
+	</EncryptedMtgPwd>
+	<JoinMeetingTitle4SmartPhone><![CDATA[(Now from mobile devices!)]]></JoinMeetingTitle4SmartPhone>
 </OutlookGetSM>

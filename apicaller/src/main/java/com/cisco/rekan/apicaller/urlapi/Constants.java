@@ -29,6 +29,9 @@ public final class Constants {
     public static final String WEBEX_SITE_2 = "pluto-killers.qa.webex.com";
     public static final String WEBEX_SITE_NAME_2 = "pluto-killers";
 
+    public static final String WEBEX_SITE_SAILY = "m1cweb3.qa.webex.com";
+    public static final String WEBEX_SITE_NAME_SAILY = "mdt31";
+
     public static final String TSP_SITE = "plutotsp.qa.webex.com";
     public static final String TSP_SITE_NAME = "plutotsp";
 

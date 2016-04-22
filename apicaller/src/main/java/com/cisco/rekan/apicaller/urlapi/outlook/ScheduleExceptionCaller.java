@@ -15,6 +15,7 @@ import org.dom4j.Document;
 import org.junit.Assert;
 
 import com.cisco.rekan.apicaller.urlapi.Constants;
+import com.cisco.rekan.apicaller.urlapi.DateUtils;
 
 /**
  * <code>ScheduleCaller</code>
@@ -24,8 +25,6 @@ import com.cisco.rekan.apicaller.urlapi.Constants;
  *
  */
 public class ScheduleExceptionCaller extends ScheduleCaller {
-
-    public static final FastDateFormat ISO_DATETIME_FORMAT = FastDateFormat.getInstance("yyyy-MM-dd HH:mm:ss");
 
     /* (non-Javadoc)
      * @see com.cisco.rekan.apitest.HttpAPICaller#addParams(java.lang.String[])
@@ -44,7 +43,7 @@ public class ScheduleExceptionCaller extends ScheduleCaller {
         Calendar startCal = super.getStartCalendar(dayOffset);
         super.setStartCalendar(startCal);
 
-        String originalStartTime = ISO_DATETIME_FORMAT.format(startCal);
+        String originalStartTime = DateUtils.ISO_DATETIME_FORMAT.format(startCal);
         super.addParam("OriginalStartTime", originalStartTime);
         super.addParam("IsSingleOccurrence", 1);
     }

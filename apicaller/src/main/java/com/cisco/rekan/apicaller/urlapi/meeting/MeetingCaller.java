@@ -6,16 +6,16 @@
  */
 package com.cisco.rekan.apicaller.urlapi.meeting;
 
-import java.io.IOException;
+import java.util.Calendar;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
-import org.dom4j.Document;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
-import com.cisco.rekan.apicaller.urlapi.DocshowParser;
-import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
+import com.cisco.rekan.apicaller.urlapi.AppTokenUtil;
+import com.cisco.rekan.apicaller.urlapi.DateUtils;
+import com.webex.webapp.common.exception.WbxAppTokenException;
 
 /**
  * <code>MeetingCaller</code>
@@ -26,8 +26,6 @@ import com.cisco.rekan.apicaller.urlapi.datemeeting.RegistrationCaller;
  */
 public class MeetingCaller extends AbstractURLAPICaller {
 
-    private static final String USER_NAME = "pluto";
-    private static final String USER_PASSWORD = "P@ss1234";
     static Logger logger = Logger.getLogger(MeetingCaller.class);
 
     /* (non-Javadoc)
@@ -46,11 +44,14 @@ public class MeetingCaller extends AbstractURLAPICaller {
         // AT=GetInfo&UUID=4g9tgwnbRkminnymq1SnBg&AppName=APP_Tahoe&AppToken=******&CurrentTime=2016-01-06 02:07:12&isUTF8=1
         super.addParam("AT", "GetInfo");
 
-        super.addParam("UUID", StringUtils.deleteWhitespace(params[0]));
+        super.addParam("UUID", params[0]);
+        String appToken = AppTokenUtil.createAPPToken(params[1]);
+        super.addParam("AppName", params[1]);
+        super.addParam("AppToken", appToken);
 
-        super.addParam("EM", "rekan@cisco.com");
-        super.addParam("DN", "steady wang");
-
+        Calendar currentCal = Calendar.getInstance();
+        String currentTime = DateUtils.ISO_DATETIME_FORMAT.format(currentCal);
+        super.addParam("CurrentTime", currentTime);
         super.addParam("isUTF8", "1");
     }
 
@@ -64,17 +65,25 @@ public class MeetingCaller extends AbstractURLAPICaller {
      * &TelePlusAttendeeID=14203&BuildNumber=31.0.0.4908&EnforceAudioLogin=0&EnforceAudioPassword=0&AudioPassword=null
      * &ExtendParams=CallIn%1
      * </pre>
-     * @throws IOException
+     * @throws WbxAppTokenException 
      */
     @Test
-    public void test() throws IOException {
-        // TODO use apptoken replace the session ticket.
-        RegistrationCaller loginCaller = new RegistrationCaller();
+    public void test4UUID() throws WbxAppTokenException {
 
-        Document docshow = super.post4Document("213 627 366");
-        docshow = DocshowParser.getClientparam(docshow);
+        String serverURL = "https://cet68.qa.webex.com/cet68/meeting.php";
+        super.setServerURL(serverURL);
+        super.post4String("gpxa0ApLT4q5JwKpQSqubA", "APP_Tahoe");
 
-        DocshowParser.printVideoAddresses(docshow);
+    }
+
+    @Test
+    public void test4MeetingKey() throws WbxAppTokenException {
+
+        super.setServerURL("https://cet68.qa.webex.com/cet68/meeting.php");
+        String meetingKey = "";
+        super.addParam("MK", StringUtils.deleteWhitespace(meetingKey)); // meeting key will override the UUID parameter.
+        super.post4String("gpxa0ApLT4q5JwKpQSqubA", "APP_Tahoe");
+
     }
 
 }
