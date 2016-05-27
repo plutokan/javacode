@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TeleMetryInfo>
+	<Status>SUCCESS</Status>
+	<MetricsEnable>1</MetricsEnable>
+	<MetricsURL>https://test.cisco.com?appid=7190BEF9-9A7C-48B8-BB86-C64C77E78F3E
+	</MetricsURL>
+	<MetricsParameters>
+		<MetricsTicket>RzH//wAAALPobR+UmmmoqXboK/3N1hf7ZDH6UiEjYsnKDUrQudtp6A==
+		</MetricsTicket>
+		<TimeStamp>1464326965392</TimeStamp>
+		<APPName>SessionKey</APPName>
+		<ConfID>1226904568973415524</ConfID>
+		<SiteID>256762</SiteID>
+	</MetricsParameters>
+</TeleMetryInfo>

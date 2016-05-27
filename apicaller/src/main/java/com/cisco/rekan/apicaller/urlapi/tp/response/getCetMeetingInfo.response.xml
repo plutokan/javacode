@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetCETMeetingInfoResp>
+	<Status>SUCCESS</Status>
+	<CMRVersion>3</CMRVersion>
+	<MeetingTopic>Pluto Kan's Personal Room</MeetingTopic>
+	<StartTime>2415-12-30 17:00:00</StartTime>
+	<ScheduledDuration>0</ScheduledDuration>
+	<ExtensionTime>0</ExtensionTime>
+	<AllowJBH>0</AllowJBH>
+	<HostKey>4001</HostKey>
+	<HostName>pluto</HostName>
+	<SIPURL>sip:m1djJzXvDUR8yd3LkBzSnpow@plutotsp.qa.webex.com</SIPURL>
+	<LanguagePreference>en_US</LanguagePreference>
+	<isTPLoginRequired>0</isTPLoginRequired>
+	<DialOutSequence>P3D35343451#P8D*24P3D57147#P0</DialOutSequence>
+	<DialOutSIPURI>86-4405804701@cmr-sip.domain.partner.com;x-cisco-tsp-pc=35343451;x-cisco-tsp-sc=35343450;x-cisco-tsp-attid=57147;x-cisco-tsp-type=1;
+	</DialOutSIPURI>
+	<TspUse>SIP</TspUse>
+	<Telephony>
+		<ServiceType>2</ServiceType>
+		<CallinTollNumber>86-4405804701</CallinTollNumber>
+		<CallinTollFreeNumber>86-4405804702</CallinTollFreeNumber>
+	</Telephony>
+	<CETMeetingType>2</CETMeetingType>
+	<LobbyGuardTime>30</LobbyGuardTime>
+	<CMRDuration>720</CMRDuration>
+	<CMRUserName>pluto</CMRUserName>
+	<MeetingKey>211286163</MeetingKey>
+	<MACCDomainIndex>m1</MACCDomainIndex>
+</GetCETMeetingInfoResp>
