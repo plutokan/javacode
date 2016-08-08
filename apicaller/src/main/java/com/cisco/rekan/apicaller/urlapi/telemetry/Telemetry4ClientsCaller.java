@@ -39,7 +39,7 @@ public class Telemetry4ClientsCaller extends AbstractURLAPICaller {
     public void addParams(String... params) {
         super.addParam("AT", "TMI");
         super.addParam("WID", "pluto");
-        super.addParam("PWPW", "P@ss12345");
+        super.addParam("PWPW", "P@ss1234");
     }
 
     /**

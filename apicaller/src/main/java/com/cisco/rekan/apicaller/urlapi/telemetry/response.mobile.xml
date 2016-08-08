@@ -2,14 +2,14 @@
 <TeleMetryInfo>
 	<Status>SUCCESS</Status>
 	<MetricsEnable>1</MetricsEnable>
-	<MetricsURL>https://test.cisco.com?appid=7190BEF9-9A7C-48B8-BB86-C64C77E78F3E
+	<MetricsURL>https://telemetry.qa.webex.com/metric/v1?appid=7190BEF9-9A7C-48B8-BB86-C64C77E78F3E
 	</MetricsURL>
 	<MetricsParameters>
-		<MetricsTicket>RzH//wAAALPobR+UmmmoqXboK/3N1hf7ZDH6UiEjYsnKDUrQudtp6A==
+		<MetricsTicket>RzH//wAAALM/tJEGdiTMtZDu5s5SvHHOA+Nmz130EIgSBctau+Ku1Q==
 		</MetricsTicket>
-		<TimeStamp>1464326965392</TimeStamp>
+		<TimeStamp>1464333422773</TimeStamp>
 		<APPName>SessionKey</APPName>
-		<ConfID>1226904568973415524</ConfID>
+		<ConfID>4415465597251495162</ConfID>
 		<SiteID>256762</SiteID>
 	</MetricsParameters>
 </TeleMetryInfo>

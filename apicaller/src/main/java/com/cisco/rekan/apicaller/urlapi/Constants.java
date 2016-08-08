@@ -23,8 +23,8 @@ public final class Constants {
     public static final String PROTOCOL_HTTP = "http";
     public static final String PROTOCOL_HTTPS = "https";
 
-    public static final String WEBEX_SITE_1 = "pluto.qa.webex.com";
-    public static final String WEBEX_SITE_NAME_1 = "pluto";
+    public static final String WEBEX_SITE_1 = "m1aweb3.qa.webex.com";
+    public static final String WEBEX_SITE_NAME_1 = "m1aweb3";
 
     public static final String WEBEX_SITE_2 = "pluto-killers.qa.webex.com";
     public static final String WEBEX_SITE_NAME_2 = "pluto-killers";
@@ -32,8 +32,8 @@ public final class Constants {
     public static final String WEBEX_SITE_SAILY = "m1cweb3.qa.webex.com";
     public static final String WEBEX_SITE_NAME_SAILY = "mdt31";
 
-    public static final String TSP_SITE = "plutotsp.qa.webex.com";
-    public static final String TSP_SITE_NAME = "plutotsp";
+    public static final String TSP_SITE = "m1aweb3s2.qa.webex.com";
+    public static final String TSP_SITE_NAME = "m1aweb3s2";
 
     public static final String QA_SITE = "gohm.qa.webex.com";
     public static final String QA_SITE_NAME = "gohm";

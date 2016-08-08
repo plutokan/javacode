@@ -50,7 +50,7 @@ public class IOsJMCaller extends AbstractURLAPICaller {
         super.addParam("PPW", params[1]);
 
 //        super.addParam("EM", "rekan@cisco.com"); // required when it's a Tandberg meeting, UUID is input
-        super.addParam("DN", "steady wang");
+        super.addParam("DN", "Potato Kan");
 
         super.addParam("DocshowVer", "2.0");
         super.addParam("FeatureSupport", "2");

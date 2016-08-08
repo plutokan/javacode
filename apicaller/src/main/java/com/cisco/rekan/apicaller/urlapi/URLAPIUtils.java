@@ -49,9 +49,15 @@ public final class URLAPIUtils {
     public static String getSessionTicket(final String userID, final String password) {
         UserGetAuthInfoCaller caller = new UserGetAuthInfoCaller();
 
-        return caller.getSessionTicket(userID, password);
+        return caller.getEPW(userID, password);
     }
 
+    /**
+     * Get session ticket via "datameeting.php?AT=Registration".
+     * @param userID WebEx user ID.
+     * @param password WebEx user password.
+     * @return raw type session ticket.
+     */
     public static String getSessionTicket2(final String userID, final String password) {
         RegistrationCaller caller = new RegistrationCaller();
 

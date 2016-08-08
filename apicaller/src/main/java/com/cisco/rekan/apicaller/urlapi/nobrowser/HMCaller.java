@@ -29,8 +29,8 @@ import com.cisco.rekan.apicaller.urlapi.m.MCaller;
  */
 public class HMCaller extends AbstractURLAPICaller {
 
-    private static final String USER_NAME = "saily";
-    private static final String USER_PASSWORD = "P@ss1234";
+    private static final String USER_NAME = "c";
+    private static final String USER_PASSWORD = "Aa1234";
     static Logger logger = Logger.getLogger(HMCaller.class);
 
     /* (non-Javadoc)
@@ -71,7 +71,7 @@ public class HMCaller extends AbstractURLAPICaller {
         String token = loginCaller.register(USER_NAME, USER_PASSWORD);
         super.addParam("SK", token);
 
-        Document docshow = super.post4Document("213014091");
+        Document docshow = super.post4Document("211 107 855");
         docshow = DocshowParser.getClientparam(docshow);
 
         DocshowParser.printVideoAddresses(docshow);

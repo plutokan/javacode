@@ -49,11 +49,14 @@ public class UserGetAuthInfoCaller extends AbstractURLAPICaller {
     }
 
     /**
-     * @param userID
-     * @param password
-     * @return
+     * Clients call this API to get the encrypted password, and store in the clients.
+     * Next time, when user need login to AS (get the session ticket), call GetAuthInfo with the parameter like "EPW".
+     *
+     * @param userID WebEx user ID.
+     * @param password user password.
+     * @return the encrypted password to store in clients.
      */
-    public static String getSessionTicket(final String userID, final String password) {
+    public static String getEPW(final String userID, final String password) {
         UserGetAuthInfoCaller caller = new UserGetAuthInfoCaller();
         HttpResponse response = caller.post(userID, password);
 
@@ -76,7 +79,7 @@ public class UserGetAuthInfoCaller extends AbstractURLAPICaller {
 
     @Test
     public void testPost() {
-        String sk = getSessionTicket("pluto", "P@ss1234");
+        String sk = getEPW("pluto", "P@ss123");
         System.out.println(sk);
     }
 
