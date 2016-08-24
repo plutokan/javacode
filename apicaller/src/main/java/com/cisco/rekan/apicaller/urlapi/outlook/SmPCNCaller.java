@@ -13,7 +13,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
-import com.cisco.rekan.apicaller.urlapi.Constants;
 
 /**
  * <code>SmPCNCaller</code>
@@ -40,7 +39,7 @@ public class SmPCNCaller extends AbstractURLAPICaller {
         super.addParam("SupportPKI", "1");
         super.addParam("SupportAES", "1");
         super.addParam("NeedCheckPassword", "1");
-        super.addParam("PPW", "P@ssword1234");
+        super.addParam("PPW", "44251080");
         super.addParam("ST", "1"); // service type.
         super.addParam("AP", "0"); // if allow Auto Play. 1/0 
         super.addParam("LF", "1"); // List flag, 1-list meeting,  0-unlisted meeting
@@ -53,6 +52,7 @@ public class SmPCNCaller extends AbstractURLAPICaller {
 
         // audio info
         super.addParam("TC", "8"); // Value:0-None, 1-Call in, 2-Call-back, 6 Other telephony, 8 Personal Conference Number, 9 3rd-TSP
+        super.addParam("TF", "1"); // 0/1  1-Toll-free call-in meeting.
         super.addParam("IP", "1"); // 1-Internet phone, default is 0 
         super.addParam("JBHT", "0"); // 1/0  join before host for telephony
         super.addParam("EETone", "1"); // 0/1/2  0-Beep 1-Announce Name 2-No Tone
@@ -67,7 +67,7 @@ public class SmPCNCaller extends AbstractURLAPICaller {
 
         // params for PCN
         super.addParam("AAH", "0");
-        super.addParam("TA", "2");
+        super.addParam("TA", "1");
     }
 
     /* (non-Javadoc)
@@ -125,9 +125,9 @@ public class SmPCNCaller extends AbstractURLAPICaller {
      * @param userName webex user name.
      * @param userPlainPassword user plain password.
      * @param meetingTopic meeting topic.
-     * @return
+     * @return document response.
      */
-    public static String schedulePCN(String userName, String userPlainPassword, String meetingTopic) {
+    public static Document schedulePCN(String userName, String userPlainPassword, String meetingTopic) {
         SmPCNCaller caller = new SmPCNCaller();
 
         caller.addParam("MT", 16); // PCN
@@ -138,15 +138,65 @@ public class SmPCNCaller extends AbstractURLAPICaller {
         Document scheduleResponse = caller.post4Document(userName, userPlainPassword, meetingTopic);
         String status = scheduleResponse.selectSingleNode("//OutlookScheduleMeeting/Status").getText();
         Assert.assertEquals("SUCCESS", status);
-        String strMeetingKey = scheduleResponse.selectSingleNode("//OutlookScheduleMeeting/MK").getText();
-        System.out.println(scheduleResponse.selectSingleNode("//OutlookScheduleMeeting/PN").getText());
-        System.out.println(scheduleResponse.selectSingleNode("//OutlookScheduleMeeting/PNA").getText());
+        logger.debug(getMeetingKey(scheduleResponse));
+        logger.debug(getPhoneNumber(scheduleResponse));
+        logger.debug(getPhoneNumber4Atd(scheduleResponse));
+
+        return scheduleResponse;
+    }
+
+    public static String updatePCN(String userName, String userPlainPassword, String meetingTopic,
+            String strMeetingKey, String password) {
+        SmPCNCaller caller = new SmPCNCaller();
+
+        caller.addParam("MK", strMeetingKey);
+        caller.addParam("MT", 16); // PCN
+        caller.addParam("OA", "56"); // site and user priviledge(bit) 
+        caller.addParam("UsePSTN", "1");
+        caller.addRepeatedParams4Daily();
+        caller.addParam("PPW", password);
+
+        Document scheduleResponse = caller.post4Document(userName, userPlainPassword, meetingTopic);
+        String status = scheduleResponse.selectSingleNode("//OutlookScheduleMeeting/Status").getText();
+        Assert.assertEquals("SUCCESS", status);
+        strMeetingKey = getMeetingKey(scheduleResponse);
+        System.out.println(getPhoneNumber(scheduleResponse));
+        System.out.println(getPhoneNumber4Atd(scheduleResponse));
 
         return strMeetingKey;
     }
 
     @Test
     public void test() {
-        SmPCNCaller.schedulePCN("jasmine01", "Aa1234", "Pluto test PCN 008");
+        String userName = "lyn";
+        String userPlainPassword = "P@ss123";
+        Document doc = SmPCNCaller.schedulePCN(userName, userPlainPassword, "Pluto test PCN 041");
+        String strMeetingKey = getMeetingKey(doc);
+        SmPCNCaller.updatePCN(userName, userPlainPassword, "Pluto test PCN 041-update", strMeetingKey, "23026936");
     }
+
+    private static String getMeetingKey(Document doc) {
+        if (null == doc) {
+            return null;
+        }
+
+        return doc.selectSingleNode("//OutlookScheduleMeeting/MK").getText();
+    }
+
+    private static String getPhoneNumber(Document doc) {
+        if (null == doc) {
+            return null;
+        }
+
+        return doc.selectSingleNode("//OutlookScheduleMeeting/PN").getText();
+    }
+
+    private static String getPhoneNumber4Atd(Document doc) {
+        if (null == doc) {
+            return null;
+        }
+
+        return doc.selectSingleNode("//OutlookScheduleMeeting/PNA").getText();
+    }
+
 }

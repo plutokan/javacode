@@ -47,9 +47,7 @@ public final class URLAPIUtils {
     }
 
     public static String getSessionTicket(final String userID, final String password) {
-        UserGetAuthInfoCaller caller = new UserGetAuthInfoCaller();
-
-        return caller.getEPW(userID, password);
+        return UserGetAuthInfoCaller.getEPW(userID, password);
     }
 
     /**

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OutlookScheduleMeeting>
+	<Status>SUCCESS</Status>
+	<MK>213340273</MK>
+	<allowAnyUserToBeAlternateHost>0</allowAnyUserToBeAlternateHost>
+	<TimeZone>
+		<JodaTimeZoneName><![CDATA[Europe/Berlin]]></JodaTimeZoneName>
+		<WebExTimeZone>
+			<ID><![CDATA[25]]></ID>
+			<Name><![CDATA[Europe]]></Name>
+		</WebExTimeZone>
+	</TimeZone>
+	<ConfID>37088481431783026</ConfID>
+	<MT>
+		<ID>16</ID>
+		<MTN>Personal Conference</MTN>
+		<supportTelePresence>false</supportTelePresence>
+	</MT>
+	<JoinURL><![CDATA[https://hm1web4.qa.webex.com/gohm/j.php?MTID=m781bf2998815941ec4adff9df82eef9c]]></JoinURL>
+	<MeetingInfoURL><![CDATA[https://hm1web4.qa.webex.com/gohm/j.php?MTID=m781bf2998815941ec4adff9df82eef9c]]></MeetingInfoURL>
+	<PPUMeeting>0</PPUMeeting>
+	<isRecurring>false</isRecurring>
+	<isExceptional>false</isExceptional>
+	<firstStartTime>2016-08-14 12:00:00</firstStartTime>
+	<PN><![CDATA[Call-in toll-free number (US/Canada): 10224462262
+Call-in toll number (US/Canada) sandy: 10224462261
+Global call-in numbers: https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+
+
+Host access code: 371 693 98
+Attendee access code: 327 587 68]]></PN>
+	<PNA><![CDATA[Call-in toll-free number (US/Canada): 10224462262
+Call-in toll number (US/Canada) sandy: 10224462261
+Global call-in numbers: https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+
+
+Attendee access code: 327 587 68]]></PNA>
+	<Host></Host>
+	<Disclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. By joining this session, you automatically consent to such recordings. If you do not consent to the recording, discuss your concerns with the meeting host prior to the start of the recording or do not join the session. Please note that any such recordings may be subject to discovery in the event of litigation.]]></Disclaimer>
+	<HostDisclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. You should inform all meeting attendees prior to recording if you intend to record the meeting. Please note that any such recordings may be subject to discovery in the event of litigation.]]></HostDisclaimer>
+	<HostEmailTemplate>
+		<Message><![CDATA[
+You are the host for this Personal Conference meeting.
+%MeetingNumberLabelWithValue%
+-----------------------------------------------------------------------------------------------
+To start the audio portion of the Personal Conference meeting
+-----------------------------------------------------------------------------------------------
+%TeleconferencingInfo%
+
+-----------------------------------------------------------------------------------------------
+%ActionOnAudioMeeting%
+-----------------------------------------------------------------------------------------------
+1. Go to %Meeting Link%
+2. If you are not logged in, log in to your account.
+
+%PKI Information%
+%MeetingPasswordLabel% %Meeting Password%
+%PasswordDesc%
+%EmailFooter%
+
+%ConfCallModerator%
+
+%HostDisclaimer%
+]]></Message>
+	</HostEmailTemplate>
+	<AttendeeEmailTemplate>
+		<Message><![CDATA[
+%Host Name% invites you to join this Personal Conference meeting.
+%MeetingNumberLabelWithValue%
+-----------------------------------------------------------------------------------------------
+To join the audio portion of the Personal Conference meeting
+-----------------------------------------------------------------------------------------------
+%TeleconferencingInfo%
+
+-----------------------------------------------------------------------------------------------
+%ActionOnAudioMeetingAttendee%
+-----------------------------------------------------------------------------------------------
+1. Go to %Meeting Link%
+2. If a password is required, enter the Meeting Password: %Meeting Password%
+
+%PKI Information%
+
+%EmailFooter%
+
+%ConfCallParticipant%
+
+%Recording Disclaimer%
+]]></Message>
+	</AttendeeEmailTemplate>
+	<EmailNewVarNodeList>
+		<VarNode>
+			<NodeName>EmailFooter</NodeName>
+			<VarName>%EmailFooter%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>iPhoneJoinMeetingDesc</NodeName>
+			<VarName>%iPhoneJoinMeetingDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinMeetingTitle4SmartPhone</NodeName>
+			<VarName>%JoinMeetingTitle4SmartPhone%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallParticipantHtml</NodeName>
+			<VarName>%ConfCallParticipantHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallParticipant</NodeName>
+			<VarName>%ConfCallParticipant%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallModerator</NodeName>
+			<VarName>%ConfCallModerator%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimer</NodeName>
+			<VarName>%HostDisclaimer%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>PasswordDesc</NodeName>
+			<VarName>%PasswordDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberLabelWithValue</NodeName>
+			<VarName>%MeetingNumberLabelWithValue%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordLabel</NodeName>
+			<VarName>%MeetingPasswordLabel%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ActionOnAudioMeeting</NodeName>
+			<VarName>%ActionOnAudioMeeting%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ActionOnAudioMeetingAttendee</NodeName>
+			<VarName>%ActionOnAudioMeetingAttendee%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>StartMeetingLink</NodeName>
+			<VarName>%StartMeetingLink%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberNS</NodeName>
+			<VarName>%MeetingNumberNS%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPDescription</NodeName>
+			<VarName>%TPDescription%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformation</NodeName>
+			<VarName>%TPInformation%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyDesc</NodeName>
+			<VarName>%HostKeyDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingInfoURL</NodeName>
+			<VarName>%MeetingInfoURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ServiceNameURL</NodeName>
+			<VarName>%ServiceNameURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneIcs</NodeName>
+			<VarName>%JoinByPhoneIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationIcs</NodeName>
+			<VarName>%TPInformationIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneIcs</NodeName>
+			<VarName>%AttendeeJoinByPhoneIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneText</NodeName>
+			<VarName>%AttendeeJoinByPhoneText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostMeetingPasswordIcs</NodeName>
+			<VarName>%HostMeetingPasswordIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordIcs</NodeName>
+			<VarName>%MeetingPasswordIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerIcs</NodeName>
+			<VarName>%DisclaimerIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimerIcs</NodeName>
+			<VarName>%HostDisclaimerIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>Hostnumber</NodeName>
+			<VarName>%Hostnumber%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationText</NodeName>
+			<VarName>%TPInformationText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneText</NodeName>
+			<VarName>%JoinByPhoneText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordText</NodeName>
+			<VarName>%MeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostMeetingPasswordText</NodeName>
+			<VarName>%HostMeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimerText</NodeName>
+			<VarName>%HostDisclaimerText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerText</NodeName>
+			<VarName>%DisclaimerText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyUrlText</NodeName>
+			<VarName>%HostKeyUrlText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyUrlHtml</NodeName>
+			<VarName>%HostKeyUrlHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AccessCodeURL</NodeName>
+			<VarName>%AccessCodeURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AudioSettingsUrl</NodeName>
+			<VarName>%AudioSettingsUrl%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumber</NodeName>
+			<VarName>%MeetingNumber%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPJoinDescriptionHtml</NodeName>
+			<VarName>%TPJoinDescriptionHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneEntHtml</NodeName>
+			<VarName>%JoinByPhoneEntHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerHtml</NodeName>
+			<VarName>%DisclaimerHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPJoinDescriptionText</NodeName>
+			<VarName>%TPJoinDescriptionText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneEntText</NodeName>
+			<VarName>%JoinByPhoneEntText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationText</NodeName>
+			<VarName>%AttendeeTPInformationText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationIcs</NodeName>
+			<VarName>%AttendeeTPInformationIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberLabelHtml</NodeName>
+			<VarName>%MeetingNumberLabelHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>NumericMeetingPasswordHtml</NodeName>
+			<VarName>%NumericMeetingPasswordHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberLabelText</NodeName>
+			<VarName>%MeetingNumberLabelText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>NumericMeetingPasswordText</NodeName>
+			<VarName>%NumericMeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationText_Simple</NodeName>
+			<VarName>%AttendeeTPInformationText_Simple%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationIcs_Simple</NodeName>
+			<VarName>%AttendeeTPInformationIcs_Simple%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneIcs_Simple</NodeName>
+			<VarName>%AttendeeJoinByPhoneIcs_Simple%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneText_Simple</NodeName>
+			<VarName>%AttendeeJoinByPhoneText_Simple%</VarName>
+		</VarNode>
+	</EmailNewVarNodeList>
+	<EmailFooter><![CDATA[https://www.webex.com]]></EmailFooter>
+	<PasswordDesc>(Required only for viewing information about the Personal
+		Conference meeting)
+
+	</PasswordDesc>
+	<MeetingPasswordLabel>
+		Meeting Password:
+	</MeetingPasswordLabel>
+	<ShowMtgPwdLabel>1</ShowMtgPwdLabel>
+	<MeetingNumberLabelWithValue>
+		Meeting Number: 213340273
+	</MeetingNumberLabelWithValue>
+	<ActionOnAudioMeeting>To start the online portion of the Personal
+		Conference meeting</ActionOnAudioMeeting>
+	<ActionOnAudioMeetingAttendee>To join the online portion of the
+		Personal Conference meeting</ActionOnAudioMeetingAttendee>
+	<AccessCodeURL>https://hm1web4.qa.webex.com/gohm/j.php?MTID=me730a18b6a639bde5c8d9518e78913d9
+	</AccessCodeURL>
+	<AudioSettingsUrl><![CDATA[https://hm1web4.qa.webex.com/mw3100/mywebex/preference.do?siteurl=gohm&keeppage=1&go_sec=mwx-lnk-audio&config=HomePage|TimeZone|Lang|Locale&backUrl=%2Fmw3100%2Fmywebex%2Fdefault.do%3Fsiteurl%3Dgohm%26service%3D1&target=Frame&siteurl=gohm&popuplogin=true]]></AudioSettingsUrl>
+	<DisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerIcs>
+	<DisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerText>
+	<HostDisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerIcs>
+	<HostDisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerText>
+	<HostMeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="Segoe UI">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></HostMeetingPasswordIcs>
+	<MeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="Segoe UI">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></MeetingPasswordIcs>
+	<MeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></MeetingPasswordText>
+	<HostMeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></HostMeetingPasswordText>
+	<NumericMeetingPasswordHtml>
+	</NumericMeetingPasswordHtml>
+	<NumericMeetingPasswordText>
+	</NumericMeetingPasswordText>
+	<MeetingNumberLabelHtml>Meeting number:</MeetingNumberLabelHtml>
+	<MeetingNumberLabelText>Meeting number:</MeetingNumberLabelText>
+	<Hostnumber>344382</Hostnumber>
+	<HostNumberDesIcs><![CDATA[<P><FONT SIZE="2" COLOR="#666666" FACE="Arial">Host key:344382</FONT>]]></HostNumberDesIcs>
+	<TPInformationIcs><![CDATA[]]>
+	</TPInformationIcs>
+	<TPInformationText><![CDATA[]]>
+	</TPInformationText>
+	<AttendeeTPInformationIcs><![CDATA[]]>
+	</AttendeeTPInformationIcs>
+	<AttendeeTPInformationText><![CDATA[]]>
+	</AttendeeTPInformationText>
+	<AttendeeTPInformationIcs_Simple><![CDATA[]]>
+	</AttendeeTPInformationIcs_Simple>
+	<AttendeeTPInformationText_Simple><![CDATA[]]>
+	</AttendeeTPInformationText_Simple>
+	<JoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada) sandy</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>Host access code:</strong>&nbsp;371 693 98</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>Attendee access code:</strong>&nbsp;327 587 68</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  </FONT>&nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></JoinByPhoneIcs>
+	<JoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224462261 Call-in toll number (US/Canada) sandy
+10224462262 Call-in toll-free number (US/Canada)
+
+Global call-in numbers:
+https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+
+Host access code: 371 693 98Attendee access code: 327 587 68
+
+* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  
+]]></JoinByPhoneText>
+	<JoinByPhoneIcs_Simple><![CDATA[<FONT SIZE="4" FACE="Segoe UI"><FONT SIZE="4" COLOR="#666666" FACE="Segoe UI">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada) sandy</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Global call-in numbers</FONT></a><FONT SIZE="2" FACE="Segoe UI">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>Host access code:</strong>&nbsp;371 693 98</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>Attendee access code:</strong>&nbsp;327 587 68</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  </FONT>&nbsp; <BR></FONT>&nbsp; <BR>]]></JoinByPhoneIcs_Simple>
+	<JoinByPhoneText_Simple><![CDATA[
+JOIN BY PHONE
+10224462261 Call-in toll number (US/Canada) sandy
+10224462262 Call-in toll-free number (US/Canada)
+
+Global call-in numbers:
+https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+
+Host access code: 371 693 98Attendee access code: 327 587 68
+
+* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  
+]]></JoinByPhoneText_Simple>
+	<AttendeeJoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada) sandy</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>Attendee access code:</strong>&nbsp;327 587 68</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  </FONT>&nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs>
+	<AttendeeJoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224462261 Call-in toll number (US/Canada) sandy
+10224462262 Call-in toll-free number (US/Canada)
+
+Global call-in numbers:
+https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+
+Attendee access code: 327 587 68
+
+* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  
+]]></AttendeeJoinByPhoneText>
+	<AttendeeJoinByPhoneIcs_Simple><![CDATA[<FONT SIZE="4" FACE="Segoe UI"><FONT SIZE="4" COLOR="#666666" FACE="Segoe UI">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada) sandy</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Global call-in numbers</FONT></a><FONT SIZE="2" FACE="Segoe UI">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>Attendee access code:</strong>&nbsp;327 587 68</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  </FONT>&nbsp; <BR></FONT>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs_Simple>
+	<AttendeeJoinByPhoneText_Simple><![CDATA[
+JOIN BY PHONE
+10224462261 Call-in toll number (US/Canada) sandy
+10224462262 Call-in toll-free number (US/Canada)
+
+Global call-in numbers:
+https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+
+Attendee access code: 327 587 68
+
+* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  
+]]></AttendeeJoinByPhoneText_Simple>
+	<ServiceNameURL>https://hm1web4.qa.webex.com/gohm/mc</ServiceNameURL>
+	<HostKeyUrlHtml><![CDATA[<FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">If you are a host, </FONT><A HREF="https://hm1web4.qa.webex.com/gohm/j.php?MTID=me730a18b6a639bde5c8d9518e78913d9"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">go here</FONT></A><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"> to view host information.</FONT><BR><BR>]]></HostKeyUrlHtml>
+	<HostKeyUrlText><![CDATA[If you are a host, go here to view host information:
+https://hm1web4.qa.webex.com/gohm/j.php?MTID=me730a18b6a639bde5c8d9518e78913d9
+
+]]></HostKeyUrlText>
+	<HostKeyURL><![CDATA[https://hm1web4.qa.webex.com/gohm/j.php?MTID=me730a18b6a639bde5c8d9518e78913d9]]></HostKeyURL>
+	<iPhoneJoinMeetingDesc><![CDATA[------------------------------------------------------- 
+To join the meeting on iPhone
+-------------------------------------------------------
+Go to wbx://hm1web4.qa.webex.com/gohm?MK=213340273&amp;MPW=501fe884fdbbb0bceafff5f4fd2f3423cd32d435e96a0a85e56cdf067a632894&amp;MTGTK=SDJTSwAAALNM8B3H5gKG2MTiV6VGB0MjqHv1GDgV2hT8OwDtW7YtNA2&amp;r2sec=1
+
+Don&apos;t have the iPhone WebEx application yet? 
+Go to http://itunes.apple.com/app/cisco-webex-meetings/id298844386 ]]></iPhoneJoinMeetingDesc>
+	<EncryptedMtgPwd><![CDATA[]]>
+	</EncryptedMtgPwd>
+	<JoinMeetingTitle4SmartPhone><![CDATA[(Now from mobile devices!)]]></JoinMeetingTitle4SmartPhone>
+	<ConfCallParticipant>CCP:+10224462261x32758768# </ConfCallParticipant>
+	<ConfCallModerator>CCM:+10224462261x37169398# </ConfCallModerator>
+	<MeetingNumberNS>213340273</MeetingNumberNS>
+	<MPCallInNumberList></MPCallInNumberList>
+</OutlookScheduleMeeting>
