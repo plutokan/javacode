@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <OutlookUserLogin>
 	<Status>SUCCESS</Status>
-	<SID>593974102</SID>
-	<UID>16032</UID>
+	<SID>256762</SID>
+	<UID>214287</UID>
 	<WID>pluto</WID>
 	<FN>Pluto</FN>
 	<LN>Kan</LN>
 	<OtherTeleName>Other teleconference service</OtherTeleName>
 	<DEFMTTOPIC></DEFMTTOPIC>
-	<SiteSetting>326397</SiteSetting>
+	<SiteSetting>326333</SiteSetting>
 	<IncludePwdInJoinMeetinglinks>true</IncludePwdInJoinMeetinglinks>
 	<AllowUser2StorePersonalInfo>false</AllowUser2StorePersonalInfo>
-	<SupportCMR>false</SupportCMR>
+	<SupportCMR>true</SupportCMR>
+	<CMRMeeting>
+		<PMRSIPURL><![CDATA[pluto@m1aweb3.qa.webex.com]]></PMRSIPURL>
+		<ConfName><![CDATA[Pluto Kan's Personal Room]]></ConfName>
+		<CMRAccessCode><![CDATA[217625834]]></CMRAccessCode>
+		<PersonalMeetingRoomURL><![CDATA[https://pluto-en.qa.webex.com/meet/pluto]]></PersonalMeetingRoomURL>
+		<ServiceType>1</ServiceType>
+		<SessionType>3</SessionType>
+		<EntryExitTone>0</EntryExitTone>
+		<TeleConfSupport>Call</TeleConfSupport>
+		<TSPIndex></TSPIndex>
+	</CMRMeeting>
 	<SSEET>0</SSEET>
 	<ECSSEET>2</ECSSEET>
 	<AuoEET>
 		<PCN>0</PCN>
 		<RCN>0</RCN>
 	</AuoEET>
-	<UserSMTP>pluto@qa.webex.com</UserSMTP>
+	<UserSMTP><![CDATA[pluto@qa.webex.com]]></UserSMTP>
 	<HostName>Pluto Kan</HostName>
 	<VER>T21</VER>
 	<SiteType>0</SiteType>
 	<TP>0</TP>
+	<UserEnableCET>1</UserEnableCET>
 	<SiteSupportTPRecord>1</SiteSupportTPRecord>
-	<CP>SUCCESS</CP>
 	<DTE>0</DTE>
-	<DAV>808</DAV>
+	<PURL><![CDATA[pluto]]></PURL>
+	<DAV>297</DAV>
 	<STS>
 		<ST>
 			<ID>1</ID>
@@ -45,49 +57,32 @@
 			<DEF>1</DEF>
 			<MTS>
 				<MT>
-					<ID>1</ID>
-					<MTN>Free Trial (Limited Functionality)</MTN>
-					<AU>0</AU>
-					<OA>457175004</OA>
-					<ExtOA1>0</ExtOA1>
-					<DEF>0</DEF>
-				</MT>
-				<MT>
-					<ID>16</ID>
-					<MTN>Personal Conference</MTN>
-					<AU>1</AU>
-					<OA>188548888</OA>
-					<ExtOA1>0</ExtOA1>
-					<DEF>0</DEF>
-				</MT>
-				<MT>
 					<ID>3</ID>
-					<MTN>Pro meeting</MTN>
+					<MTN><![CDATA[Pro meeting]]></MTN>
 					<AU>0</AU>
-					<OA>457175004</OA>
-					<ExtOA1>0</ExtOA1>
+					<OA>423620604</OA>
+					<ExtOA1>32</ExtOA1>
 					<DEF>0</DEF>
 				</MT>
 				<MT>
 					<ID>2</ID>
-					<MTN>Standard Meeting</MTN>
+					<MTN><![CDATA[Standard Meeting]]></MTN>
 					<AU>0</AU>
-					<OA>457175004</OA>
-					<ExtOA1>0</ExtOA1>
+					<OA>423620572</OA>
+					<ExtOA1>32</ExtOA1>
 					<DEF>0</DEF>
 				</MT>
 				<MT>
-					<ID>16</ID>
-					<MTN>Other teleconference service</MTN>
-					<AU>1</AU>
-					<OA>18417472</OA>
-					<ExtOA1>0</ExtOA1>
+					<ID>2194</ID>
+					<MTN><![CDATA[std 2]]></MTN>
+					<AU>0</AU>
+					<OA>423620604</OA>
+					<ExtOA1>32</ExtOA1>
 					<DEF>0</DEF>
-					<VirtualOCNMT>1</VirtualOCNMT>
 				</MT>
 			</MTS>
 			<PTS>
-				<PT>Default Information Tab</PT>
+				<PT><![CDATA[Default Information Tab]]></PT>
 			</PTS>
 		</ST>
 		<ST>
@@ -108,31 +103,23 @@
 			<MTS>
 				<MT>
 					<ID>9</ID>
-					<MTN>Online Event</MTN>
+					<MTN><![CDATA[Online Event]]></MTN>
 					<AU>0</AU>
-					<OA>269430748</OA>
+					<OA>1028092</OA>
 					<ExtOA1>0</ExtOA1>
 					<DEF>1</DEF>
 				</MT>
 				<MT>
-					<ID>3</ID>
-					<MTN>Pro meeting</MTN>
-					<AU>0</AU>
-					<OA>286207964</OA>
-					<ExtOA1>0</ExtOA1>
-					<DEF>0</DEF>
-				</MT>
-				<MT>
 					<ID>2</ID>
-					<MTN>Standard Meeting</MTN>
+					<MTN><![CDATA[Standard Meeting]]></MTN>
 					<AU>0</AU>
-					<OA>286207964</OA>
+					<OA>17805276</OA>
 					<ExtOA1>0</ExtOA1>
 					<DEF>0</DEF>
 				</MT>
 			</MTS>
 			<PTS>
-				<PT>Default Information Tab</PT>
+				<PT><![CDATA[Default Information Tab]]></PT>
 			</PTS>
 		</ST>
 		<ST>
@@ -153,81 +140,39 @@
 			<MTS>
 				<MT>
 					<ID>11</ID>
-					<MTN>Training session</MTN>
+					<MTN><![CDATA[Training session]]></MTN>
 					<AU>0</AU>
-					<OA>455028700</OA>
+					<OA>153038844</OA>
 					<ExtOA1>0</ExtOA1>
 					<DEF>0</DEF>
 				</MT>
 			</MTS>
 			<PTS>
-				<PT>Default Information Tab</PT>
-			</PTS>
-		</ST>
-		<ST>
-			<ID>12</ID>
-			<Name>Sales Center</Name>
-			<MRT>-1</MRT>
-			<EEE>
-				<WebExSite>3</WebExSite>
-				<TSPSite>1</TSPSite>
-				<MPSite>0</MPSite>
-				<AUO>
-					<WebExSite>3</WebExSite>
-					<TSPSite>0</TSPSite>
-					<MPSite>0</MPSite>
-				</AUO>
-			</EEE>
-			<DEF>0</DEF>
-			<MTS>
-				<MT>
-					<ID>3</ID>
-					<MTN>Pro meeting</MTN>
-					<AU>0</AU>
-					<OA>457101272</OA>
-					<ExtOA1>0</ExtOA1>
-					<DEF>0</DEF>
-				</MT>
-				<MT>
-					<ID>15</ID>
-					<MTN>Sales Session</MTN>
-					<AU>0</AU>
-					<OA>440324056</OA>
-					<ExtOA1>0</ExtOA1>
-					<DEF>0</DEF>
-				</MT>
-				<MT>
-					<ID>2</ID>
-					<MTN>Standard Meeting</MTN>
-					<AU>0</AU>
-					<OA>457101272</OA>
-					<ExtOA1>0</ExtOA1>
-					<DEF>0</DEF>
-				</MT>
-			</MTS>
-			<PTS>
-				<PT>Default Information Tab</PT>
+				<PT><![CDATA[Default Information Tab]]></PT>
 			</PTS>
 		</ST>
 	</STS>
 	<MPS>
 		<MP>
 			<ID></ID>
-			<TN>MC: Meeting Center Default</TN>
-			<MTKey>G;MC;en_US;7.1;0;Meeting Center Default;D; ;</MTKey>
+			<TN><![CDATA[MC: Meeting Center Default]]></TN>
+			<MTKey><![CDATA[G;MC;en_US;7.1;0;Meeting Center Default;D; ;]]></MTKey>
 			<MPST>1</MPST>
 			<MTP>0</MTP>
 			<SITEDEF>1</SITEDEF>
 			<INFO>
 				<MT>3</MT>
 				<MTTOPIC></MTTOPIC>
-				<TP></TP>
-				<MTOA>938080</MTOA>
+				<TP><![CDATA[]]>
+				</TP>
+				<MTOA>938058</MTOA>
 				<CUVCMtgID></CUVCMtgID>
 				<JBHT>5</JBHT>
-				<TD></TD>
+				<TD><![CDATA[]]>
+				</TD>
 				<PCN></PCN>
-				<APF></APF>
+				<APF><![CDATA[]]>
+				</APF>
 				<EETone>0</EETone>
 			</INFO>
 			<TCS></TCS>
@@ -235,84 +180,47 @@
 		</MP>
 		<MP>
 			<ID></ID>
-			<TN>MC: tpl-pluto-001</TN>
-			<MTKey>S;MC;en_US;9.1;2522;tpl-pluto-001; ; ;</MTKey>
-			<MPST>1</MPST>
-			<MTP>1</MTP>
-			<SITEDEF>0</SITEDEF>
-			<INFO>
-				<MT>1</MT>
-				<MTTOPIC>Pluto test 001</MTTOPIC>
-				<TP>Default Information Tab</TP>
-				<MTOA>786496</MTOA>
-				<CUVCMtgID></CUVCMtgID>
-				<JBHT>5</JBHT>
-				<TD></TD>
-				<PCN>null</PCN>
-				<APF></APF>
-				<EETone>0</EETone>
-			</INFO>
-			<TCS></TCS>
-			<DEF>0</DEF>
-		</MP>
-		<MP>
-			<ID></ID>
-			<TN>EC: Event Center Default</TN>
-			<MTKey>G;EC;en_US;5.5;0;Event Center Default;D; ;</MTKey>
+			<TN><![CDATA[EC: Event Center Default]]></TN>
+			<MTKey><![CDATA[G;EC;en_US;5.5;0;Event Center Default;D; ;]]></MTKey>
 			<MPST>6</MPST>
 			<MTP>0</MTP>
 			<SITEDEF>1</SITEDEF>
 			<INFO>
 				<MT>9</MT>
 				<MTTOPIC></MTTOPIC>
-				<TP></TP>
-				<MTOA>3136</MTOA>
+				<TP><![CDATA[]]>
+				</TP>
+				<MTOA>3146</MTOA>
 				<JBHT>0</JBHT>
-				<TD></TD>
+				<TD><![CDATA[]]>
+				</TD>
 				<PCN></PCN>
-				<APF></APF>
+				<APF><![CDATA[]]>
+				</APF>
 				<EETone>2</EETone>
 			</INFO>
 			<TCS></TCS>
-			<DEF>0</DEF>
+			<DEF>1</DEF>
 		</MP>
 		<MP>
 			<ID></ID>
-			<TN>TC: Training Center Default</TN>
-			<MTKey>G;TC;en_US;4.5.0;0;Training Center Default;D; ;</MTKey>
+			<TN><![CDATA[TC: Training Center Default]]></TN>
+			<MTKey><![CDATA[G;TC;en_US;4.5.0;0;Training Center Default;D; ;]]></MTKey>
 			<MPST>7</MPST>
 			<MTP>0</MTP>
 			<SITEDEF>1</SITEDEF>
 			<INFO>
 				<MT>11</MT>
 				<MTTOPIC></MTTOPIC>
-				<TP></TP>
-				<MTOA>421984</MTOA>
+				<TP><![CDATA[]]>
+				</TP>
+				<MTOA>405576</MTOA>
 				<JBHT>5</JBHT>
-				<TD></TD>
+				<TD><![CDATA[]]>
+				</TD>
 				<PCN></PCN>
-				<APF></APF>
-				<EETone>0</EETone>
-			</INFO>
-			<TCS></TCS>
-			<DEF>0</DEF>
-		</MP>
-		<MP>
-			<ID></ID>
-			<TN>SaC: Sales Center Default</TN>
-			<MTKey>G;SaC;en_US;3.1;0;Sales Center Default;D; ;</MTKey>
-			<MPST>12</MPST>
-			<MTP>0</MTP>
-			<SITEDEF>1</SITEDEF>
-			<INFO>
-				<MT>15</MT>
-				<MTTOPIC></MTTOPIC>
-				<TP></TP>
-				<MTOA>413760</MTOA>
-				<JBHT>5</JBHT>
-				<TD></TD>
-				<PCN></PCN>
-				<APF></APF>
+				<APF><![CDATA[]]>
+				</APF>
 				<EETone>0</EETone>
 			</INFO>
 			<TCS></TCS>
@@ -320,19 +228,22 @@
 		</MP>
 	</MPS>
 	<PCN>
-		<TSN>Service name-Personal Conference No.</TSN>
+		<TSN><![CDATA[Personal Conference No.]]></TSN>
 		<DEF>1</DEF>
 	</PCN>
-	<PCNA>
-		<TSN>Service name-Personal Conference No.</TSN>
-		<DEF>1</DEF>
-	</PCNA>
 	<BFS></BFS>
 	<Config>
 		<PT>
-			<FG1Config>19</FG1Config>
+			<FG1Config>595</FG1Config>
 		</PT>
 		<T29CryptoFlag>0</T29CryptoFlag>
 		<EnforcePostFlag>0</EnforcePostFlag>
+		<EnableR2SecurityFlag>1</EnableR2SecurityFlag>
+		<R2>1</R2>
+		<SupportPMR>1</SupportPMR>
+		<SiteSupportHybridVoIPOnly>1</SiteSupportHybridVoIPOnly>
+		<UseOneEmailTemplate>1</UseOneEmailTemplate>
+		<BulkAPIForExceptionMeeting>1</BulkAPIForExceptionMeeting>
+		<SupportJodaTimeZone>1</SupportJodaTimeZone>
 	</Config>
 </OutlookUserLogin>

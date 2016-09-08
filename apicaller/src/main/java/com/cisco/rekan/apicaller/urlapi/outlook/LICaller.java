@@ -20,7 +20,7 @@ import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 public class LICaller extends AbstractURLAPICaller {
 
     private static final String USER_NAME = "pluto";
-    private static final String USER_PASSWORD = "P@ss1234";
+    private static final String USER_PASSWORD = "P@ss12345";
     private static final String USER_ENCRYPTED_PASSWORD = "b85c743317185d581717";
     private static final String USER_NEW_PASSWORD = "P@ssword123";
     private static final String USER_NEW_ENCRYPTED_PASSWORD = "49ad251d013d203b2b3835020076";
@@ -53,11 +53,11 @@ public class LICaller extends AbstractURLAPICaller {
     @Test
     public void testLI() {
         // outlook.php?AT=LI&WID=pluto&WPW=...
-        super.addParam("WPW", USER_ENCRYPTED_PASSWORD);
-        super.post4Document("LI");
+//        super.addParam("WPW", USER_ENCRYPTED_PASSWORD);
+//        super.post4Document("LI");
 
         // outlook.php?AT=LI&WID=pluto&PWPW=P@ss123
-        super.reset();
+//        super.reset();
         super.addParam("PWPW", USER_PASSWORD);
         super.post4Document("LI");
     }
