@@ -28,11 +28,10 @@ import com.cisco.rekan.apicaller.IHttpCaller;
 public abstract class AbstractURLAPICaller extends AbstractHttpCaller {
 
     private String scheme = Constants.PROTOCOL_HTTPS;
-    private String domainURL = "m1aweb3.qa.webex.com";
 //    private String domainURL = "hm1web4.qa.webex.com";
-//    private String domainURL = "t30ptcc.qa.webex.com";
-//    private String domainURL = "m1aweb3s2.qa.webex.com";
-    private String siteName = "m1aweb3";
+    private String domainURL = "m1cweb2.qa.webex.com";
+//    private String siteName = "boret31std";
+    private String siteName = "m1cweb2";
 
     /**
      * @return the scheme

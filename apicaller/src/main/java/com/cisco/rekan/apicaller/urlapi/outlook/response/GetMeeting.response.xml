@@ -1,0 +1,58 @@
+<OutlookDealGetMeeting>
+	<Status>SUCCESS</Status>
+	<confName><![CDATA[Pluto test PCN 002]]></confName>
+	<startTime>2016-09-21 20:00:00</startTime>
+	<firstStartTime>2016-09-21 20:00:00</firstStartTime>
+	<seriesLocalStartTime>2016-09-21 20:00:00</seriesLocalStartTime>
+	<hasException>false</hasException>
+	<isExceptional>false</isExceptional>
+	<meetingKey>228932919</meetingKey>
+	<TimeZone>
+		<JodaTimeZoneName><![CDATA[Asia/Shanghai]]></JodaTimeZoneName>
+		<WebExTimeZone>
+			<ID><![CDATA[45]]></ID>
+			<Name><![CDATA[China]]></Name>
+		</WebExTimeZone>
+	</TimeZone>
+	<HostKey>768667</HostKey>
+	<meetingPsw><![CDATA[44251080]]></meetingPsw>
+	<serviceType>1</serviceType>
+	<meetingType>16</meetingType>
+	<isListed>true</isListed>
+	<isSupportCLI>false</isSupportCLI>
+	<EETone>1</EETone>
+	<isExcludePassword>false</isExcludePassword>
+	<isSupportInternalMtg>false</isSupportInternalMtg>
+	<isEnableReg>false</isEnableReg>
+	<isAutoAccept>false</isAutoAccept>
+	<JBHTime>0</JBHTime>
+	<isTpPlusMeeting>false</isTpPlusMeeting>
+	<isUsePSTN>false</isUsePSTN>
+	<duration>30</duration>
+	<repeatType>NoRepeat</repeatType>
+	<host>
+		<hostID>215767</hostID>
+		<hostName><![CDATA[pluto]]></hostName>
+		<hostEmail><![CDATA[pluto@qa.webex.com]]></hostEmail>
+		<isCreator>true</isCreator>
+	</host>
+	<isSupportAES>false</isSupportAES>
+	<isSupportPKI>false</isSupportPKI>
+	<showFileStartMode>1</showFileStartMode>
+	<showFileInterVal>30</showFileInterVal>
+	<showFileContPlayFlag>false</showFileContPlayFlag>
+	<templateFilePath><![CDATA[Default Information Tab]]></templateFilePath>
+	<allowJBH>false</allowJBH>
+	<allowJBHConference>false</allowJBHConference>
+	<isLocalCallInSupport>false</isLocalCallInSupport>
+	<meetingTypeName><![CDATA[Personal Conference]]></meetingTypeName>
+	<isAUOMtg>true</isAUOMtg>
+	<trackingCodes></trackingCodes>
+	<attendees></attendees>
+	<isTollFreeCallIn>true</isTollFreeCallIn>
+	<isVoIP>true</isVoIP>
+	<isCallBack>true</isCallBack>
+	<isPerTSPAudioConf>false</isPerTSPAudioConf>
+	<tspAccountIndex>1</tspAccountIndex>
+	<allowAnyUserToBeAlternateHost>0</allowAnyUserToBeAlternateHost>
+</OutlookDealGetMeeting>

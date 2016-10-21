@@ -1,0 +1,60 @@
+<OutlookDealGetMeeting>
+	<Status>SUCCESS</Status>
+	<confName><![CDATA[PlutoTestMeeting 010]]></confName>
+	<startTime>2016-09-25 20:00:00</startTime>
+	<firstStartTime>2016-09-25 20:00:00</firstStartTime>
+	<seriesLocalStartTime>2016-09-25 20:00:00</seriesLocalStartTime>
+	<hasException>false</hasException>
+	<isExceptional>false</isExceptional>
+	<meetingKey>220494584</meetingKey>
+	<TimeZone>
+		<JodaTimeZoneName><![CDATA[Asia/Shanghai]]></JodaTimeZoneName>
+		<WebExTimeZone>
+			<ID><![CDATA[45]]></ID>
+			<Name><![CDATA[China]]></Name>
+		</WebExTimeZone>
+	</TimeZone>
+	<HostKey>520991</HostKey>
+	<meetingPsw><![CDATA[P@ssword1234]]></meetingPsw>
+	<serviceType>1</serviceType>
+	<meetingType>3</meetingType>
+	<isListed>false</isListed>
+	<isSupportCLI>false</isSupportCLI>
+	<EETone>0</EETone>
+	<isExcludePassword>false</isExcludePassword>
+	<isSupportInternalMtg>false</isSupportInternalMtg>
+	<isEnableReg>false</isEnableReg>
+	<isAutoAccept>false</isAutoAccept>
+	<JBHTime>5</JBHTime>
+	<isTpPlusMeeting>false</isTpPlusMeeting>
+	<isUsePSTN>false</isUsePSTN>
+	<duration>30</duration>
+	<repeatType>NoRepeat</repeatType>
+	<host>
+		<hostID>215767</hostID>
+		<hostName><![CDATA[pluto]]></hostName>
+		<hostEmail><![CDATA[pluto@qa.webex.com]]></hostEmail>
+		<isCreator>true</isCreator>
+	</host>
+	<isSupportAES>false</isSupportAES>
+	<isSupportPKI>false</isSupportPKI>
+	<showFileStartMode>1</showFileStartMode>
+	<showFileInterVal>30</showFileInterVal>
+	<showFileContPlayFlag>false</showFileContPlayFlag>
+	<templateFilePath><![CDATA[Default Information Tab]]></templateFilePath>
+	<allowJBH>true</allowJBH>
+	<allowJBHConference>true</allowJBHConference>
+	<isLocalCallInSupport>true</isLocalCallInSupport>
+	<meetingTypeName><![CDATA[Pro meeting]]></meetingTypeName>
+	<isAUOMtg>false</isAUOMtg>
+	<trackingCodes></trackingCodes>
+	<attendees></attendees>
+	<isTollFreeCallIn>true</isTollFreeCallIn>
+	<isVoIP>true</isVoIP>
+	<isCallBack>true</isCallBack>
+	<isPerTSPAudioConf>false</isPerTSPAudioConf>
+	<tspAccountIndex>0</tspAccountIndex>
+	<allowAnyUserToBeAlternateHost>0</allowAnyUserToBeAlternateHost>
+	<MeetingTemplateKey>G;MC;en_US;7.1;0;Meeting Center Default;D; ;
+	</MeetingTemplateKey>
+</OutlookDealGetMeeting>

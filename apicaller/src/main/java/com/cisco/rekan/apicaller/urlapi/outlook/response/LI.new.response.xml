@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <OutlookUserLogin>
 	<Status>SUCCESS</Status>
-	<SID>256762</SID>
-	<UID>214287</UID>
+	<SID>856932</SID>
+	<UID>215767</UID>
 	<WID>pluto</WID>
 	<FN>Pluto</FN>
 	<LN>Kan</LN>
-	<OtherTeleName>Other teleconference service</OtherTeleName>
 	<DEFMTTOPIC></DEFMTTOPIC>
 	<SiteSetting>326333</SiteSetting>
 	<IncludePwdInJoinMeetinglinks>true</IncludePwdInJoinMeetinglinks>
 	<AllowUser2StorePersonalInfo>false</AllowUser2StorePersonalInfo>
 	<SupportCMR>true</SupportCMR>
 	<CMRMeeting>
-		<PMRSIPURL><![CDATA[pluto@m1aweb3.qa.webex.com]]></PMRSIPURL>
-		<ConfName><![CDATA[Pluto Kan's Personal Room]]></ConfName>
-		<CMRAccessCode><![CDATA[217625834]]></CMRAccessCode>
-		<PersonalMeetingRoomURL><![CDATA[https://pluto-en.qa.webex.com/meet/pluto]]></PersonalMeetingRoomURL>
+		<PMRSIPURL><![CDATA[pluto@m1cweb2.qa.webex.com]]></PMRSIPURL>
+		<ConfName><![CDATA[Pluto Kan's PMR]]></ConfName>
+		<CMRAccessCode><![CDATA[217019598]]></CMRAccessCode>
+		<PersonalMeetingRoomURL><![CDATA[https://m1cweb2.qa.webex.com/meet/pluto]]></PersonalMeetingRoomURL>
 		<ServiceType>1</ServiceType>
 		<SessionType>3</SessionType>
 		<EntryExitTone>0</EntryExitTone>
@@ -38,7 +37,7 @@
 	<SiteSupportTPRecord>1</SiteSupportTPRecord>
 	<DTE>0</DTE>
 	<PURL><![CDATA[pluto]]></PURL>
-	<DAV>297</DAV>
+	<DAV>803</DAV>
 	<STS>
 		<ST>
 			<ID>1</ID>
@@ -57,26 +56,26 @@
 			<DEF>1</DEF>
 			<MTS>
 				<MT>
+					<ID>16</ID>
+					<MTN><![CDATA[Personal Conference]]></MTN>
+					<AU>1</AU>
+					<OA>188548922</OA>
+					<ExtOA1>0</ExtOA1>
+					<DEF>0</DEF>
+				</MT>
+				<MT>
 					<ID>3</ID>
 					<MTN><![CDATA[Pro meeting]]></MTN>
 					<AU>0</AU>
-					<OA>423620604</OA>
+					<OA>457174974</OA>
 					<ExtOA1>32</ExtOA1>
-					<DEF>0</DEF>
+					<DEF>1</DEF>
 				</MT>
 				<MT>
 					<ID>2</ID>
 					<MTN><![CDATA[Standard Meeting]]></MTN>
 					<AU>0</AU>
-					<OA>423620572</OA>
-					<ExtOA1>32</ExtOA1>
-					<DEF>0</DEF>
-				</MT>
-				<MT>
-					<ID>2194</ID>
-					<MTN><![CDATA[std 2]]></MTN>
-					<AU>0</AU>
-					<OA>423620604</OA>
+					<OA>457174942</OA>
 					<ExtOA1>32</ExtOA1>
 					<DEF>0</DEF>
 				</MT>
@@ -105,15 +104,15 @@
 					<ID>9</ID>
 					<MTN><![CDATA[Online Event]]></MTN>
 					<AU>0</AU>
-					<OA>1028092</OA>
+					<OA>269463487</OA>
 					<ExtOA1>0</ExtOA1>
-					<DEF>1</DEF>
+					<DEF>0</DEF>
 				</MT>
 				<MT>
 					<ID>2</ID>
 					<MTN><![CDATA[Standard Meeting]]></MTN>
 					<AU>0</AU>
-					<OA>17805276</OA>
+					<OA>286240671</OA>
 					<ExtOA1>0</ExtOA1>
 					<DEF>0</DEF>
 				</MT>
@@ -142,7 +141,7 @@
 					<ID>11</ID>
 					<MTN><![CDATA[Training session]]></MTN>
 					<AU>0</AU>
-					<OA>153038844</OA>
+					<OA>455028671</OA>
 					<ExtOA1>0</ExtOA1>
 					<DEF>0</DEF>
 				</MT>
@@ -165,7 +164,7 @@
 				<MTTOPIC></MTTOPIC>
 				<TP><![CDATA[]]>
 				</TP>
-				<MTOA>938058</MTOA>
+				<MTOA>938042</MTOA>
 				<CUVCMtgID></CUVCMtgID>
 				<JBHT>5</JBHT>
 				<TD><![CDATA[]]>
@@ -176,55 +175,7 @@
 				<EETone>0</EETone>
 			</INFO>
 			<TCS></TCS>
-			<DEF>0</DEF>
-		</MP>
-		<MP>
-			<ID></ID>
-			<TN><![CDATA[MC: Pluto's Standard templ]]></TN>
-			<MTKey><![CDATA[S;MC;en_US;9.1;11402;Pluto's Standard templ; ; ;]]></MTKey>
-			<MPST>1</MPST>
-			<MTP>1</MTP>
-			<SITEDEF>0</SITEDEF>
-			<INFO>
-				<MT>2</MT>
-				<MTTOPIC>pluto test template 01</MTTOPIC>
-				<TP><![CDATA[Default Information Tab]]></TP>
-				<MTOA>786498</MTOA>
-				<CUVCMtgID></CUVCMtgID>
-				<JBHT>5</JBHT>
-				<TD><![CDATA[]]>
-				</TD>
-				<PCN>null</PCN>
-				<APF><![CDATA[]]>
-				</APF>
-				<EETone>0</EETone>
-			</INFO>
-			<TCS></TCS>
-			<DEF>0</DEF>
-		</MP>
-		<MP>
-			<ID></ID>
-			<TN><![CDATA[MC: Pluto's template 02]]></TN>
-			<MTKey><![CDATA[S;MC;en_US;9.1;11512;Pluto's template 02; ; ;]]></MTKey>
-			<MPST>1</MPST>
-			<MTP>1</MTP>
-			<SITEDEF>0</SITEDEF>
-			<INFO>
-				<MT>2</MT>
-				<MTTOPIC>pluto test template 02</MTTOPIC>
-				<TP><![CDATA[Default Information Tab]]></TP>
-				<MTOA>786498</MTOA>
-				<CUVCMtgID></CUVCMtgID>
-				<JBHT>5</JBHT>
-				<TD><![CDATA[]]>
-				</TD>
-				<PCN>null</PCN>
-				<APF><![CDATA[]]>
-				</APF>
-				<EETone>0</EETone>
-			</INFO>
-			<TCS></TCS>
-			<DEF>0</DEF>
+			<DEF>1</DEF>
 		</MP>
 		<MP>
 			<ID></ID>
@@ -238,7 +189,7 @@
 				<MTTOPIC></MTTOPIC>
 				<TP><![CDATA[]]>
 				</TP>
-				<MTOA>3146</MTOA>
+				<MTOA>3098</MTOA>
 				<JBHT>0</JBHT>
 				<TD><![CDATA[]]>
 				</TD>
@@ -248,7 +199,7 @@
 				<EETone>2</EETone>
 			</INFO>
 			<TCS></TCS>
-			<DEF>1</DEF>
+			<DEF>0</DEF>
 		</MP>
 		<MP>
 			<ID></ID>
@@ -262,7 +213,7 @@
 				<MTTOPIC></MTTOPIC>
 				<TP><![CDATA[]]>
 				</TP>
-				<MTOA>405576</MTOA>
+				<MTOA>421994</MTOA>
 				<JBHT>5</JBHT>
 				<TD><![CDATA[]]>
 				</TD>
@@ -279,10 +230,14 @@
 		<TSN><![CDATA[Personal Conference No.]]></TSN>
 		<DEF>1</DEF>
 	</PCN>
+	<PCNA>
+		<TSN><![CDATA[Personal Conference No.]]></TSN>
+		<DEF>1</DEF>
+	</PCNA>
 	<BFS></BFS>
 	<Config>
 		<PT>
-			<FG1Config>595</FG1Config>
+			<FG1Config>531</FG1Config>
 		</PT>
 		<T29CryptoFlag>0</T29CryptoFlag>
 		<EnforcePostFlag>0</EnforcePostFlag>

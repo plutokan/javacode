@@ -170,9 +170,9 @@ public class SmPCNCaller extends AbstractURLAPICaller {
     public void test() {
         String userName = "lyn";
         String userPlainPassword = "P@ss123";
-        Document doc = SmPCNCaller.schedulePCN(userName, userPlainPassword, "Pluto test PCN 041");
-        String strMeetingKey = getMeetingKey(doc);
-        SmPCNCaller.updatePCN(userName, userPlainPassword, "Pluto test PCN 041-update", strMeetingKey, "23026936");
+        Document doc = SmPCNCaller.schedulePCN(userName, userPlainPassword, "Pluto test PCN 010");
+//        String strMeetingKey = getMeetingKey(doc);
+//        SmPCNCaller.updatePCN(userName, userPlainPassword, "Pluto test PCN 002-update", strMeetingKey, "23026936");
     }
 
     private static String getMeetingKey(Document doc) {

@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <OutlookScheduleMeeting>
 	<Status>SUCCESS</Status>
-	<MK>213340273</MK>
-	<allowAnyUserToBeAlternateHost>0</allowAnyUserToBeAlternateHost>
-	<TimeZone>
-		<JodaTimeZoneName><![CDATA[Europe/Berlin]]></JodaTimeZoneName>
-		<WebExTimeZone>
-			<ID><![CDATA[25]]></ID>
-			<Name><![CDATA[Europe]]></Name>
-		</WebExTimeZone>
-	</TimeZone>
-	<ConfID>37088481431783026</ConfID>
-	<MT>
-		<ID>16</ID>
-		<MTN>Personal Conference</MTN>
-		<supportTelePresence>false</supportTelePresence>
-	</MT>
-	<JoinURL><![CDATA[https://hm1web4.qa.webex.com/gohm/j.php?MTID=m781bf2998815941ec4adff9df82eef9c]]></JoinURL>
-	<MeetingInfoURL><![CDATA[https://hm1web4.qa.webex.com/gohm/j.php?MTID=m781bf2998815941ec4adff9df82eef9c]]></MeetingInfoURL>
-	<PPUMeeting>0</PPUMeeting>
+	<MK>268196552</MK>
+	<CustomizedLocationForAttendee><![CDATA[Mobile +40800012,,23026936# Dial-in +40800012 Meeting-ID 23026936#1-en]]></CustomizedLocationForAttendee>
 	<isRecurring>false</isRecurring>
 	<isExceptional>false</isExceptional>
-	<firstStartTime>2016-08-14 12:00:00</firstStartTime>
-	<PN><![CDATA[Call-in toll-free number (US/Canada): 10224462262
-Call-in toll number (US/Canada) sandy: 10224462261
-Global call-in numbers: https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+	<MT>
+		<ID>16</ID>
+		<MTN>Personal Conference test</MTN>
+		<supportTelePresence>false</supportTelePresence>
+	</MT>
+	<firstStartTime>2016-09-24 12:00:00</firstStartTime>
+	<JoinURL><![CDATA[https://t30sp.qa.webex.com/t30sp-en/j.php?MTID=m2b42a5ce8153ee8c4415602fe3df22c7]]></JoinURL>
+	<MeetingInfoURL><![CDATA[https://t30sp.qa.webex.com/t30sp-en/j.php?MTID=m2b42a5ce8153ee8c4415602fe3df22c7]]></MeetingInfoURL>
+	<PN><![CDATA[Canada: +1 408197052
+US: +1-949-259-2970
+Global call-in numbers: https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1
+Toll-free dialing restrictions: https://www.webex.com/pdf/tollfree_restrictions.pdf
 
+Host access code: 236 742 80
+Attendee access code: 230 269 36]]></PN>
+	<PNA><![CDATA[Canada: +1 408197052
+US: +1-949-259-2970
+Global call-in numbers: https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1
+Toll-free dialing restrictions: https://www.webex.com/pdf/tollfree_restrictions.pdf
 
-Host access code: 371 693 98
-Attendee access code: 327 587 68]]></PN>
-	<PNA><![CDATA[Call-in toll-free number (US/Canada): 10224462262
-Call-in toll number (US/Canada) sandy: 10224462261
-Global call-in numbers: https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
-
-
-Attendee access code: 327 587 68]]></PNA>
+Attendee access code: 230 269 36]]></PNA>
 	<Host></Host>
+	<PPUMeeting>0</PPUMeeting>
 	<Disclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. By joining this session, you automatically consent to such recordings. If you do not consent to the recording, discuss your concerns with the meeting host prior to the start of the recording or do not join the session. Please note that any such recordings may be subject to discovery in the event of litigation.]]></Disclaimer>
 	<HostDisclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. You should inform all meeting attendees prior to recording if you intend to record the meeting. Please note that any such recordings may be subject to discovery in the event of litigation.]]></HostDisclaimer>
 	<HostEmailTemplate>
@@ -304,6 +296,22 @@ To join the audio portion of the Personal Conference meeting
 			<NodeName>AttendeeJoinByPhoneText_Simple</NodeName>
 			<VarName>%AttendeeJoinByPhoneText_Simple%</VarName>
 		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationText_Simple</NodeName>
+			<VarName>%TPInformationText_Simple%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationIcs_Simple</NodeName>
+			<VarName>%TPInformationIcs_Simple%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneIcs_Simple</NodeName>
+			<VarName>%JoinByPhoneIcs_Simple%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneText_Simple</NodeName>
+			<VarName>%JoinByPhoneText_Simple%</VarName>
+		</VarNode>
 	</EmailNewVarNodeList>
 	<EmailFooter><![CDATA[https://www.webex.com]]></EmailFooter>
 	<PasswordDesc>(Required only for viewing information about the Personal
@@ -315,33 +323,29 @@ To join the audio portion of the Personal Conference meeting
 	</MeetingPasswordLabel>
 	<ShowMtgPwdLabel>1</ShowMtgPwdLabel>
 	<MeetingNumberLabelWithValue>
-		Meeting Number: 213340273
+		Meeting Number: 268196552
 	</MeetingNumberLabelWithValue>
 	<ActionOnAudioMeeting>To start the online portion of the Personal
 		Conference meeting</ActionOnAudioMeeting>
 	<ActionOnAudioMeetingAttendee>To join the online portion of the
 		Personal Conference meeting</ActionOnAudioMeetingAttendee>
-	<AccessCodeURL>https://hm1web4.qa.webex.com/gohm/j.php?MTID=me730a18b6a639bde5c8d9518e78913d9
+	<AccessCodeURL>https://t30sp.qa.webex.com/t30sp-en/j.php?MTID=mba508ca3540ccad862435d3e38bb9f97
 	</AccessCodeURL>
-	<AudioSettingsUrl><![CDATA[https://hm1web4.qa.webex.com/mw3100/mywebex/preference.do?siteurl=gohm&keeppage=1&go_sec=mwx-lnk-audio&config=HomePage|TimeZone|Lang|Locale&backUrl=%2Fmw3100%2Fmywebex%2Fdefault.do%3Fsiteurl%3Dgohm%26service%3D1&target=Frame&siteurl=gohm&popuplogin=true]]></AudioSettingsUrl>
+	<AudioSettingsUrl><![CDATA[https://t30sp.qa.webex.com/mw3000/mywebex/preference.do?siteurl=t30sp&keeppage=1&go_sec=mwx-lnk-audio&config=HomePage|TimeZone|Lang|Locale&backUrl=%2Fmw3000%2Fmywebex%2Fdefault.do%3Fsiteurl%3Dt30sp%26service%3D1&target=Frame&siteurl=t30sp&popuplogin=true]]></AudioSettingsUrl>
 	<DisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerIcs>
 	<DisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerText>
 	<HostDisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerIcs>
 	<HostDisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerText>
-	<HostMeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="Segoe UI">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></HostMeetingPasswordIcs>
-	<MeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="Segoe UI">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></MeetingPasswordIcs>
+	<HostMeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="Segoe UI">44251080</FONT>&nbsp; <BR> ]]></HostMeetingPasswordIcs>
+	<MeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="Segoe UI">44251080</FONT>&nbsp; <BR> ]]></MeetingPasswordIcs>
 	<MeetingPasswordText><![CDATA[
-Meeting password: P&#64;ssword1234]]></MeetingPasswordText>
+Meeting password: 44251080]]></MeetingPasswordText>
 	<HostMeetingPasswordText><![CDATA[
-Meeting password: P&#64;ssword1234]]></HostMeetingPasswordText>
-	<NumericMeetingPasswordHtml>
-	</NumericMeetingPasswordHtml>
-	<NumericMeetingPasswordText>
-	</NumericMeetingPasswordText>
+Meeting password: 44251080]]></HostMeetingPasswordText>
 	<MeetingNumberLabelHtml>Meeting number:</MeetingNumberLabelHtml>
 	<MeetingNumberLabelText>Meeting number:</MeetingNumberLabelText>
-	<Hostnumber>344382</Hostnumber>
-	<HostNumberDesIcs><![CDATA[<P><FONT SIZE="2" COLOR="#666666" FACE="Arial">Host key:344382</FONT>]]></HostNumberDesIcs>
+	<Hostnumber>848308</Hostnumber>
+	<HostNumberDesIcs><![CDATA[<P><FONT SIZE="2" COLOR="#666666" FACE="Arial">Host key:848308</FONT>]]></HostNumberDesIcs>
 	<TPInformationIcs><![CDATA[]]>
 	</TPInformationIcs>
 	<TPInformationText><![CDATA[]]>
@@ -350,81 +354,84 @@ Meeting password: P&#64;ssword1234]]></HostMeetingPasswordText>
 	</AttendeeTPInformationIcs>
 	<AttendeeTPInformationText><![CDATA[]]>
 	</AttendeeTPInformationText>
+	<TPInformationIcs_Simple><![CDATA[]]>
+	</TPInformationIcs_Simple>
+	<TPInformationText_Simple><![CDATA[]]>
+	</TPInformationText_Simple>
 	<AttendeeTPInformationIcs_Simple><![CDATA[]]>
 	</AttendeeTPInformationIcs_Simple>
 	<AttendeeTPInformationText_Simple><![CDATA[]]>
 	</AttendeeTPInformationText_Simple>
-	<JoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada) sandy</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>Host access code:</strong>&nbsp;371 693 98</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>Attendee access code:</strong>&nbsp;327 587 68</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  </FONT>&nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></JoinByPhoneIcs>
+	<JoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>40800014</strong>&nbsp;Taiwan -- toll free</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>40800012</strong>&nbsp;Mexico</FONT>&nbsp; <BR><a href="https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>Host access code:</strong>&nbsp;236 742 80</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>Attendee access code:</strong>&nbsp;230 269 36</FONT>&nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></JoinByPhoneIcs>
 	<JoinByPhoneText><![CDATA[
 JOIN BY PHONE
-10224462261 Call-in toll number (US/Canada) sandy
-10224462262 Call-in toll-free number (US/Canada)
+40800014 Taiwan -- toll free
+40800012 Mexico
 
 Global call-in numbers:
-https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1
 
-Host access code: 371 693 98Attendee access code: 327 587 68
-
-* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+Host access code: 236 742 80Attendee access code: 230 269 36
 ]]></JoinByPhoneText>
-	<JoinByPhoneIcs_Simple><![CDATA[<FONT SIZE="4" FACE="Segoe UI"><FONT SIZE="4" COLOR="#666666" FACE="Segoe UI">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada) sandy</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Global call-in numbers</FONT></a><FONT SIZE="2" FACE="Segoe UI">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>Host access code:</strong>&nbsp;371 693 98</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>Attendee access code:</strong>&nbsp;327 587 68</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  </FONT>&nbsp; <BR></FONT>&nbsp; <BR>]]></JoinByPhoneIcs_Simple>
+	<JoinByPhoneIcs_Simple><![CDATA[<FONT SIZE="4" FACE="Segoe UI"><FONT SIZE="4" COLOR="#666666" FACE="Segoe UI">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>40800014</strong>&nbsp;Taiwan -- toll free</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>40800012</strong>&nbsp;Mexico</FONT>&nbsp; <BR><a href="https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Global call-in numbers</FONT></a><FONT SIZE="2" FACE="Segoe UI">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Toll-free calling restrictions</FONT></a> &nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>Host access code:</strong>&nbsp;236 742 80</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>Attendee access code:</strong>&nbsp;230 269 36</FONT>&nbsp; <BR></FONT>&nbsp; <BR>]]></JoinByPhoneIcs_Simple>
 	<JoinByPhoneText_Simple><![CDATA[
 JOIN BY PHONE
-10224462261 Call-in toll number (US/Canada) sandy
-10224462262 Call-in toll-free number (US/Canada)
+40800014 Taiwan -- toll free
+40800012 Mexico
 
 Global call-in numbers:
-https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1
 
-Host access code: 371 693 98Attendee access code: 327 587 68
-
-* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+Host access code: 236 742 80Attendee access code: 230 269 36
 ]]></JoinByPhoneText_Simple>
-	<AttendeeJoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada) sandy</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>Attendee access code:</strong>&nbsp;327 587 68</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  </FONT>&nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs>
+	<AttendeeJoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>40800014</strong>&nbsp;Taiwan -- toll free</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>40800012</strong>&nbsp;Mexico</FONT>&nbsp; <BR><a href="https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial"><strong>Attendee access code:</strong>&nbsp;230 269 36</FONT>&nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs>
 	<AttendeeJoinByPhoneText><![CDATA[
 JOIN BY PHONE
-10224462261 Call-in toll number (US/Canada) sandy
-10224462262 Call-in toll-free number (US/Canada)
+40800014 Taiwan -- toll free
+40800012 Mexico
 
 Global call-in numbers:
-https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1
 
-Attendee access code: 327 587 68
-
-* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+Attendee access code: 230 269 36
 ]]></AttendeeJoinByPhoneText>
-	<AttendeeJoinByPhoneIcs_Simple><![CDATA[<FONT SIZE="4" FACE="Segoe UI"><FONT SIZE="4" COLOR="#666666" FACE="Segoe UI">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462261</strong>&nbsp;Call-in toll number (US/Canada) sandy</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224462262</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Global call-in numbers</FONT></a><FONT SIZE="2" FACE="Segoe UI">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>Attendee access code:</strong>&nbsp;327 587 68</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  </FONT>&nbsp; <BR></FONT>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs_Simple>
+	<AttendeeJoinByPhoneIcs_Simple><![CDATA[<FONT SIZE="4" FACE="Segoe UI"><FONT SIZE="4" COLOR="#666666" FACE="Segoe UI">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>40800014</strong>&nbsp;Taiwan -- toll free</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>40800012</strong>&nbsp;Mexico</FONT>&nbsp; <BR><a href="https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Global call-in numbers</FONT></a><FONT SIZE="2" FACE="Segoe UI">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Toll-free calling restrictions</FONT></a> &nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>Attendee access code:</strong>&nbsp;230 269 36</FONT>&nbsp; <BR></FONT>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs_Simple>
 	<AttendeeJoinByPhoneText_Simple><![CDATA[
 JOIN BY PHONE
-10224462261 Call-in toll number (US/Canada) sandy
-10224462262 Call-in toll-free number (US/Canada)
+40800014 Taiwan -- toll free
+40800012 Mexico
 
 Global call-in numbers:
-https://hm1web4.qa.webex.com/gohm/globalcallin.php?serviceType=MC&ED=181699397&tollFree=1
+https://t30sp.qa.webex.com/t30sp-en/globalcallin.php?serviceType=MC&ED=187369822&tollFree=1
 
-Attendee access code: 327 587 68
-
-* Backup 2 Large call-in toll number (US/Canada) should only be used if the primary number does not work.  
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+Attendee access code: 230 269 36
 ]]></AttendeeJoinByPhoneText_Simple>
-	<ServiceNameURL>https://hm1web4.qa.webex.com/gohm/mc</ServiceNameURL>
-	<HostKeyUrlHtml><![CDATA[<FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">If you are a host, </FONT><A HREF="https://hm1web4.qa.webex.com/gohm/j.php?MTID=me730a18b6a639bde5c8d9518e78913d9"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">go here</FONT></A><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"> to view host information.</FONT><BR><BR>]]></HostKeyUrlHtml>
+	<ServiceNameURL>https://t30sp.qa.webex.com/t30sp-en/mc</ServiceNameURL>
+	<HostKeyUrlHtml><![CDATA[<FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">If you are a host, </FONT><A HREF="https://t30sp.qa.webex.com/t30sp-en/j.php?MTID=mba508ca3540ccad862435d3e38bb9f97"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">go here</FONT></A><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"> to view host information.</FONT><BR><BR>]]></HostKeyUrlHtml>
 	<HostKeyUrlText><![CDATA[If you are a host, go here to view host information:
-https://hm1web4.qa.webex.com/gohm/j.php?MTID=me730a18b6a639bde5c8d9518e78913d9
+https://t30sp.qa.webex.com/t30sp-en/j.php?MTID=mba508ca3540ccad862435d3e38bb9f97
 
 ]]></HostKeyUrlText>
-	<HostKeyURL><![CDATA[https://hm1web4.qa.webex.com/gohm/j.php?MTID=me730a18b6a639bde5c8d9518e78913d9]]></HostKeyURL>
+	<HostKeyURL><![CDATA[https://t30sp.qa.webex.com/t30sp-en/j.php?MTID=mba508ca3540ccad862435d3e38bb9f97]]></HostKeyURL>
 	<iPhoneJoinMeetingDesc><![CDATA[------------------------------------------------------- 
 To join the meeting on iPhone
 -------------------------------------------------------
-Go to wbx://hm1web4.qa.webex.com/gohm?MK=213340273&amp;MPW=501fe884fdbbb0bceafff5f4fd2f3423cd32d435e96a0a85e56cdf067a632894&amp;MTGTK=SDJTSwAAALNM8B3H5gKG2MTiV6VGB0MjqHv1GDgV2hT8OwDtW7YtNA2&amp;r2sec=1
+Go to wbx://t30sp.qa.webex.com/t30sp?MK=268196552&amp;MTGTK=SDJTSwAAAIr9GBuRCYNZ5mMYZgBcbK2GnM8Xqu9yNkdt22__FHenKw2&amp;r2sec=1
 
 Don&apos;t have the iPhone WebEx application yet? 
 Go to http://itunes.apple.com/app/cisco-webex-meetings/id298844386 ]]></iPhoneJoinMeetingDesc>
 	<EncryptedMtgPwd><![CDATA[]]>
 	</EncryptedMtgPwd>
 	<JoinMeetingTitle4SmartPhone><![CDATA[(Now from mobile devices!)]]></JoinMeetingTitle4SmartPhone>
-	<ConfCallParticipant>CCP:+10224462261x32758768# </ConfCallParticipant>
-	<ConfCallModerator>CCM:+10224462261x37169398# </ConfCallModerator>
-	<MeetingNumberNS>213340273</MeetingNumberNS>
-	<MPCallInNumberList></MPCallInNumberList>
+	<ConfCallParticipant>CCP:+19492592970x23026936# </ConfCallParticipant>
+	<ConfCallModerator>CCM:+19492592970x23674280# </ConfCallModerator>
+	<MeetingNumberNS>268196552</MeetingNumberNS>
 </OutlookScheduleMeeting>

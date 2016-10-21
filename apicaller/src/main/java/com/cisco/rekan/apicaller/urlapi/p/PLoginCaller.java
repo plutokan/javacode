@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.springframework.util.Assert;
 
+import com.cisco.rekan.apicaller.Utils;
 import com.cisco.rekan.apicaller.urlapi.AbstractURLAPICaller;
 
 /**
@@ -72,9 +73,11 @@ RESPONSE: https://pluto.qa.webex.com/mw3100/mywebex/default.do?siteurl=pluto&AT=
         this.setPw(password);
         HttpResponse response = super.post();
 //        Utils.printHeaders(response);
+//        Utils.printContent(response);
         HttpResponse response2 = super.redirectViaJsp(response);
+        Utils.printContent(response2);
 
-        return response2;
+        return null;
     }
 
     @Test

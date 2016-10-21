@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OutlookScheduleMeeting>
+	<Status>SUCCESS</Status>
+	<MK>226855893</MK>
+	<allowAnyUserToBeAlternateHost>0</allowAnyUserToBeAlternateHost>
+	<TimeZone>
+		<JodaTimeZoneName><![CDATA[Asia/Shanghai]]></JodaTimeZoneName>
+		<WebExTimeZone>
+			<ID><![CDATA[45]]></ID>
+			<Name><![CDATA[China]]></Name>
+		</WebExTimeZone>
+	</TimeZone>
+	<ConfID>40520571524484671</ConfID>
+	<MT>
+		<ID>3</ID>
+		<MTN>Pro meeting</MTN>
+		<supportTelePresence>false</supportTelePresence>
+	</MT>
+	<JoinURL><![CDATA[https://m1cweb2.qa.webex.com/m1cweb2/j.php?MTID=m4dcbeb997dc186db461ff1a3e8a56bb5]]></JoinURL>
+	<MeetingInfoURL><![CDATA[https://m1cweb2.qa.webex.com/m1cweb2/j.php?MTID=m4dcbeb997dc186db461ff1a3e8a56bb5]]></MeetingInfoURL>
+	<PPUMeeting>0</PPUMeeting>
+	<MeetingTemplateKey>G;MC;en_US;7.1;0;Meeting Center Default;D; ;
+	</MeetingTemplateKey>
+	<isRecurring>false</isRecurring>
+	<isExceptional>false</isExceptional>
+	<firstStartTime>2016-09-22 12:00:00</firstStartTime>
+	<PN><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.
+Call-in toll number (US/Canada): 10224431460
+Call-in toll-free number (US/Canada): 10224431462
+
+Having trouble dialing in? Try these backup numbers:
+Call-in toll-free number (US/Canada): 10224431462 
+Call-in toll number (US/Canada): 10224431460
+
+Access code:226 855 893
+Global call-in numbers: https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1
+Toll-free dialing restrictions: https://www.webex.com/pdf/tollfree_restrictions.pdf]]></PN>
+	<PNA><![CDATA[To receive a call back, provide your phone number when you join the meeting, or call the number below and enter the access code.
+Call-in toll number (US/Canada): 10224431460
+Call-in toll-free number (US/Canada): 10224431462
+
+Having trouble dialing in? Try these backup numbers:
+Call-in toll-free number (US/Canada): 10224431462 
+Call-in toll number (US/Canada): 10224431460
+
+Access code:226 855 893
+Global call-in numbers: https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1
+Toll-free dialing restrictions: https://www.webex.com/pdf/tollfree_restrictions.pdf]]></PNA>
+	<Host></Host>
+	<Disclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. By joining this session, you automatically consent to such recordings. If you do not consent to the recording, discuss your concerns with the meeting host prior to the start of the recording or do not join the session. Please note that any such recordings may be subject to discovery in the event of litigation.]]></Disclaimer>
+	<HostDisclaimer><![CDATA[IMPORTANT NOTICE: This WebEx service includes a feature that allows audio and any documents and other materials exchanged or viewed during the session to be recorded. You should inform all meeting attendees prior to recording if you intend to record the meeting. Please note that any such recordings may be subject to discovery in the event of litigation.]]></HostDisclaimer>
+	<HostEmailTemplate>
+		<Message><![CDATA[-- Do not delete or change any of the following text. --
+
+
+JOIN WEBEX MEETING
+%MeetingInfoURL%
+%MeetingNumberLabelText% %Meeting Number%%MeetingPasswordText%%NumericMeetingPasswordText%
+
+%AttendeeTPInformationText_Simple%%AttendeeJoinByPhoneText_Simple%
+
+Can't join the meeting?
+https://help.webex.com/docs/DOC-5412
+
+%HostKeyUrlText%
+
+%DisclaimerText%
+]]></Message>
+	</HostEmailTemplate>
+	<AttendeeEmailTemplate>
+		<Message><![CDATA[-- Do not delete or change any of the following text. --
+
+
+JOIN WEBEX MEETING
+%MeetingInfoURL%
+%MeetingNumberLabelText% %Meeting Number%%MeetingPasswordText%%NumericMeetingPasswordText%
+
+%AttendeeTPInformationText_Simple%%AttendeeJoinByPhoneText_Simple%
+
+Can't join the meeting?
+https://help.webex.com/docs/DOC-5412
+
+%HostKeyUrlText%
+
+%DisclaimerText%
+]]></Message>
+	</AttendeeEmailTemplate>
+	<EmailNewVarNodeList>
+		<VarNode>
+			<NodeName>EmailFooter</NodeName>
+			<VarName>%EmailFooter%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>iPhoneJoinMeetingDesc</NodeName>
+			<VarName>%iPhoneJoinMeetingDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinMeetingTitle4SmartPhone</NodeName>
+			<VarName>%JoinMeetingTitle4SmartPhone%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallParticipantHtml</NodeName>
+			<VarName>%ConfCallParticipantHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallParticipant</NodeName>
+			<VarName>%ConfCallParticipant%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ConfCallModerator</NodeName>
+			<VarName>%ConfCallModerator%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimer</NodeName>
+			<VarName>%HostDisclaimer%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>PasswordDesc</NodeName>
+			<VarName>%PasswordDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberLabelWithValue</NodeName>
+			<VarName>%MeetingNumberLabelWithValue%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordLabel</NodeName>
+			<VarName>%MeetingPasswordLabel%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ActionOnAudioMeeting</NodeName>
+			<VarName>%ActionOnAudioMeeting%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ActionOnAudioMeetingAttendee</NodeName>
+			<VarName>%ActionOnAudioMeetingAttendee%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>StartMeetingLink</NodeName>
+			<VarName>%StartMeetingLink%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberNS</NodeName>
+			<VarName>%MeetingNumberNS%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPDescription</NodeName>
+			<VarName>%TPDescription%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformation</NodeName>
+			<VarName>%TPInformation%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyDesc</NodeName>
+			<VarName>%HostKeyDesc%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingInfoURL</NodeName>
+			<VarName>%MeetingInfoURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>ServiceNameURL</NodeName>
+			<VarName>%ServiceNameURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneIcs</NodeName>
+			<VarName>%JoinByPhoneIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationIcs</NodeName>
+			<VarName>%TPInformationIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneIcs</NodeName>
+			<VarName>%AttendeeJoinByPhoneIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneText</NodeName>
+			<VarName>%AttendeeJoinByPhoneText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostMeetingPasswordIcs</NodeName>
+			<VarName>%HostMeetingPasswordIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordIcs</NodeName>
+			<VarName>%MeetingPasswordIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerIcs</NodeName>
+			<VarName>%DisclaimerIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimerIcs</NodeName>
+			<VarName>%HostDisclaimerIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>Hostnumber</NodeName>
+			<VarName>%Hostnumber%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPInformationText</NodeName>
+			<VarName>%TPInformationText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneText</NodeName>
+			<VarName>%JoinByPhoneText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingPasswordText</NodeName>
+			<VarName>%MeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostMeetingPasswordText</NodeName>
+			<VarName>%HostMeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostDisclaimerText</NodeName>
+			<VarName>%HostDisclaimerText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerText</NodeName>
+			<VarName>%DisclaimerText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyUrlText</NodeName>
+			<VarName>%HostKeyUrlText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>HostKeyUrlHtml</NodeName>
+			<VarName>%HostKeyUrlHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AccessCodeURL</NodeName>
+			<VarName>%AccessCodeURL%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AudioSettingsUrl</NodeName>
+			<VarName>%AudioSettingsUrl%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumber</NodeName>
+			<VarName>%MeetingNumber%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPJoinDescriptionHtml</NodeName>
+			<VarName>%TPJoinDescriptionHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneEntHtml</NodeName>
+			<VarName>%JoinByPhoneEntHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>DisclaimerHtml</NodeName>
+			<VarName>%DisclaimerHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>TPJoinDescriptionText</NodeName>
+			<VarName>%TPJoinDescriptionText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>JoinByPhoneEntText</NodeName>
+			<VarName>%JoinByPhoneEntText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationText</NodeName>
+			<VarName>%AttendeeTPInformationText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationIcs</NodeName>
+			<VarName>%AttendeeTPInformationIcs%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberLabelHtml</NodeName>
+			<VarName>%MeetingNumberLabelHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>NumericMeetingPasswordHtml</NodeName>
+			<VarName>%NumericMeetingPasswordHtml%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>MeetingNumberLabelText</NodeName>
+			<VarName>%MeetingNumberLabelText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>NumericMeetingPasswordText</NodeName>
+			<VarName>%NumericMeetingPasswordText%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationText_Simple</NodeName>
+			<VarName>%AttendeeTPInformationText_Simple%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeTPInformationIcs_Simple</NodeName>
+			<VarName>%AttendeeTPInformationIcs_Simple%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneIcs_Simple</NodeName>
+			<VarName>%AttendeeJoinByPhoneIcs_Simple%</VarName>
+		</VarNode>
+		<VarNode>
+			<NodeName>AttendeeJoinByPhoneText_Simple</NodeName>
+			<VarName>%AttendeeJoinByPhoneText_Simple%</VarName>
+		</VarNode>
+	</EmailNewVarNodeList>
+	<EmailFooter><![CDATA[https://www.webex.com]]></EmailFooter>
+	<PasswordDesc></PasswordDesc>
+	<MeetingPasswordLabel></MeetingPasswordLabel>
+	<ShowMtgPwdLabel></ShowMtgPwdLabel>
+	<AccessCodeURL></AccessCodeURL>
+	<AudioSettingsUrl><![CDATA[]]>
+	</AudioSettingsUrl>
+	<DisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerIcs>
+	<DisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. By joining this session, you automatically consent to such recordings. If you do not consent to being recorded, discuss your concerns with the host or do not join the session.]]></DisclaimerText>
+	<HostDisclaimerIcs><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerIcs>
+	<HostDisclaimerText><![CDATA[IMPORTANT NOTICE: Please note that this WebEx service allows audio and other information sent during the session to be recorded, which may be discoverable in a legal matter. You should inform all meeting attendees prior to recording if you intend to record the meeting.]]></HostDisclaimerText>
+	<HostMeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="Segoe UI">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></HostMeetingPasswordIcs>
+	<MeetingPasswordIcs><![CDATA[ <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">Meeting password:</FONT> <FONT SIZE="2"  COLOR="#666666" FACE="Segoe UI">P&#64;ssword1234</FONT>&nbsp; <BR> ]]></MeetingPasswordIcs>
+	<MeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></MeetingPasswordText>
+	<HostMeetingPasswordText><![CDATA[
+Meeting password: P&#64;ssword1234]]></HostMeetingPasswordText>
+	<NumericMeetingPasswordHtml>
+	</NumericMeetingPasswordHtml>
+	<NumericMeetingPasswordText>
+	</NumericMeetingPasswordText>
+	<MeetingNumberLabelHtml>Meeting number (access code):
+	</MeetingNumberLabelHtml>
+	<MeetingNumberLabelText>Meeting number (access code):
+	</MeetingNumberLabelText>
+	<Hostnumber>359912</Hostnumber>
+	<HostNumberDesIcs><![CDATA[<P><FONT SIZE="2" COLOR="#666666" FACE="Arial">Host key:359912</FONT>]]></HostNumberDesIcs>
+	<TPInformationIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join from a video conferencing system or application</FONT><BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Dial</FONT> <a href="sip:226855893@m1cweb2.qa.webex.com"><FONT SIZE="2" COLOR="#00AFF9" FACE="arial">226855893@m1cweb2.qa.webex.com</FONT></a>&nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></TPInformationIcs>
+	<TPInformationText><![CDATA[
+JOIN FROM A VIDEO CONFERENCING SYSTEM OR APPLICATION
+Dial sip:226855893@m1cweb2.qa.webex.com
+
+]]></TPInformationText>
+	<AttendeeTPInformationIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join from a video conferencing system or application</FONT><BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Dial</FONT> <a href="sip:226855893@m1cweb2.qa.webex.com"><FONT SIZE="2" COLOR="#00AFF9" FACE="arial">226855893@m1cweb2.qa.webex.com</FONT></a>&nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></AttendeeTPInformationIcs>
+	<AttendeeTPInformationText><![CDATA[
+JOIN FROM A VIDEO CONFERENCING SYSTEM OR APPLICATION
+Dial sip:226855893@m1cweb2.qa.webex.com
+
+]]></AttendeeTPInformationText>
+	<AttendeeTPInformationIcs_Simple><![CDATA[<FONT SIZE="4" FACE="Segoe UI"><FONT SIZE="4" COLOR="#666666" FACE="Segoe UI">Join from a video system or application</FONT><BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">Dial</FONT> <a href="sip:226855893@m1cweb2.qa.webex.com"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">226855893@m1cweb2.qa.webex.com</FONT></a>&nbsp; <BR></FONT>&nbsp; <BR>]]></AttendeeTPInformationIcs_Simple>
+	<AttendeeTPInformationText_Simple><![CDATA[
+JOIN FROM A VIDEO SYSTEM OR APPLICATION
+Dial sip:226855893@m1cweb2.qa.webex.com
+
+]]></AttendeeTPInformationText_Simple>
+	<JoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224431460</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224431462</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 226 855 893</FONT>&nbsp; <BR><a href="https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></JoinByPhoneIcs>
+	<JoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224431460 Call-in toll number (US/Canada)
+10224431462 Call-in toll-free number (US/Canada)
+Access code: 226 855 893
+
+Global call-in numbers:
+https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></JoinByPhoneText>
+	<JoinByPhoneIcs_Simple><![CDATA[<FONT SIZE="4" FACE="Segoe UI"><FONT SIZE="4" COLOR="#666666" FACE="Segoe UI">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224431460</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224431462</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Global call-in numbers</FONT></a><FONT SIZE="2" FACE="Segoe UI">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>]]></JoinByPhoneIcs_Simple>
+	<JoinByPhoneText_Simple><![CDATA[
+JOIN BY PHONE
+10224431460 Call-in toll number (US/Canada)
+10224431462 Call-in toll-free number (US/Canada)
+
+Global call-in numbers:
+https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></JoinByPhoneText_Simple>
+	<AttendeeJoinByPhoneIcs><![CDATA[<FONT SIZE="4" FACE="ARIAL"><FONT SIZE="3" COLOR="#666666" FACE="arial">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224431460</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224431462</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="arial">Access code: 226 855 893</FONT>&nbsp; <BR><a href="https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Global call-in numbers</FONT></a><FONT SIZE="1" FACE="ARIAL">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="1" COLOR="#00AFF9" FACE="arial">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs>
+	<AttendeeJoinByPhoneText><![CDATA[
+JOIN BY PHONE
+10224431460 Call-in toll number (US/Canada)
+10224431462 Call-in toll-free number (US/Canada)
+Access code: 226 855 893
+
+Global call-in numbers:
+https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></AttendeeJoinByPhoneText>
+	<AttendeeJoinByPhoneIcs_Simple><![CDATA[<FONT SIZE="4" FACE="Segoe UI"><FONT SIZE="4" COLOR="#666666" FACE="Segoe UI">Join by phone</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224431460</strong>&nbsp;Call-in toll number (US/Canada)</FONT>&nbsp; <BR><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"><strong>10224431462</strong>&nbsp;Call-in toll-free number (US/Canada)</FONT>&nbsp; <BR><a href="https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Global call-in numbers</FONT></a><FONT SIZE="2" FACE="Segoe UI">&nbsp;&nbsp;|&nbsp;&nbsp;</FONT><a href="https://www.webex.com/pdf/tollfree_restrictions.pdf"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">Toll-free calling restrictions</FONT></a> &nbsp; <BR></FONT>&nbsp; <BR>]]></AttendeeJoinByPhoneIcs_Simple>
+	<AttendeeJoinByPhoneText_Simple><![CDATA[
+JOIN BY PHONE
+10224431460 Call-in toll number (US/Canada)
+10224431462 Call-in toll-free number (US/Canada)
+
+Global call-in numbers:
+https://m1cweb2.qa.webex.com/m1cweb2/globalcallin.php?serviceType=MC&ED=510542&tollFree=1
+
+Toll-free dialing restrictions: 
+https://www.webex.com/pdf/tollfree_restrictions.pdf
+]]></AttendeeJoinByPhoneText_Simple>
+	<ServiceNameURL>https://m1cweb2.qa.webex.com/m1cweb2/mc
+	</ServiceNameURL>
+	<HostKeyUrlHtml><![CDATA[<FONT SIZE="2" COLOR="#666666" FACE="Segoe UI">If you are a host, </FONT><A HREF="https://m1cweb2.qa.webex.com/m1cweb2/j.php?MTID=m9ea09c0c3f0eeaeb7951a5f2d1337982"><FONT SIZE="2" COLOR="#00AFF9" FACE="Segoe UI">go here</FONT></A><FONT SIZE="2" COLOR="#666666" FACE="Segoe UI"> to view host information.</FONT><BR><BR>]]></HostKeyUrlHtml>
+	<HostKeyUrlText><![CDATA[If you are a host, go here to view host information:
+https://m1cweb2.qa.webex.com/m1cweb2/j.php?MTID=m9ea09c0c3f0eeaeb7951a5f2d1337982
+
+]]></HostKeyUrlText>
+	<HostKeyURL><![CDATA[https://m1cweb2.qa.webex.com/m1cweb2/j.php?MTID=m9ea09c0c3f0eeaeb7951a5f2d1337982]]></HostKeyURL>
+	<iPhoneJoinMeetingDesc><![CDATA[------------------------------------------------------- 
+To join the meeting on iPhone
+-------------------------------------------------------
+Go to wbx://m1cweb2.qa.webex.com/m1cweb2?MK=226855893&amp;MPW=501fe884fdbbb0bceafff5f4fd2f3423cd32d435e96a0a85e56cdf067a632894&amp;MTGTK=SDJTSwAAALOinMhLnwTuLeeUuEt4sxpJws2HGlILCTkR-S--NSn1qw2&amp;r2sec=1
+
+Don&apos;t have the iPhone WebEx application yet? 
+Go to http://itunes.apple.com/app/cisco-webex-meetings/id298844386 ]]></iPhoneJoinMeetingDesc>
+	<EncryptedMtgPwd><![CDATA[]]>
+	</EncryptedMtgPwd>
+	<JoinMeetingTitle4SmartPhone><![CDATA[(Now from mobile devices!)]]></JoinMeetingTitle4SmartPhone>
+	<ConfCallParticipant>CCP:+10224431460x226855893# </ConfCallParticipant>
+	<ConfCallModerator>CCM:+10224431460x226855893# </ConfCallModerator>
+	<MeetingNumberNS>226855893</MeetingNumberNS>
+	<MPCallInNumberList></MPCallInNumberList>
+	<HostKeyDesc><![CDATA[Host key: 359912]]>
+	</HostKeyDesc>
+	<TPDescription><![CDATA[Join from a video conferencing system or application
+You can join this meeting in one of the following ways: online, from a telepresence device, or by phone.
+]]></TPDescription>
+	<TPInformation><![CDATA[Dial or click
+-------------------------------------------------------
+To join from a telepresence device
+-------------------------------------------------------
+Use the keypad to enter this video address:
+226855893@m1cweb2.qa.webex.com
+]]></TPInformation>
+	<CMRSIPURL><![CDATA[226855893@m1cweb2.qa.webex.com]]></CMRSIPURL>
+</OutlookScheduleMeeting>
